@@ -7,7 +7,7 @@
 ## 🟢 OPERATIONAL
 
 **Current Status:** All systems functioning normally
-**Last Updated:** April 16, 2026, 11:42 AM PT
+**Last Updated:** April 16, 2026 12:20 PM PT
 **Season:** Regular Season 2026
 
 ---
@@ -23,7 +23,7 @@
 | 🌦️ OpenWeather API | 🟢 Connected | Real-time | Continuous |
 | 💾 State Persistence | 🟢 Working | April 16, 2026 | Automatic |
 | 🏟️ Roof Status API | 🟢 Connected | April 16, 2026 | Continuous |
-| ⏰ External Cron Trigger | 🟢 Operational | April 16, 2026 11:30 AM PT | Every 10 min via cron-job.org |
+| ⏰ External Cron Trigger | 🟢 Operational | April 16, 2026 12:20 PM PT | Every 10 min via cron-job.org |
 
 ---
 
@@ -31,108 +31,12 @@
 
 | Metric | Value |
 |--------|-------|
-| **Games Monitored** | Updated automatically each run |
-| **Total Alerts Sent** | Updated automatically each run |
-| **Delay Prediction Accuracy** | Updated automatically each run |
-| **False Positives** | Updated automatically each run |
-| **System Uptime** | 100% |
+| **Games Monitored** | 68 |
+| **Total Alerts Sent** | 65 |
+| **Delay Prediction Accuracy** | 0.0% (0/4) |
+| **False Positives** | 0 |
+| **System Uptime** | 72.7% |
 | **Monitoring Interval** | Every 10 min (via cron-job.org) |
-
----
-
-## Recent Activity
-
-### April 16, 2026
-⏰ **Infrastructure: External Cron Trigger via cron-job.org**
-- Configured cron-job.org to trigger MLB Status Monitor every
-  10 minutes via GitHub API workflow_dispatch — replacing
-  unreliable GitHub native cron scheduler
-- GitHub Actions free tier was delaying scheduled runs by
-  30-60 minutes during peak hours — both rain delays today
-  (White Sox/Royals and Royals/Tigers) required manual triggers
-  before this fix
-- Guaranteed 10-minute detection cycles now active
-- GitHub native cron remains as backup
-- Zero code changes to Python scripts or alert logic
-
-🚨 **Two Rain Delays Successfully Detected**
-- Chicago White Sox vs Kansas City Royals — Delayed Start at
-  Kauffman Stadium (Reason: Rain) — alerted at 1:09 PM PT
-- Kansas City Royals vs Detroit Tigers — Delayed Start at
-  Comerica Park (Reason: Inclement Weather) — alerted at
-  10:36 AM PT
-
-### April 8, 2026
-🐛 **CRITICAL FIX: Duplicate Alerts and Wrong Alert Types**
-- Fixed "RAIN DELAY DETECTED" incorrectly firing on
-  already-Postponed games
-- Fixed duplicate alerts firing every 10 minutes for same game
-- Added fetch-depth: 0 and git pull --rebase to
-  mlb-status-monitor-v2.yml to fix state persistence
-- Introduced normalized state constants throughout
-  mlb_game_status_monitor.py
-- Added STATE_SUSPENDED handling for suspended games
-
-🐛 **FIX: Commit Step Failing with Exit Code 1**
-- Fixed mlb-status-monitor-v2.yml commit step failing with
-  no changes added to commit error
-- Split git add into individual lines with || true
-- Removed git diff --quiet from commit condition
-
-📊 **Analytics Metrics Fixes**
-- Fixed Games Monitored showing 0
-- Fixed Skipped Runs showing 0
-- Fixed double counting of games monitored
-- Added skipped run logging to all three workflows
-- Improved time saved and average alerts calculations
-
-🎯 **Prediction Accuracy Tracking Wired Up**
-- save_high_risk_predictions() now saves predicted game PKs
-- check_and_log_prediction_accuracy() cross-references
-  predictions vs actual delays automatically
-- Prediction Accuracy dashboard now populates automatically
-
-### March 28, 2026
-✨ **Major Enhancement: Roof-Aware Filtering**
-- Added intelligent stadium roof detection to reduce false
-  alerts
-- Fixed dome stadiums (Tropicana Field, Rogers Centre) now
-  excluded from weather forecasts
-- Retractable roof stadiums (6 total) checked via MLB API
-- Expected result: ~27% reduction in unnecessary weather
-  alerts
-- All three Python scripts updated
-
-### March 27, 2026
-✅ **Automatic Scheduling Confirmed Working**
-- All workflows now triggering on schedule
-- Daily Weather Report: 7:00 AM PT
-- High Risk Alerts: 10:00 AM PT
-- Real-Time Monitoring: Every 10 min
-
-### March 26, 2026
-🔧 **Analytics Tracking Fixed**
-- Fixed critical issue where ANALYTICS.md was not updating
-- Added git commit steps to all workflow files
-- Real-time analytics now functional for all alert types
-
-### March 18, 2026
-✅ **All workflows updated and tested**
-- Fixed DST cron schedules for automatic adjustment
-- Verified all three alert types working
-- Enabled game state persistence for resumption alerts
-- Successfully posted test alerts to both Slack channels
-
-### March 15, 2026
-⚠️ **Rain delay detected and alerted**
-- Yankees vs Orioles game delayed in Top 5
-- Alert successfully posted at 3:59 PM PT
-- Resumption alert functionality confirmed fixed
-
-### March 12, 2026
-🎉 **System launched**
-- Initial deployment complete
-- Spring Training validation began
 
 ---
 
@@ -205,8 +109,9 @@
 
 **System Owner:** Luis Evangelista
 **Slack:** @le805s
-**Response Time:** Within 2 hours during business hours
+**Response Time:** Within 2 hours during business hours for
+critical issues
 
 ---
 
-_Last generated: April 16, 2026 11:42 AM PT — Auto-updates on every workflow run_
+_Last generated: April 16, 2026 12:20 PM PT_
