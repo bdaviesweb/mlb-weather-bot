@@ -16,9 +16,9 @@
 
 | Metric | Count |
 |--------|-------|
-| 📅 Games Monitored | 68 |
-| 📬 Total Alerts Sent | 67 |
-| 📊 Daily Reports | 8 |
+| 📅 Games Monitored | 78 |
+| 📬 Total Alerts Sent | 68 |
+| 📊 Daily Reports | 9 |
 | 🚨 High-Risk Alerts | 21 |
 | ⏸️ Delay Alerts | 21 |
 | ▶️ Resumption Alerts | 8 |
@@ -42,8 +42,8 @@
 
 | Metric | Count | Percentage |
 |--------|-------|------------|
-| Total Workflow Runs | 445 | - |
-| ✅ Successful | 302 | 67.9% |
+| Total Workflow Runs | 446 | - |
+| ✅ Successful | 303 | 67.9% |
 | ❌ Failed | 0 | 0.0% |
 | ⏭️ Skipped (outside game hours) | 143 | 32.1% |
 
@@ -55,8 +55,8 @@
 
 ### Today (April 17, 2026)
 
-- 📊 Alerts sent: 0
-- 📅 Games monitored: 0
+- 📊 Alerts sent: 1
+- 📅 Games monitored: 10
 
 ### Yesterday (April 16, 2026)
 
@@ -68,11 +68,11 @@
 ## 💡 Key Insights
 
 **Time Saved:** ~17 hours this season
-**Estimated Value:** $838 in operational efficiency
+**Estimated Value:** $850 in operational efficiency
 
-**Days Active:** 21
-**Active Game Days:** 21
-**Average Alerts/Day (game days only):** 3.2
+**Days Active:** 22
+**Active Game Days:** 22
+**Average Alerts/Day (game days only):** 3.1
 
 ---
 
