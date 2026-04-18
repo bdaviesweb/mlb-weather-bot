@@ -47,7 +47,7 @@ jobs:
       - name: Send High-risk alerts
         if: steps.check_already_ran.outputs.already_ran == 'false'
         env:
-          SLACK_WEBHOOK: ${{ secrets.HIGH_RISK_WEBHOOK_URL }}
+          HIGH_RISK_WEBHOOK_URL: ${{ secrets.HIGH_RISK_WEBHOOK_URL }}
         run: python high_risk_alert.py
 
       - name: Mark as ran today
