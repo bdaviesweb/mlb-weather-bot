@@ -33,7 +33,7 @@
 | Actual Delays Occurred | 0 |
 | Correctly Predicted | 0 |
 | **Accuracy Rate** | **0.0%** |
-| False Positives | 19 |
+| False Positives | 20 |
 | False Negatives | 0 |
 
 ---
@@ -42,12 +42,12 @@
 
 | Metric | Count | Percentage |
 |--------|-------|------------|
-| Total Workflow Runs | 654 | - |
-| ✅ Successful | 414 | 63.3% |
+| Total Workflow Runs | 655 | - |
+| ✅ Successful | 415 | 63.4% |
 | ❌ Failed | 0 | 0.0% |
-| ⏭️ Skipped (outside game hours) | 240 | 36.7% |
+| ⏭️ Skipped (outside game hours) | 240 | 36.6% |
 
-**System Uptime:** 63.3%
+**System Uptime:** 63.4%
 
 ---
 
