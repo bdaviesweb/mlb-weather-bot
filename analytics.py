@@ -189,13 +189,13 @@ def generate_summary_report():
     """Generate a comprehensive analytics summary report"""
     analytics = load_analytics()
 
-    total_delays = analytics['accuracy']['actual_delays']
+    total_delays        = analytics['accuracy']['actual_delays']
     correct_predictions = analytics['accuracy']['delays_predicted']
-    accuracy_pct = (correct_predictions / total_delays * 100) if total_delays > 0 else 0
+    accuracy_pct        = (correct_predictions / total_delays * 100) if total_delays > 0 else 0
 
-    total_runs = analytics['workflow_runs']['total_runs']
+    total_runs      = analytics['workflow_runs']['total_runs']
     successful_runs = analytics['workflow_runs']['successful_runs']
-    success_rate = (successful_runs / total_runs * 100) if total_runs > 0 else 0
+    success_rate    = (successful_runs / total_runs * 100) if total_runs > 0 else 0
 
     report = f"""
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -245,24 +245,24 @@ Success Rate:              {success_rate:.1f}%
 
 def generate_analytics_markdown():
     """Generate ANALYTICS.md — formatted markdown for GitHub display"""
-    analytics = load_analytics()
+    analytics  = load_analytics()
     pacific_tz = pytz.timezone('America/Los_Angeles')
-    now = datetime.now(pacific_tz)
+    now        = datetime.now(pacific_tz)
 
     # ── Accuracy calculations ──────────────────────────────────────────
-    total_delays = analytics['accuracy']['actual_delays']
+    total_delays        = analytics['accuracy']['actual_delays']
     correct_predictions = analytics['accuracy']['delays_predicted']
-    accuracy_pct = (correct_predictions / total_delays * 100) if total_delays > 0 else 0
+    accuracy_pct        = (correct_predictions / total_delays * 100) if total_delays > 0 else 0
 
     # ── Reliability calculations ───────────────────────────────────────
-    total_runs = analytics['workflow_runs']['total_runs']
+    total_runs      = analytics['workflow_runs']['total_runs']
     successful_runs = analytics['workflow_runs']['successful_runs']
-    skipped_runs = analytics['workflow_runs']['skipped_runs']
-    failed_runs = analytics['workflow_runs']['failed_runs']
-    success_rate = (successful_runs / total_runs * 100) if total_runs > 0 else 0
+    skipped_runs    = analytics['workflow_runs']['skipped_runs']
+    failed_runs     = analytics['workflow_runs']['failed_runs']
+    success_rate    = (successful_runs / total_runs * 100) if total_runs > 0 else 0
 
     # ── Activity calculations ──────────────────────────────────────────
-    today = now.strftime('%Y-%m-%d')
+    today     = now.strftime('%Y-%m-%d')
     yesterday = (now - timedelta(days=1)).strftime('%Y-%m-%d')
     today_stats = analytics['daily_activity'].get(
         today, {'alerts_sent': 0, 'games_monitored': 0}
@@ -280,8 +280,8 @@ def generate_analytics_markdown():
     )
 
     # ✅ Base time saved on actual alerts sent (each alert = ~15 min saved)
-    time_saved_hours = analytics['totals']['alerts_sent'] * 0.25
-    estimated_value = time_saved_hours * 50
+    time_saved_hours  = analytics['totals']['alerts_sent'] * 0.25
+    estimated_value   = time_saved_hours * 50
 
     markdown = f"""# 📊 System Analytics
 
@@ -378,30 +378,31 @@ _Last generated: {now.strftime('%B %d, %Y %I:%M %p PT')}_
 
     print("📊 Updated ANALYTICS.md")
 
+
 def generate_status_markdown():
     """
     Auto-generate STATUS.md with current timestamp and latest
     analytics data after every workflow run — ensures Last Updated
     date never goes stale.
     """
-    analytics = load_analytics()
+    analytics  = load_analytics()
     pacific_tz = pytz.timezone('America/Los_Angeles')
-    now = datetime.now(pacific_tz)
+    now        = datetime.now(pacific_tz)
 
-    today = now.strftime('%B %d, %Y')
+    today    = now.strftime('%B %d, %Y')
     tomorrow = (now + timedelta(days=1)).strftime('%B %d, %Y')
 
     # ── Pull live metrics from analytics ──────────────────────────────
-    total_alerts = analytics['totals']['alerts_sent']
+    total_alerts    = analytics['totals']['alerts_sent']
     games_monitored = analytics['totals']['games_monitored']
-    total_runs = analytics['workflow_runs']['total_runs']
+    total_runs      = analytics['workflow_runs']['total_runs']
     successful_runs = analytics['workflow_runs']['successful_runs']
-    uptime = (successful_runs / total_runs * 100) if total_runs > 0 else 0
+    uptime          = (successful_runs / total_runs * 100) if total_runs > 0 else 0
 
-    accuracy = analytics['accuracy']
-    actual_delays = accuracy['actual_delays']
-    predicted = accuracy['delays_predicted']
-    accuracy_pct = (predicted / actual_delays * 100) if actual_delays > 0 else 0
+    accuracy       = analytics['accuracy']
+    actual_delays  = accuracy['actual_delays']
+    predicted      = accuracy['delays_predicted']
+    accuracy_pct   = (predicted / actual_delays * 100) if actual_delays > 0 else 0
     false_positives = accuracy['false_positives']
 
     markdown = f"""# 🌤️ System Status
@@ -426,7 +427,7 @@ def generate_status_markdown():
 | 🚨 High Risk Alert (10 AM) | 🟢 Operational | {today} 10:00 AM PT | {tomorrow} 10:00 AM PT |
 | ⚾ Game Status Monitor | 🟢 Operational | Real-time during game hours | Every 10 min (10 AM - 10 PM PT) |
 | 🔌 MLB Stats API | 🟢 Connected | Real-time | Continuous |
-| 🌦️ OpenWeather API | 🟢 Connected | Real-time | Continuous |
+| 🌦️ National Weather Service API | 🟢 Connected | Real-time | Continuous |
 | 💾 State Persistence | 🟢 Working | {today} | Automatic |
 | 🏟️ Roof Status API | 🟢 Connected | {today} | Continuous |
 | ⏰ External Cron Trigger | 🟢 Operational | {now.strftime('%B %d, %Y %I:%M %p PT')} | Every 10 min via cron-job.org |
@@ -493,7 +494,7 @@ def generate_status_markdown():
 |-------|-----------|---------|
 | Scheduling | cron-job.org + GitHub Actions | Reliable 10-min monitoring cycles |
 | Game Data | MLB Stats API | Real-time game status and venue info |
-| Weather Data | OpenWeatherMap API | 48-hour forecasts for all venues |
+| Weather Data | National Weather Service (NWS) API | Hourly forecasts — free, no API key, ~92-95% accuracy |
 | Alerts | Slack Webhooks | Real-time notifications to ops team |
 | State | game_states.json in GitHub repo | Prevents duplicate alerts |
 | Analytics | analytics.json + ANALYTICS.md | Performance tracking and reporting |
@@ -528,6 +529,7 @@ _Last generated: {now.strftime('%B %d, %Y %I:%M %p PT')}_
 
     print("📊 Updated STATUS.md")
 
+
 def get_daily_stats(date=None):
     """Get statistics for a specific date"""
     analytics = load_analytics()
@@ -541,6 +543,7 @@ def get_daily_stats(date=None):
         return analytics['daily_activity'][date]
     else:
         return None
+
 
 # ============================================
 # TESTING / EXAMPLE USAGE
