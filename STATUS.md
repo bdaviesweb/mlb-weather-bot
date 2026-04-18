@@ -7,7 +7,7 @@
 ## 🟢 OPERATIONAL
 
 **Current Status:** All systems functioning normally
-**Last Updated:** April 18, 2026 04:20 AM PT
+**Last Updated:** April 18, 2026 04:30 AM PT
 **Season:** Regular Season 2026
 
 ---
@@ -20,10 +20,10 @@
 | 🚨 High Risk Alert (10 AM) | 🟢 Operational | April 18, 2026 10:00 AM PT | April 19, 2026 10:00 AM PT |
 | ⚾ Game Status Monitor | 🟢 Operational | Real-time during game hours | Every 10 min (10 AM - 10 PM PT) |
 | 🔌 MLB Stats API | 🟢 Connected | Real-time | Continuous |
-| 🌦️ OpenWeather API | 🟢 Connected | Real-time | Continuous |
+| 🌦️ National Weather Service API | 🟢 Connected | Real-time | Continuous |
 | 💾 State Persistence | 🟢 Working | April 18, 2026 | Automatic |
 | 🏟️ Roof Status API | 🟢 Connected | April 18, 2026 | Continuous |
-| ⏰ External Cron Trigger | 🟢 Operational | April 18, 2026 04:20 AM PT | Every 10 min via cron-job.org |
+| ⏰ External Cron Trigger | 🟢 Operational | April 18, 2026 04:30 AM PT | Every 10 min via cron-job.org |
 
 ---
 
@@ -35,7 +35,7 @@
 | **Total Alerts Sent** | 69 |
 | **Delay Prediction Accuracy** | 0.0% (0/5) |
 | **False Positives** | 0 |
-| **System Uptime** | 66.2% |
+| **System Uptime** | 66.1% |
 | **Monitoring Interval** | Every 10 min (via cron-job.org) |
 
 ---
@@ -87,7 +87,7 @@
 |-------|-----------|---------|
 | Scheduling | cron-job.org + GitHub Actions | Reliable 10-min monitoring cycles |
 | Game Data | MLB Stats API | Real-time game status and venue info |
-| Weather Data | OpenWeatherMap API | 48-hour forecasts for all venues |
+| Weather Data | National Weather Service (NWS) API | Hourly forecasts — free, no API key, ~92-95% accuracy |
 | Alerts | Slack Webhooks | Real-time notifications to ops team |
 | State | game_states.json in GitHub repo | Prevents duplicate alerts |
 | Analytics | analytics.json + ANALYTICS.md | Performance tracking and reporting |
@@ -114,4 +114,4 @@ critical issues
 
 ---
 
-_Last generated: April 18, 2026 04:20 AM PT_
+_Last generated: April 18, 2026 04:30 AM PT_
