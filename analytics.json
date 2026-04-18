@@ -1,7 +1,7 @@
 {
   "metadata": {
     "created": "2026-03-25T05:50:00-07:00",
-    "last_updated": "2026-04-18T12:00:15.599616-07:00",
+    "last_updated": "2026-04-18T12:10:13.758856-07:00",
     "season": "Regular Season 2026"
   },
   "totals": {
@@ -16,12 +16,12 @@
   "accuracy": {
     "delays_predicted": 0,
     "actual_delays": 0,
-    "false_positives": 16,
+    "false_positives": 17,
     "false_negatives": 0
   },
   "workflow_runs": {
-    "total_runs": 651,
-    "successful_runs": 411,
+    "total_runs": 652,
+    "successful_runs": 412,
     "failed_runs": 0,
     "skipped_runs": 240
   },
