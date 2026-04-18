@@ -6,6 +6,73 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ---
 
+## [2.0.2] - 2026-04-18
+
+### 🔧 Changed
+
+#### `weather-update-v2.yml` — Removed Stale Secret Reference
+- `WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}` removed from
+  the `Run weather bot` step env block — secret was deleted from
+  GitHub repository settings as part of v2.0.0 but the stale
+  reference remained in the workflow file
+- `SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}` is the
+  only env var needed — no weather API key required with NWS
+
+#### `test_venues.py` — Full Rewrite for NWS API
+- Entire file rewritten from OpenWeatherMap to NWS API
+- Removed `WEATHER_API_KEY` dependency — NWS requires no API key
+- Replaced zip code location strings with lat/lon coordinates
+  matching `STADIUM_COORDINATES` in `weather_bot.py`
+- Test now performs full two-step NWS validation:
+  - Step 1: `api.weather.gov/points/{lat},{lon}` → gets gridpoint URL
+  - Step 2: Fetches hourly forecast from returned URL
+- Output now shows NWS grid ID, timezone, temperature, rain
+  probability, and short forecast for each venue — much more
+  informative than old pass/fail only output
+- Added `Sutter Health Park` (Athletics) — was missing from old file
+- Added `Camelback Ranch` and `American Family Fields of Phoenix`
+  — were missing from old file
+- Rogers Centre and Tropicana Field labeled as `(Fixed Dome)` —
+  still tested for NWS connectivity even though excluded from alerts
+- Organized into 5 clearly labeled sections:
+  Fixed Dome, Retractable Roof, Open Air Regular Season,
+  Cactus League, Grapefruit League
+- Final summary line shows pass/fail count and confirms
+  NWS as data source
+
+#### `test-venues.yml` — Removed Stale Secret Reference
+- `WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}` removed from
+  the `Test all venue locations` step env block entirely
+- NWS requires no API key — `env` block removed completely
+- `test_venues.py` now runs with zero environment variables needed
+
+### 🗑️ Removed
+
+#### All Remaining `WEATHER_API_KEY` References — Fully Purged
+- `weather-update-v2.yml` — removed from `Run weather bot` step
+- `test-venues.yml` — removed entire `env` block
+- `test_venues.py` — removed `os.environ.get('WEATHER_API_KEY')`
+  and `raise ValueError` guard entirely
+- **Zero `WEATHER_API_KEY` references remain anywhere in the repo**
+
+### 🎯 Impact
+
+- **Full repo audit complete** — every file verified clean
+- **No OpenWeatherMap references remain** in any Python script,
+  workflow file, or test file
+- **`test_venues.py` now validates NWS connectivity** — can be
+  run anytime via `test-venues.yml` to confirm all 40+ stadium
+  coordinates are resolving correctly with live forecast data
+
+### 📋 Files Changed
+
+| File | Type | Summary |
+|---|---|---|
+| `weather-update-v2.yml` | 🔧 Modified | Removed stale `WEATHER_API_KEY` env var |
+| `test_venues.py` | 🔧 Rewritten | Full NWS rewrite — lat/lon, no API key, richer output |
+| `test-venues.yml` | 🔧 Modified | Removed `WEATHER_API_KEY` env block entirely |
+
+---
 ## [2.0.1] - 2026-04-18
 
 ### 🐛 Fixed
