@@ -34,7 +34,7 @@
 | **Games Monitored** | 125 |
 | **Total Alerts Sent** | 83 |
 | **Delay Prediction Accuracy** | 100.0% (2/2) |
-| **False Positives** | 364 |
+| **False Positives** | 365 |
 | **System Uptime** | 59.5% |
 | **Monitoring Interval** | Every 10 min (via cron-job.org) |
 
