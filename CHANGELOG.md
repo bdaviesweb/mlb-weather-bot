@@ -5,6 +5,50 @@ All notable changes to the MLB Weather Monitoring System.
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ---
+## [2.0.4] - 2026-04-23
+
+### 🐛 Fixed
+
+#### `weather_bot.py` + `high_risk_alert.py` — False HIGH RISK Alerts from "Slight Chance Thunderstorms"
+- **Root cause:** Thunderstorm detection used a broad keyword match —
+  any forecast containing "thunder", "tstm", "lightning", or "storm"
+  triggered HIGH RISK regardless of rain probability or storm severity
+- **Symptom:** Atlanta Braves vs Washington Nationals flagged as
+  HIGH RISK on April 22, 2026 with only **19% rain probability**
+  because the NWS forecast read
+  *"Slight Chance Showers And Thunderstorms"* — the word
+  "Thunderstorms" alone triggered the alert even though the actual
+  weather risk was minimal
+- **Real-world impact:** Team manually extended Yankees vs Red Sox
+  EPG listings based on their own weather check — the system missed
+  the actual high-risk game while falsely alerting on a low-risk one
+- **Fix — Two conditions now required to trigger thunderstorm HIGH RISK:**
+  1. Forecast must NOT contain a low-probability qualifier:
+     `"slight chance"`, `"isolated"`, `"chance thunderstorm"`,
+     `"chance of thunderstorm"`, `"few thunderstorm"`
+  2. Rain probability must be **≥40%** — ensures storm is
+     accompanied by meaningful precipitation, not just a passing
+     electrical storm with no rain impact
+
+### 🔧 Changed
+
+#### Thunderstorm Detection Logic — Both Files
+
+```python
+# Old — too aggressive ❌
+has_thunderstorm = any(w in combined for w in
+    ['thunder', 'tstm', 'lightning', 'storm'])
+
+# New — smarter, requires real threat ✅
+is_slight_chance = any(w in combined for w in [
+    'slight chance', 'isolated', 'chance thunderstorm',
+    'chance of thunderstorm', 'few thunderstorm'
+])
+has_thunderstorm = (
+    any(w in combined for w in ['thunder', 'tstm', 'lightning'])
+    and not is_slight_chance   # ignore slight chance storms
+    and rain_prob >= 40        # require meaningful rain probability
+)
 ## [2.0.3] - 2026-04-23
 
 ### 🐛 Fixed
