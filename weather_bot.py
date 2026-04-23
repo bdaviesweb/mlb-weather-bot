@@ -6,10 +6,12 @@
 #   - NWS API: no API key, hourly updates, ~92-95% accuracy (US only)
 #   - Toronto (Rogers Centre) hardcoded as fixed dome — roof always closed
 #   - get_weather_forecast() replaced with get_nws_weather_forecast()
-#   - Rain threshold tightened: HIGH_RISK 70% → 75%, MONITOR 40% → 45%
+#   - Rain threshold tightened: HIGH_RISK 75% → 80%, MONITOR 40% → 45%
 #   - Forecast now targets exact game start hour (not closest 3-hr bucket)
-#   - Thunderstorm detection smarter: ignores "Slight Chance" thunderstorms
-#     and requires rain_prob >= 40% to trigger thunderstorm HIGH RISK
+#   - Thunderstorm detection smarter: ignores "Slight Chance" +
+#     "Scattered" thunderstorms and requires rain_prob >= 40%
+#   - Added "Why Triggered" reason line to HIGH RISK alerts
+#   - Added delay probability language to HIGH RISK alerts
 
 import os
 import json
@@ -26,7 +28,6 @@ SLACK_WEBHOOK = os.environ.get('SLACK_WEBHOOK_URL')
 NWS_USER_AGENT = "MLBWeatherBot/2.0 (github.com/Sports-Weather2/mlb-weather-bot)"
 NWS_POINTS_URL = "https://api.weather.gov/points/{lat},{lon}"
 
-# Stadium lat/lon — NWS requires coordinates (not city strings)
 STADIUM_COORDINATES = {
     # Fixed Dome — always excluded
     'St Petersburg,US':  {'lat': 27.7683, 'lon': -82.6534, 'roof': 'fixed'},
@@ -87,7 +88,7 @@ STADIUM_COORDINATES = {
 # ─────────────────────────────────────────────────────────────
 IMPACT_RULES = {
     'high_risk': {
-        'rain_prob':    75,
+        'rain_prob':    80,    # ✅ raised from 75% → 80%
         'wind_gust':    30,
         'lightning':    True,
         'temp_extreme': [35, 100]
@@ -101,7 +102,7 @@ IMPACT_RULES = {
 
 
 # ─────────────────────────────────────────────────────────────
-# EXISTING HELPERS (unchanged)
+# HELPERS
 # ─────────────────────────────────────────────────────────────
 def load_games():
     with open('config.json', 'r') as f:
@@ -109,7 +110,6 @@ def load_games():
 
 
 def get_venue_name_from_location(location):
-    """Map location string to official venue name for roof lookup"""
     location_to_venue = {
         'Phoenix,US':         'Chase Field',
         'Miami,US':           'loanDepot park',
@@ -158,10 +158,6 @@ def get_venue_name_from_location(location):
 
 
 def get_venue_roof_info(venue_name):
-    """
-    Determine if venue has a roof and its type.
-    Toronto (Rogers Centre) moved to fixed dome — roof always closed.
-    """
     fixed_domes = {
         'Tropicana Field': {'has_roof': True, 'type': 'fixed', 'should_alert': False},
         'Rogers Centre':   {'has_roof': True, 'type': 'fixed', 'should_alert': False}
@@ -182,7 +178,6 @@ def get_venue_roof_info(venue_name):
 
 
 def get_roof_status_from_mlb(game_date, venue_name):
-    """Check if retractable roof is open/closed via MLB Stats API."""
     url = f"https://statsapi.mlb.com/api/v1/schedule?sportId=1&date={game_date}&hydrate=venue"
     try:
         response = requests.get(url, timeout=5)
@@ -214,7 +209,6 @@ def get_roof_status_from_mlb(game_date, venue_name):
 # NWS WEATHER FETCH
 # ─────────────────────────────────────────────────────────────
 def get_nws_hourly_forecast_url(lat, lon):
-    """Step 1: Get NWS gridpoint hourly forecast URL for a lat/lon."""
     url = NWS_POINTS_URL.format(lat=lat, lon=lon)
     headers = {
         'User-Agent': NWS_USER_AGENT,
@@ -230,21 +224,14 @@ def get_nws_hourly_forecast_url(lat, lon):
 
 
 def get_weather_forecast(location, game_datetime):
-    """
-    Fetch NWS hourly weather for the exact game start hour.
-    Drop-in replacement for the old OpenWeatherMap get_weather_forecast().
-    Returns same dict structure so all downstream code works unchanged.
-    """
     if location not in STADIUM_COORDINATES:
         raise ValueError(f"No coordinates found for location: {location}")
 
     coords = STADIUM_COORDINATES[location]
     lat, lon = coords['lat'], coords['lon']
 
-    # Step 1: Get NWS hourly forecast URL
     hourly_url, tz_name = get_nws_hourly_forecast_url(lat, lon)
 
-    # Step 2: Fetch hourly periods
     headers = {
         'User-Agent': NWS_USER_AGENT,
         'Accept': 'application/geo+json'
@@ -253,7 +240,6 @@ def get_weather_forecast(location, game_datetime):
     resp.raise_for_status()
     periods = resp.json()['properties']['periods']
 
-    # Step 3: Convert game_datetime to stadium local time for matching
     stadium_tz = pytz.timezone(tz_name)
     if game_datetime.tzinfo is None:
         pt = pytz.timezone('America/Los_Angeles')
@@ -261,7 +247,6 @@ def get_weather_forecast(location, game_datetime):
     else:
         game_local = game_datetime.astimezone(stadium_tz)
 
-    # Step 4: Find the hourly period matching game start time exactly
     best_period = None
     for period in periods:
         period_start = datetime.fromisoformat(period['startTime'])
@@ -270,7 +255,6 @@ def get_weather_forecast(location, game_datetime):
             best_period = period
             break
 
-    # Fallback: grab closest period within ±1 hour if no exact match
     if not best_period:
         closest      = None
         closest_diff = float('inf')
@@ -285,7 +269,6 @@ def get_weather_forecast(location, game_datetime):
     if not best_period:
         raise ValueError(f"No NWS forecast period found for {location} at {game_local}")
 
-    # Step 5: Parse wind speed
     wind_str = best_period.get('windSpeed', '0 mph')
     try:
         wind_parts = [int(p) for p in wind_str.replace('mph', '').split('to') if p.strip().isdigit()]
@@ -293,54 +276,77 @@ def get_weather_forecast(location, game_datetime):
     except Exception:
         wind_speed = 0
 
-    # Step 6: Precipitation probability
     pop_data  = best_period.get('probabilityOfPrecipitation', {})
     rain_prob = pop_data.get('value') if isinstance(pop_data, dict) else 0
     rain_prob = rain_prob or 0
 
-    # Step 7: Temperature
     temp = best_period.get('temperature', 72)
 
-    # Step 8: Thunderstorm detection — SMARTER ✅
-    # Ignores "Slight Chance", "Isolated", "Chance" thunderstorms
-    # Also requires rain_prob >= 40% so low-probability storms don't trigger HIGH RISK
     short_forecast    = best_period.get('shortForecast', '')
     detailed_forecast = best_period.get('detailedForecast', '')
     combined          = (short_forecast + ' ' + detailed_forecast).lower()
 
-    # Check if it's only a slight/isolated/chance storm (not a real threat)
+    # ✅ PRIORITY 1 — Added 'scattered thunderstorm' to slight chance list
     is_slight_chance = any(w in combined for w in [
         'slight chance', 'isolated', 'chance thunderstorm',
-        'chance of thunderstorm', 'few thunderstorm'
+        'chance of thunderstorm', 'few thunderstorm',
+        'scattered thunderstorm'   # ✅ NEW
     ])
 
-    # Only flag thunderstorm if it's a real threat — not just a slight chance
-    # AND rain probability is meaningful (≥40%)
     has_thunderstorm = (
         any(w in combined for w in ['thunder', 'tstm', 'lightning'])
-        and not is_slight_chance   # ✅ Ignore slight chance thunderstorms
-        and rain_prob >= 40        # ✅ Require meaningful rain probability
+        and not is_slight_chance
+        and rain_prob >= 40
     )
+
+    # ✅ PRIORITY 2 — Build "why triggered" reason string
+    trigger_reasons = []
+    if rain_prob >= IMPACT_RULES['high_risk']['rain_prob']:
+        trigger_reasons.append(f"Rain {rain_prob:.0f}% ≥ {IMPACT_RULES['high_risk']['rain_prob']}% threshold")
+    if has_thunderstorm:
+        trigger_reasons.append(f"Active thunderstorms + Rain {rain_prob:.0f}%")
+    if wind_speed >= IMPACT_RULES['high_risk']['wind_gust']:
+        trigger_reasons.append(f"Wind {wind_speed} mph ≥ {IMPACT_RULES['high_risk']['wind_gust']} mph threshold")
+    if temp <= IMPACT_RULES['high_risk']['temp_extreme'][0]:
+        trigger_reasons.append(f"Temp {temp}°F ≤ {IMPACT_RULES['high_risk']['temp_extreme'][0]}°F threshold")
+    if temp >= IMPACT_RULES['high_risk']['temp_extreme'][1]:
+        trigger_reasons.append(f"Temp {temp}°F ≥ {IMPACT_RULES['high_risk']['temp_extreme'][1]}°F threshold")
+    trigger_reason = ' | '.join(trigger_reasons) if trigger_reasons else 'No trigger'
+
+    # ✅ PRIORITY 4 — Delay probability language
+    if rain_prob >= 90 or (has_thunderstorm and rain_prob >= 70):
+        delay_probability = "🔴 *VERY HIGH* — Delay or postponement likely"
+    elif rain_prob >= 80 or (has_thunderstorm and rain_prob >= 50):
+        delay_probability = "🟠 *HIGH* — Delay probable at game time"
+    elif has_thunderstorm or wind_speed >= IMPACT_RULES['high_risk']['wind_gust']:
+        delay_probability = "🟡 *ELEVATED* — Conditions may impact play"
+    elif temp <= IMPACT_RULES['high_risk']['temp_extreme'][0]:
+        delay_probability = "🟡 *ELEVATED* — Extreme cold may impact play"
+    else:
+        delay_probability = "🟡 *ELEVATED* — Weather warrants monitoring"
 
     print(f"   📡 NWS [{location}] @ {game_local.strftime('%I:%M %p %Z')}: "
           f"{temp}°F | {rain_prob}% rain | {wind_speed}mph wind | "
-          f"{short_forecast} | ⚡thunderstorm={has_thunderstorm}")
+          f"{short_forecast} | ⚡thunderstorm={has_thunderstorm} | "
+          f"trigger={trigger_reason}")
 
     return {
-        'temp':             temp,
-        'feels_like':       temp,
-        'rain_prob':        rain_prob,
-        'conditions':       short_forecast,
-        'wind_speed':       wind_speed,
-        'wind_gust':        wind_speed,
-        'humidity':         0,
-        'has_thunderstorm': has_thunderstorm,
-        'nws_period_start': best_period.get('startTime', '')
+        'temp':              temp,
+        'feels_like':        temp,
+        'rain_prob':         rain_prob,
+        'conditions':        short_forecast,
+        'wind_speed':        wind_speed,
+        'wind_gust':         wind_speed,
+        'humidity':          0,
+        'has_thunderstorm':  has_thunderstorm,
+        'nws_period_start':  best_period.get('startTime', ''),
+        'trigger_reason':    trigger_reason,      # ✅ PRIORITY 2
+        'delay_probability': delay_probability    # ✅ PRIORITY 4
     }
 
 
 # ─────────────────────────────────────────────────────────────
-# IMPACT / SLACK / MAIN — unchanged
+# IMPACT
 # ─────────────────────────────────────────────────────────────
 def calculate_game_impact(weather):
     if (weather['rain_prob'] >= IMPACT_RULES['high_risk']['rain_prob'] or
@@ -375,6 +381,9 @@ def calculate_game_impact(weather):
         }
 
 
+# ─────────────────────────────────────────────────────────────
+# SLACK FORMATTING
+# ─────────────────────────────────────────────────────────────
 def format_game_block(game, weather, impact):
     game_datetime = datetime.strptime(
         f"{game['date']} {game['time']}",
@@ -393,6 +402,14 @@ def format_game_block(game, weather, impact):
     if weather['wind_gust'] > weather['wind_speed'] + 5:
         weather_details += f" (gusts to {weather['wind_gust']:.0f} mph)"
 
+    # ✅ PRIORITY 2 + 4 — Add reason + delay probability to HIGH RISK blocks
+    impact_details = f"{impact['emoji']} *{impact['status']}*"
+    if impact['level'] == 'HIGH_RISK':
+        impact_details += (
+            f"\n📋 *Why:* {weather.get('trigger_reason', 'N/A')}\n"
+            f"🎯 *Delay Probability:* {weather.get('delay_probability', 'N/A')}"
+        )
+
     blocks = [
         {
             "type": "section",
@@ -410,7 +427,7 @@ def format_game_block(game, weather, impact):
                 },
                 {
                     "type": "mrkdwn",
-                    "text": f"*Game Impact:*\n{impact['emoji']} *{impact['status']}*"
+                    "text": f"*Game Impact:*\n{impact_details}"
                 }
             ]
         }
