@@ -10,6 +10,8 @@
 #   - Cold temp threshold tightened: 20°F → 35°F
 #   - Forecast targets exact game start hour (not closest 3-hr bucket)
 #   - Slack footer updated to reflect new NWS threshold
+#   - Thunderstorm detection smarter: ignores "Slight Chance" thunderstorms
+#     and requires rain_prob >= 40% to trigger thunderstorm HIGH RISK
 
 import os
 import json
@@ -26,7 +28,6 @@ SLACK_WEBHOOK = os.environ.get('HIGH_RISK_WEBHOOK_URL')
 NWS_USER_AGENT = "MLBWeatherBot/2.0 (github.com/Sports-Weather2/mlb-weather-bot)"
 NWS_POINTS_URL = "https://api.weather.gov/points/{lat},{lon}"
 
-# Stadium coordinates — same as weather_bot.py
 STADIUM_COORDINATES = {
     # Fixed Dome — always excluded
     'St Petersburg,US':  {'lat': 27.7683, 'lon': -82.6534, 'roof': 'fixed'},
@@ -296,13 +297,30 @@ def get_weather_forecast(location, game_datetime):
 
     temp = best_period.get('temperature', 72)
 
+    # Step 8: Thunderstorm detection — SMARTER ✅
+    # Ignores "Slight Chance", "Isolated", "Chance" thunderstorms
+    # Also requires rain_prob >= 40% so low-probability storms don't trigger HIGH RISK
     short_forecast    = best_period.get('shortForecast', '')
     detailed_forecast = best_period.get('detailedForecast', '')
-    combined = (short_forecast + ' ' + detailed_forecast).lower()
-    has_thunderstorm = any(w in combined for w in ['thunder', 'tstm', 'lightning', 'storm'])
+    combined          = (short_forecast + ' ' + detailed_forecast).lower()
+
+    # Check if it's only a slight/isolated/chance storm (not a real threat)
+    is_slight_chance = any(w in combined for w in [
+        'slight chance', 'isolated', 'chance thunderstorm',
+        'chance of thunderstorm', 'few thunderstorm'
+    ])
+
+    # Only flag thunderstorm if it's a real threat — not just a slight chance
+    # AND rain probability is meaningful (≥40%)
+    has_thunderstorm = (
+        any(w in combined for w in ['thunder', 'tstm', 'lightning'])
+        and not is_slight_chance   # ✅ Ignore slight chance thunderstorms
+        and rain_prob >= 40        # ✅ Require meaningful rain probability
+    )
 
     print(f"   📡 NWS [{location}] @ {game_local.strftime('%I:%M %p %Z')}: "
-          f"{temp}°F | {rain_prob}% rain | {wind_speed}mph wind | {short_forecast}")
+          f"{temp}°F | {rain_prob}% rain | {wind_speed}mph wind | "
+          f"{short_forecast} | ⚡thunderstorm={has_thunderstorm}")
 
     return {
         'temp':             temp,
@@ -449,7 +467,7 @@ def build_high_risk_message(high_risk_games):
             {
                 "type": "mrkdwn",
                 "text": (
-                    "🔴 *HIGH RISK* = ≥75% rain OR thunderstorms OR "
+                    "🔴 *HIGH RISK* = ≥75% rain OR thunderstorms (≥40% rain) OR "
                     "temps ≤35°F / ≥100°F OR wind gusts ≥30 mph"
                 )
             }
