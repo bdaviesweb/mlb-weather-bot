@@ -57,6 +57,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add game_states.json || true
           git add high_risk_predictions.json || true
+          git add false_positive_logged.json || true
           git add analytics.json || true
           git add ANALYTICS.md || true
           git add STATUS.md || true
