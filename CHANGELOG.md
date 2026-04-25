@@ -5,6 +5,105 @@ All notable changes to the MLB Weather Monitoring System.
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ---
+## [2.0.7] - 2026-04-25
+
+### 🐛 Fixed
+
+#### `weather_bot.py` + `high_risk_alert.py` — "Chance Showers And Thunderstorms" Still Triggering HIGH RISK
+- **Root cause:** The `is_slight_chance` exclusion list checked for
+  `"chance thunderstorm"` as an exact substring — but NWS forecast
+  text `"Chance Showers And Thunderstorms"` contains the word
+  "Showers And" between "Chance" and "Thunderstorms", so it did
+  not match the exclusion string and slipped through as a real
+  thunderstorm threat
+- **Symptom:** April 25, 2026 alert flagged Phillies vs Braves
+  at Truist Park as HIGH RISK with only **49% rain probability**
+  because NWS returned `"Chance Showers And Thunderstorms"` —
+  cross-checked against PropFinder (propfinder.app/weather)
+  which showed the same game as 🟡 Yellow (Chance For Delay),
+  not red HIGH RISK
+- **Cross-check result:** 13 of 14 games correct (93% accuracy)
+  before this fix — this was the one remaining false positive
+- **Fix:** Added two new strings to `is_slight_chance` exclusion
+  list in `get_weather_forecast()` in both files:
+  - `'chance showers and thunderstorm'` — directly catches
+    `"Chance Showers And Thunderstorms"` NWS forecast text
+  - `'chance shower'` — catches all "Chance Shower" variants
+    that indicate low-probability precipitation
+
+### 🔧 Changed
+
+#### Thunderstorm Exclusion List — Both Files
+
+Full updated `is_slight_chance` list (8 items, was 6):
+
+- `'slight chance'` — Slight Chance Thunderstorms
+- `'isolated'` — Isolated Thunderstorms
+- `'chance thunderstorm'` — Chance Thunderstorms
+- `'chance of thunderstorm'` — Chance Of Thunderstorms
+- `'few thunderstorm'` — Few Thunderstorms
+- `'scattered thunderstorm'` — Scattered Thunderstorms *(added v2.0.4)*
+- `'chance showers and thunderstorm'` — ✅ NEW Chance Showers And Thunderstorms
+- `'chance shower'` — ✅ NEW All "Chance Shower" variants
+
+#### `analytics.json` — Accuracy Counters Reset to Clean Baseline
+- All accuracy counters reset to 0 to start clean tracking
+  from April 25, 2026 forward with all fixes now in place
+- Previous data was unreliable due to multiple bug fixes
+  (false positive inflation, webhook errors, thunderstorm
+  false positives) that have now all been resolved
+- `high_risk_predictions.json` and `false_positive_logged.json`
+  also cleared to `{}` for a fresh start
+
+### 🎯 Impact
+
+- **"Chance Showers And Thunderstorms" no longer triggers HIGH RISK**
+  at low rain probabilities
+- **All known thunderstorm false positive patterns now excluded**
+- **Accuracy baseline reset** — clean data collection starts today
+  with all threshold and detection fixes fully deployed
+
+### 📊 NWS Forecast Text — Full Exclusion Coverage (After Fix)
+
+| NWS Forecast Text | Rain % | Result |
+|---|---|---|
+| Chance Showers And Thunderstorms | 49% | 🟢 CLEAR ✅ |
+| Chance Thunderstorms | 35% | 🟢 CLEAR ✅ |
+| Slight Chance Thunderstorms | 19% | 🟢 CLEAR ✅ |
+| Scattered Thunderstorms | 45% | 🟢 CLEAR ✅ |
+| Isolated Thunderstorms | 30% | 🟢 CLEAR ✅ |
+| Showers And Thunderstorms | 80% | 🔴 HIGH RISK ✅ |
+| Thunderstorms | 85% | 🔴 HIGH RISK ✅ |
+| Heavy Rain | 88% | 🔴 HIGH RISK ✅ |
+
+### 📊 PropFinder Cross-Check Results — April 25, 2026
+
+| Game | PropFinder | Bot Result | Verdict |
+|---|---|---|---|
+| Red Sox @ Orioles | 🟢 Clear | 🟢 Clear | ✅ |
+| Cardinals @ Cubs | 🟢 Clear | 🟢 Clear | ✅ |
+| Rogers Centre (roof) | 🏟️ Excluded | 🏟️ Excluded | ✅ |
+| Oracle Park | 🟢 Clear | 🟢 Clear | ✅ |
+| Tropicana Field (dome) | 🏟️ Excluded | 🏟️ Excluded | ✅ |
+| Rate Field | 🟢 Clear | 🟢 Clear | ✅ |
+| Globe Life (roof) | 🏟️ Excluded | 🏟️ Excluded | ✅ |
+| American Family (roof) | 🏟️ Excluded | 🏟️ Excluded | ✅ |
+| Kauffman Stadium | 🟢 Clear | 🟢 Clear | ✅ |
+| Daikin Park (roof) | 🏟️ Excluded | 🏟️ Excluded | ✅ |
+| Dodger Stadium | 🟢 Clear | 🟢 Clear | ✅ |
+| Great American Ball Park | 🟢 Clear | 🟢 Clear | ✅ |
+| Rockies @ Mets | 🔴 High Risk | 🔴 HIGH RISK | ✅ |
+| Phillies @ Braves | 🟡 Yellow | 🔴 HIGH RISK ❌ → ✅ Fixed |
+
+### 📋 Files Changed
+
+| File | Type | Summary |
+|---|---|---|
+| `weather_bot.py` | 🔧 Modified | Added 2 strings to `is_slight_chance` exclusion list |
+| `high_risk_alert.py` | 🔧 Modified | Same fix — identical change |
+| `analytics.json` | 🔧 Modified | Accuracy counters reset to 0 — clean baseline |
+
+---
 ## [2.0.6] - 2026-04-23
 
 ### 🔧 Changed
