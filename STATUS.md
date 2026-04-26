@@ -35,7 +35,7 @@
 | **Total Alerts Sent** | 98 |
 | **Delay Prediction Accuracy** | 83.3% (5/6) |
 | **False Positives** | 0 |
-| **System Uptime** | 56.8% |
+| **System Uptime** | 56.7% |
 | **Monitoring Interval** | Every 10 min (via cron-job.org) |
 
 ---
