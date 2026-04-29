@@ -71,6 +71,7 @@ jobs:
           git add last_weather_run.txt .github/.weather-keep-alive || true
           git add analytics.json ANALYTICS.md 2>/dev/null || true
           git add STATUS.md || true
+          git add config.json || true
           git diff --quiet && git diff --staged --quiet || \
             git commit -m "📊 Update analytics and tracking [skip ci]"
           git pull --rebase origin main || true
