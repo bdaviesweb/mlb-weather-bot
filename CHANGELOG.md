@@ -5,6 +5,56 @@ All notable changes to the MLB Weather Monitoring System.
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ---
+## [2.0.9] - 2026-04-29
+
+### 🐛 Fixed
+
+#### `weather-update-v2.yml` — `config.json` Never Committed to Repo
+- **Root cause:** The commit step in `weather-update-v2.yml` was
+  missing `git add config.json || true` — `update_schedule.py`
+  wrote fresh schedule data to `config.json` on the GitHub Actions
+  VM every morning but it was never committed back to the repo
+- **Symptom:** `config.json` was permanently stuck on
+  **March 6, 2026 Spring Training data** — every daily report
+  and high risk alert was running against 6-week-old game data
+  meaning many Regular Season games were completely missing
+  from weather monitoring
+- **Real-world impact:** April 29 daily report missed:
+  - Angels vs White Sox (Rate Field)
+  - Marlins vs Dodgers (UNIQLO Field at Dodger Stadium)
+  - And potentially many other games since Regular Season started
+- **Fix:** Added `git add config.json || true` to the
+  "Commit run tracking, analytics, and keep-alive" step in
+  `weather-update-v2.yml` — `config.json` now commits to the
+  repo after every successful daily run
+
+#### `update_schedule.py` — Two Missing Venue Mappings
+- **`Rate Field` → `Chicago,US`** ✅ NEW
+  - White Sox renamed their stadium from Guaranteed Rate Field
+    to Rate Field — MLB API now returns `"Rate Field"` which
+    was not in the venue mapping, causing it to fall through
+    to the `Phoenix,US` default → incorrectly mapped to
+    Chase Field (retractable roof) → excluded from weather
+    monitoring entirely
+- **`UNIQLO Field at Dodger Stadium` → `Los Angeles,US`** ✅ NEW
+  - Dodger Stadium was renamed with a sponsorship prefix —
+    MLB API now returns `"UNIQLO Field at Dodger Stadium"`
+    which was not mapped, also falling to `Phoenix,US` default
+    → same exclusion issue as Rate Field
+
+#### `last_weather_run.txt` — Manual Reset Required Today
+- File was cleared manually on April 29 to force a fresh run
+  after discovering the stale `config.json` issue
+- Going forward this should not be needed — `config.json` now
+  commits correctly after every run
+
+### 🔧 Changed
+
+#### `weather-update-v2.yml` — Added `config.json` to Commit Step
+
+```yaml
+# Added to "Commit run tracking, analytics, and keep-alive" step
+git add config.json || true  # ✅ NEW — ensures fresh schedule persists
 ## [2.0.7] - 2026-04-25
 
 ### 🐛 Fixed
