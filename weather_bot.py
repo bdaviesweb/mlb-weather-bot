@@ -94,7 +94,7 @@ IMPACT_RULES = {
         'temp_extreme': [35, 100]
     },
     'monitor': {
-        'rain_prob':      45,
+        'rain_prob':      35,
         'wind_sustained': 20,
         'temp_concern':   [40, 95]
     }
