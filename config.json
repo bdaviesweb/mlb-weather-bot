@@ -12,7 +12,7 @@
       "date": "2026-04-29",
       "time": "10:10",
       "opponent": "Los Angeles Angels vs Chicago White Sox",
-      "location": "Phoenix,US",
+      "location": "Chicago,US",
       "venue": "Rate Field",
       "game_pk": 824608
     },
@@ -44,7 +44,7 @@
       "date": "2026-04-29",
       "time": "12:10",
       "opponent": "Miami Marlins vs Los Angeles Dodgers",
-      "location": "Phoenix,US",
+      "location": "Los Angeles,US",
       "venue": "UNIQLO Field at Dodger Stadium",
       "game_pk": 823958
     },
