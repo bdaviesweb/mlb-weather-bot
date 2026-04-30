@@ -1,62 +1,46 @@
 {
-  "824445": {
+  "824929": {
     "state": "LIVE",
-    "matchup": "Tampa Bay Rays vs Cleveland Guardians"
-  },
-  "824608": {
-    "state": "LIVE",
-    "matchup": "Los Angeles Angels vs Chicago White Sox"
-  },
-  "823717": {
-    "state": "PREVIEW",
-    "matchup": "Seattle Mariners vs Minnesota Twins"
-  },
-  "822907": {
-    "state": "PREVIEW",
-    "matchup": "New York Yankees vs Texas Rangers"
-  },
-  "822821": {
-    "state": "PREVIEW",
-    "matchup": "Boston Red Sox vs Toronto Blue Jays"
-  },
-  "823958": {
-    "state": "PREVIEW",
-    "matchup": "Miami Marlins vs Los Angeles Dodgers"
-  },
-  "823312": {
-    "state": "PREVIEW",
-    "matchup": "Chicago Cubs vs San Diego Padres"
-  },
-  "824525": {
-    "state": "PREVIEW",
-    "matchup": "Colorado Rockies vs Cincinnati Reds"
-  },
-  "823392": {
-    "state": "PREVIEW",
-    "matchup": "St. Louis Cardinals vs Pittsburgh Pirates"
-  },
-  "823633": {
-    "state": "PREVIEW",
-    "matchup": "Washington Nationals vs New York Mets"
-  },
-  "824930": {
-    "state": "PREVIEW",
     "matchup": "Detroit Tigers vs Atlanta Braves"
   },
-  "823796": {
-    "state": "PREVIEW",
-    "matchup": "Arizona Diamondbacks vs Milwaukee Brewers"
+  "824848": {
+    "state": "LIVE",
+    "matchup": "Houston Astros vs Baltimore Orioles"
   },
-  "825015": {
-    "state": "PREVIEW",
-    "matchup": "Kansas City Royals vs Athletics"
+  "824850": {
+    "state": "POSTPONED",
+    "matchup": "Houston Astros vs Baltimore Orioles"
+  },
+  "823391": {
+    "state": "LIVE",
+    "matchup": "St. Louis Cardinals vs Pittsburgh Pirates"
+  },
+  "823472": {
+    "state": "LIVE",
+    "matchup": "San Francisco Giants vs Philadelphia Phillies"
   },
   "823471": {
     "state": "POSTPONED",
     "matchup": "San Francisco Giants vs Philadelphia Phillies"
   },
-  "824850": {
-    "state": "POSTPONED",
-    "matchup": "Houston Astros vs Baltimore Orioles"
+  "824524": {
+    "state": "LIVE",
+    "matchup": "Colorado Rockies vs Cincinnati Reds"
+  },
+  "823634": {
+    "state": "LIVE",
+    "matchup": "Washington Nationals vs New York Mets"
+  },
+  "823795": {
+    "state": "PREVIEW",
+    "matchup": "Arizona Diamondbacks vs Milwaukee Brewers"
+  },
+  "825016": {
+    "state": "PREVIEW",
+    "matchup": "Kansas City Royals vs Athletics"
+  },
+  "823714": {
+    "state": "PREVIEW",
+    "matchup": "Toronto Blue Jays vs Minnesota Twins"
   }
 }
