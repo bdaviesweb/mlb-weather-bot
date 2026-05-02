@@ -5,6 +5,64 @@ All notable changes to the MLB Weather Monitoring System.
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ---
+## [2.0.11] - 2026-05-02
+
+### 🐛 Fixed
+
+#### `weather-update-v2.yml` — Duplicate Daily Report Posting
+- **Root cause:** `last_weather_run.txt` was committed in the same
+  git step as `analytics.json` and `ANALYTICS.md` — when the
+  `mlb-status-monitor-v2.yml` ran simultaneously it caused a
+  **merge conflict on analytics files** during `git pull --rebase`
+  — the rebase failed, leaving the repo in detached HEAD state,
+  and the push failed silently
+- **Symptom:** May 2, 2026 — daily report posted **twice**:
+  - Run #74 at 7:10 AM PT — posted correctly ✅
+  - Run #75 at 7:55 AM PT — posted duplicate ❌
+  - Both were Scheduled cron triggers (6 AM + 7 AM backup)
+  - Run #74 commit logs showed:
+    `CONFLICT (content): Merge conflict in ANALYTICS.md`
+    `CONFLICT (content): Merge conflict in analytics.json`
+    `⚠️ WARNING: Push failed — dedup file may not persist`
+  - Run #75 saw old date in `last_weather_run.txt` because
+    #74's push failed — thought it was first run and posted again
+- **Fix 1 — Separate dedup commit:** `last_weather_run.txt` now
+  commits in its **own dedicated step** ("Mark as ran today")
+  immediately after the weather bot runs — before analytics files
+  are touched. This simple commit has no conflict risk since no
+  other workflow writes to `last_weather_run.txt`
+- **Fix 2 — Rebase abort fallback:** Added `|| git rebase --abort
+  || true` after `git pull --rebase` so the repo never gets stuck
+  in detached HEAD state on conflict
+- **Fix 3 — Force-with-lease push:** Changed `git push` fallback
+  from silent warning to `git push --force-with-lease` which
+  handles cases where the remote has moved ahead
+
+### 🎯 Impact
+
+- **Duplicate daily reports eliminated** — `last_weather_run.txt`
+  now persists correctly even when analytics files conflict
+- **Zero impact on analytics** — `analytics.json`, `ANALYTICS.md`
+  and `STATUS.md` still committed in the same step as before
+- **Zero impact on alert accuracy** — weather data, thresholds
+  and Slack formatting all unchanged
+
+### 📊 Before vs After
+
+| | Before Fix | After Fix |
+|---|---|---|
+| `last_weather_run.txt` commit | Same step as analytics | ✅ Own dedicated step |
+| Analytics conflict impact | Blocks dedup file save | ✅ Dedup already saved |
+| Push failure handling | Silent warning only | ✅ Rebase abort + force-with-lease |
+| Duplicate alert risk | High when conflicts occur | ✅ Eliminated |
+
+### 📋 Files Changed
+
+| File | Type | Summary |
+|---|---|---|
+| `weather-update-v2.yml` | 🔧 Modified | Separate dedup commit + rebase abort + force-with-lease |
+
+---
 ## [2.0.10] - 2026-04-30
 
 ### 🐛 Fixed
