@@ -82,14 +82,6 @@
     },
     {
       "date": "2026-05-05",
-      "time": "17:40",
-      "opponent": "New York Mets vs Colorado Rockies",
-      "location": "Denver,US",
-      "venue": "Coors Field",
-      "game_pk": 824362
-    },
-    {
-      "date": "2026-05-05",
       "time": "18:38",
       "opponent": "Chicago White Sox vs Los Angeles Angels",
       "location": "Anaheim,US",
@@ -119,6 +111,14 @@
       "location": "San Francisco,US",
       "venue": "Oracle Park",
       "game_pk": 823227
+    },
+    {
+      "date": "2026-05-05",
+      "time": "17:40",
+      "opponent": "New York Mets vs Colorado Rockies",
+      "location": "Denver,US",
+      "venue": "Coors Field",
+      "game_pk": 824362
     }
   ]
 }
