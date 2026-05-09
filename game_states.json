@@ -11,10 +11,6 @@
     "state": "PREVIEW",
     "matchup": "Houston Astros vs Cincinnati Reds"
   },
-  "824766": {
-    "state": "PREVIEW",
-    "matchup": "Tampa Bay Rays vs Boston Red Sox"
-  },
   "823869": {
     "state": "PREVIEW",
     "matchup": "Washington Nationals vs Miami Marlins"
@@ -58,5 +54,9 @@
   "823955": {
     "state": "PREVIEW",
     "matchup": "Atlanta Braves vs Los Angeles Dodgers"
+  },
+  "824766": {
+    "state": "POSTPONED",
+    "matchup": "Tampa Bay Rays vs Boston Red Sox"
   }
 }
