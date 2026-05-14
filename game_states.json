@@ -1,61 +1,45 @@
 {
-  "824841": {
-    "state": "LIVE",
-    "matchup": "New York Yankees vs Baltimore Orioles"
-  },
-  "824438": {
-    "state": "LIVE",
-    "matchup": "Los Angeles Angels vs Cleveland Guardians"
-  },
-  "824519": {
-    "state": "PREVIEW",
-    "matchup": "Washington Nationals vs Cincinnati Reds"
-  },
-  "823386": {
+  "823383": {
     "state": "LIVE",
     "matchup": "Colorado Rockies vs Pittsburgh Pirates"
   },
-  "824763": {
-    "state": "PREVIEW",
-    "matchup": "Philadelphia Phillies vs Boston Red Sox"
+  "824517": {
+    "state": "LIVE",
+    "matchup": "Washington Nationals vs Cincinnati Reds"
   },
-  "822815": {
-    "state": "PREVIEW",
-    "matchup": "Tampa Bay Rays vs Toronto Blue Jays"
-  },
-  "823631": {
-    "state": "PREVIEW",
+  "823630": {
+    "state": "LIVE",
     "matchup": "Detroit Tigers vs New York Mets"
   },
-  "824928": {
-    "state": "PREVIEW",
-    "matchup": "Chicago Cubs vs Atlanta Braves"
-  },
-  "824603": {
-    "state": "PREVIEW",
-    "matchup": "Kansas City Royals vs Chicago White Sox"
-  },
-  "823710": {
+  "823709": {
     "state": "PREVIEW",
     "matchup": "Miami Marlins vs Minnesota Twins"
   },
-  "823791": {
+  "823789": {
     "state": "PREVIEW",
     "matchup": "San Diego Padres vs Milwaukee Brewers"
   },
-  "822900": {
-    "state": "PREVIEW",
-    "matchup": "Arizona Diamondbacks vs Texas Rangers"
-  },
-  "824195": {
+  "824196": {
     "state": "PREVIEW",
     "matchup": "Seattle Mariners vs Houston Astros"
   },
-  "825010": {
+  "825008": {
     "state": "PREVIEW",
     "matchup": "St. Louis Cardinals vs Athletics"
   },
-  "823952": {
+  "824762": {
+    "state": "PREVIEW",
+    "matchup": "Philadelphia Phillies vs Boston Red Sox"
+  },
+  "824926": {
+    "state": "PREVIEW",
+    "matchup": "Chicago Cubs vs Atlanta Braves"
+  },
+  "824602": {
+    "state": "PREVIEW",
+    "matchup": "Kansas City Royals vs Chicago White Sox"
+  },
+  "823950": {
     "state": "PREVIEW",
     "matchup": "San Francisco Giants vs Los Angeles Dodgers"
   }
