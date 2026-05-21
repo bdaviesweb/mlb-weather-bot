@@ -1,124 +1,60 @@
 {
   "games": [
     {
-      "date": "2026-05-20",
-      "time": "10:05",
-      "opponent": "Cincinnati Reds vs Philadelphia Phillies",
-      "location": "Philadelphia,US",
-      "venue": "Citizens Bank Park",
-      "game_pk": 823462
-    },
-    {
-      "date": "2026-05-20",
+      "date": "2026-05-21",
       "time": "10:10",
-      "opponent": "Baltimore Orioles vs Tampa Bay Rays",
-      "location": "St Petersburg,US",
-      "venue": "Tropicana Field",
-      "game_pk": 822977
-    },
-    {
-      "date": "2026-05-20",
-      "time": "10:40",
-      "opponent": "Houston Astros vs Minnesota Twins",
-      "location": "Minneapolis,US",
-      "venue": "Target Field",
-      "game_pk": 823703
-    },
-    {
-      "date": "2026-05-20",
-      "time": "12:10",
-      "opponent": "Texas Rangers vs Colorado Rockies",
-      "location": "Denver,US",
-      "venue": "Coors Field",
-      "game_pk": 824355
-    },
-    {
-      "date": "2026-05-20",
-      "time": "12:40",
-      "opponent": "San Francisco Giants vs Arizona Diamondbacks",
-      "location": "Phoenix,US",
-      "venue": "Chase Field",
-      "game_pk": 825084
-    },
-    {
-      "date": "2026-05-20",
-      "time": "13:10",
-      "opponent": "Chicago White Sox vs Seattle Mariners",
-      "location": "Seattle,US",
-      "venue": "T-Mobile Park",
-      "game_pk": 823134
-    },
-    {
-      "date": "2026-05-20",
-      "time": "15:40",
       "opponent": "Cleveland Guardians vs Detroit Tigers",
       "location": "Detroit,US",
       "venue": "Comerica Park",
-      "game_pk": 824273
+      "game_pk": 824274
     },
     {
-      "date": "2026-05-20",
+      "date": "2026-05-21",
+      "time": "10:15",
+      "opponent": "Pittsburgh Pirates vs St. Louis Cardinals",
+      "location": "St Louis,US",
+      "venue": "Busch Stadium",
+      "game_pk": 823056
+    },
+    {
+      "date": "2026-05-21",
+      "time": "13:05",
+      "opponent": "New York Mets vs Washington Nationals",
+      "location": "Washington,US",
+      "venue": "Nationals Park",
+      "game_pk": 822733
+    },
+    {
+      "date": "2026-05-21",
       "time": "15:40",
       "opponent": "Atlanta Braves vs Miami Marlins",
       "location": "Miami,US",
       "venue": "loanDepot park",
-      "game_pk": 823866
+      "game_pk": 823864
     },
     {
-      "date": "2026-05-20",
-      "time": "15:45",
-      "opponent": "New York Mets vs Washington Nationals",
-      "location": "Washington,US",
-      "venue": "Nationals Park",
-      "game_pk": 822735
-    },
-    {
-      "date": "2026-05-20",
+      "date": "2026-05-21",
       "time": "16:05",
       "opponent": "Toronto Blue Jays vs New York Yankees",
       "location": "New York,US",
       "venue": "Yankee Stadium",
-      "game_pk": 823547
+      "game_pk": 823545
     },
     {
-      "date": "2026-05-20",
-      "time": "16:40",
-      "opponent": "Boston Red Sox vs Kansas City Royals",
-      "location": "Kansas City,US",
-      "venue": "Kauffman Stadium",
-      "game_pk": 824111
-    },
-    {
-      "date": "2026-05-20",
-      "time": "16:40",
-      "opponent": "Milwaukee Brewers vs Chicago Cubs",
-      "location": "Chicago,US",
-      "venue": "Wrigley Field",
-      "game_pk": 824678
-    },
-    {
-      "date": "2026-05-20",
-      "time": "16:45",
-      "opponent": "Pittsburgh Pirates vs St. Louis Cardinals",
-      "location": "St Louis,US",
-      "venue": "Busch Stadium",
-      "game_pk": 823057
-    },
-    {
-      "date": "2026-05-20",
-      "time": "17:40",
-      "opponent": "Los Angeles Dodgers vs San Diego Padres",
-      "location": "San Diego,US",
-      "venue": "Petco Park",
-      "game_pk": 823299
-    },
-    {
-      "date": "2026-05-20",
+      "date": "2026-05-21",
       "time": "18:38",
       "opponent": "Athletics vs Los Angeles Angels",
       "location": "Anaheim,US",
       "venue": "Angel Stadium",
-      "game_pk": 824032
+      "game_pk": 824031
+    },
+    {
+      "date": "2026-05-21",
+      "time": "18:40",
+      "opponent": "Colorado Rockies vs Arizona Diamondbacks",
+      "location": "Phoenix,US",
+      "venue": "Chase Field",
+      "game_pk": 825083
     }
   ]
 }
