@@ -1,30 +1,62 @@
 {
-  "824274": {
-    "state": "LIVE",
-    "matchup": "Cleveland Guardians vs Detroit Tigers"
-  },
-  "823056": {
-    "state": "LIVE",
-    "matchup": "Pittsburgh Pirates vs St. Louis Cardinals"
-  },
-  "822733": {
+  "824679": {
     "state": "PREVIEW",
-    "matchup": "New York Mets vs Washington Nationals"
+    "matchup": "Houston Astros vs Chicago Cubs"
   },
-  "823864": {
+  "824518": {
     "state": "PREVIEW",
-    "matchup": "Atlanta Braves vs Miami Marlins"
+    "matchup": "St. Louis Cardinals vs Cincinnati Reds"
   },
-  "823545": {
+  "823461": {
     "state": "PREVIEW",
-    "matchup": "Toronto Blue Jays vs New York Yankees"
+    "matchup": "Cleveland Guardians vs Philadelphia Phillies"
   },
-  "824031": {
+  "823546": {
     "state": "PREVIEW",
-    "matchup": "Athletics vs Los Angeles Angels"
+    "matchup": "Tampa Bay Rays vs New York Yankees"
   },
-  "825083": {
+  "822816": {
+    "state": "PREVIEW",
+    "matchup": "Pittsburgh Pirates vs Toronto Blue Jays"
+  },
+  "824761": {
+    "state": "PREVIEW",
+    "matchup": "Minnesota Twins vs Boston Red Sox"
+  },
+  "823863": {
+    "state": "PREVIEW",
+    "matchup": "New York Mets vs Miami Marlins"
+  },
+  "824842": {
+    "state": "PREVIEW",
+    "matchup": "Detroit Tigers vs Baltimore Orioles"
+  },
+  "824922": {
+    "state": "PREVIEW",
+    "matchup": "Washington Nationals vs Atlanta Braves"
+  },
+  "824110": {
+    "state": "PREVIEW",
+    "matchup": "Seattle Mariners vs Kansas City Royals"
+  },
+  "823788": {
+    "state": "PREVIEW",
+    "matchup": "Los Angeles Dodgers vs Milwaukee Brewers"
+  },
+  "824029": {
+    "state": "PREVIEW",
+    "matchup": "Texas Rangers vs Los Angeles Angels"
+  },
+  "825082": {
     "state": "PREVIEW",
     "matchup": "Colorado Rockies vs Arizona Diamondbacks"
+  },
+  "823298": {
+    "state": "PREVIEW",
+    "matchup": "Athletics vs San Diego Padres"
+  },
+  "823223": {
+    "state": "PREVIEW",
+    "matchup": "Chicago White Sox vs San Francisco Giants"
   }
 }
