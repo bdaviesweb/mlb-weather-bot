@@ -23,10 +23,6 @@
     "state": "PREVIEW",
     "matchup": "Tampa Bay Rays vs New York Yankees"
   },
-  "824514": {
-    "state": "DELAYED",
-    "matchup": "St. Louis Cardinals vs Cincinnati Reds"
-  },
   "823861": {
     "state": "PREVIEW",
     "matchup": "New York Mets vs Miami Marlins"
@@ -62,5 +58,9 @@
   "824028": {
     "state": "PREVIEW",
     "matchup": "Texas Rangers vs Los Angeles Angels"
+  },
+  "824514": {
+    "state": "POSTPONED",
+    "matchup": "St. Louis Cardinals vs Cincinnati Reds"
   }
 }
