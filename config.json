@@ -1,124 +1,76 @@
 {
   "games": [
     {
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "time": "10:05",
-      "opponent": "Miami Marlins vs Washington Nationals",
-      "location": "Washington,US",
-      "venue": "Nationals Park",
-      "game_pk": 822727
-    },
-    {
-      "date": "2026-06-03",
-      "time": "10:10",
-      "opponent": "Detroit Tigers vs Tampa Bay Rays",
-      "location": "St Petersburg,US",
-      "venue": "Tropicana Field",
-      "game_pk": 822973
-    },
-    {
-      "date": "2026-06-03",
-      "time": "10:40",
-      "opponent": "Chicago White Sox vs Minnesota Twins",
-      "location": "Minneapolis,US",
-      "venue": "Target Field",
-      "game_pk": 823701
-    },
-    {
-      "date": "2026-06-03",
-      "time": "12:40",
-      "opponent": "New York Mets vs Seattle Mariners",
-      "location": "Seattle,US",
-      "venue": "T-Mobile Park",
-      "game_pk": 823130
-    },
-    {
-      "date": "2026-06-03",
-      "time": "15:40",
       "opponent": "San Diego Padres vs Philadelphia Phillies",
       "location": "Philadelphia,US",
       "venue": "Citizens Bank Park",
-      "game_pk": 823456
+      "game_pk": 823457
     },
     {
-      "date": "2026-06-03",
-      "time": "15:45",
+      "date": "2026-06-04",
+      "time": "10:35",
       "opponent": "Baltimore Orioles vs Boston Red Sox",
       "location": "Boston,US",
       "venue": "Fenway Park",
-      "game_pk": 824755
+      "game_pk": 824753
     },
     {
-      "date": "2026-06-03",
-      "time": "16:05",
+      "date": "2026-06-04",
+      "time": "10:35",
       "opponent": "Cleveland Guardians vs New York Yankees",
       "location": "New York,US",
       "venue": "Yankee Stadium",
-      "game_pk": 823540
+      "game_pk": 823542
     },
     {
-      "date": "2026-06-03",
-      "time": "16:10",
-      "opponent": "Kansas City Royals vs Cincinnati Reds",
-      "location": "Cincinnati,US",
-      "venue": "Great American Ball Park",
-      "game_pk": 824509
+      "date": "2026-06-04",
+      "time": "11:10",
+      "opponent": "San Francisco Giants vs Milwaukee Brewers",
+      "location": "Milwaukee,US",
+      "venue": "American Family Field",
+      "game_pk": 823779
     },
     {
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "time": "16:15",
       "opponent": "Toronto Blue Jays vs Atlanta Braves",
       "location": "Atlanta,US",
       "venue": "Truist Park",
-      "game_pk": 824917
+      "game_pk": 824919
     },
     {
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "time": "16:40",
-      "opponent": "San Francisco Giants vs Milwaukee Brewers",
-      "location": "Milwaukee,US",
-      "venue": "American Family Field",
-      "game_pk": 823780
+      "opponent": "Kansas City Royals vs Minnesota Twins",
+      "location": "Minneapolis,US",
+      "venue": "Target Field",
+      "game_pk": 823698
     },
     {
-      "date": "2026-06-03",
-      "time": "16:45",
-      "opponent": "Texas Rangers vs St. Louis Cardinals",
-      "location": "St Louis,US",
-      "venue": "Busch Stadium",
-      "game_pk": 823051
-    },
-    {
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "time": "17:05",
       "opponent": "Athletics vs Chicago Cubs",
       "location": "Chicago,US",
       "venue": "Wrigley Field",
-      "game_pk": 824671
+      "game_pk": 824672
     },
     {
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "time": "17:10",
       "opponent": "Pittsburgh Pirates vs Houston Astros",
       "location": "Houston,US",
       "venue": "Daikin Park",
-      "game_pk": 824188
+      "game_pk": 824185
     },
     {
-      "date": "2026-06-03",
-      "time": "18:38",
-      "opponent": "Colorado Rockies vs Los Angeles Angels",
-      "location": "Anaheim,US",
-      "venue": "Angel Stadium",
-      "game_pk": 824024
-    },
-    {
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "time": "18:40",
       "opponent": "Los Angeles Dodgers vs Arizona Diamondbacks",
       "location": "Phoenix,US",
       "venue": "Chase Field",
-      "game_pk": 825077
+      "game_pk": 825076
     }
   ]
 }
