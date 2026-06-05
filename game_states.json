@@ -1,38 +1,62 @@
 {
-  "823457": {
-    "state": "LIVE",
-    "matchup": "San Diego Padres vs Philadelphia Phillies"
-  },
-  "824753": {
+  "824673": {
     "state": "PREVIEW",
-    "matchup": "Baltimore Orioles vs Boston Red Sox"
+    "matchup": "San Francisco Giants vs Chicago Cubs"
   },
-  "823542": {
+  "824271": {
     "state": "PREVIEW",
-    "matchup": "Cleveland Guardians vs New York Yankees"
+    "matchup": "Seattle Mariners vs Detroit Tigers"
   },
-  "823779": {
+  "823455": {
     "state": "PREVIEW",
-    "matchup": "San Francisco Giants vs Milwaukee Brewers"
+    "matchup": "Chicago White Sox vs Philadelphia Phillies"
   },
-  "824919": {
+  "823538": {
     "state": "PREVIEW",
-    "matchup": "Toronto Blue Jays vs Atlanta Braves"
+    "matchup": "Boston Red Sox vs New York Yankees"
   },
-  "823698": {
-    "state": "LIVE",
+  "822810": {
+    "state": "PREVIEW",
+    "matchup": "Baltimore Orioles vs Toronto Blue Jays"
+  },
+  "823860": {
+    "state": "PREVIEW",
+    "matchup": "Tampa Bay Rays vs Miami Marlins"
+  },
+  "824914": {
+    "state": "PREVIEW",
+    "matchup": "Pittsburgh Pirates vs Atlanta Braves"
+  },
+  "824186": {
+    "state": "PREVIEW",
+    "matchup": "Athletics vs Houston Astros"
+  },
+  "823049": {
+    "state": "PREVIEW",
+    "matchup": "Cincinnati Reds vs St. Louis Cardinals"
+  },
+  "822892": {
+    "state": "PREVIEW",
+    "matchup": "Cleveland Guardians vs Texas Rangers"
+  },
+  "823699": {
+    "state": "PREVIEW",
     "matchup": "Kansas City Royals vs Minnesota Twins"
   },
-  "824672": {
+  "824350": {
     "state": "PREVIEW",
-    "matchup": "Athletics vs Chicago Cubs"
+    "matchup": "Milwaukee Brewers vs Colorado Rockies"
   },
-  "824185": {
+  "825073": {
     "state": "PREVIEW",
-    "matchup": "Pittsburgh Pirates vs Houston Astros"
+    "matchup": "Washington Nationals vs Arizona Diamondbacks"
   },
-  "825076": {
+  "823293": {
     "state": "PREVIEW",
-    "matchup": "Los Angeles Dodgers vs Arizona Diamondbacks"
+    "matchup": "New York Mets vs San Diego Padres"
+  },
+  "823943": {
+    "state": "PREVIEW",
+    "matchup": "Los Angeles Angels vs Los Angeles Dodgers"
   }
 }
