@@ -1,76 +1,124 @@
 {
   "games": [
     {
-      "date": "2026-06-04",
-      "time": "10:05",
-      "opponent": "San Diego Padres vs Philadelphia Phillies",
+      "date": "2026-06-05",
+      "time": "11:20",
+      "opponent": "San Francisco Giants vs Chicago Cubs",
+      "location": "Chicago,US",
+      "venue": "Wrigley Field",
+      "game_pk": 824673
+    },
+    {
+      "date": "2026-06-05",
+      "time": "15:40",
+      "opponent": "Seattle Mariners vs Detroit Tigers",
+      "location": "Detroit,US",
+      "venue": "Comerica Park",
+      "game_pk": 824271
+    },
+    {
+      "date": "2026-06-05",
+      "time": "15:40",
+      "opponent": "Chicago White Sox vs Philadelphia Phillies",
       "location": "Philadelphia,US",
       "venue": "Citizens Bank Park",
-      "game_pk": 823457
+      "game_pk": 823455
     },
     {
-      "date": "2026-06-04",
-      "time": "10:35",
-      "opponent": "Baltimore Orioles vs Boston Red Sox",
-      "location": "Boston,US",
-      "venue": "Fenway Park",
-      "game_pk": 824753
-    },
-    {
-      "date": "2026-06-04",
-      "time": "10:35",
-      "opponent": "Cleveland Guardians vs New York Yankees",
+      "date": "2026-06-05",
+      "time": "16:05",
+      "opponent": "Boston Red Sox vs New York Yankees",
       "location": "New York,US",
       "venue": "Yankee Stadium",
-      "game_pk": 823542
+      "game_pk": 823538
     },
     {
-      "date": "2026-06-04",
-      "time": "11:10",
-      "opponent": "San Francisco Giants vs Milwaukee Brewers",
-      "location": "Milwaukee,US",
-      "venue": "American Family Field",
-      "game_pk": 823779
+      "date": "2026-06-05",
+      "time": "16:07",
+      "opponent": "Baltimore Orioles vs Toronto Blue Jays",
+      "location": "Toronto,CA",
+      "venue": "Rogers Centre",
+      "game_pk": 822810
     },
     {
-      "date": "2026-06-04",
+      "date": "2026-06-05",
+      "time": "16:10",
+      "opponent": "Tampa Bay Rays vs Miami Marlins",
+      "location": "Miami,US",
+      "venue": "loanDepot park",
+      "game_pk": 823860
+    },
+    {
+      "date": "2026-06-05",
       "time": "16:15",
-      "opponent": "Toronto Blue Jays vs Atlanta Braves",
+      "opponent": "Pittsburgh Pirates vs Atlanta Braves",
       "location": "Atlanta,US",
       "venue": "Truist Park",
-      "game_pk": 824919
+      "game_pk": 824914
     },
     {
-      "date": "2026-06-04",
-      "time": "16:40",
+      "date": "2026-06-05",
+      "time": "17:10",
+      "opponent": "Athletics vs Houston Astros",
+      "location": "Houston,US",
+      "venue": "Daikin Park",
+      "game_pk": 824186
+    },
+    {
+      "date": "2026-06-05",
+      "time": "17:15",
+      "opponent": "Cincinnati Reds vs St. Louis Cardinals",
+      "location": "St Louis,US",
+      "venue": "Busch Stadium",
+      "game_pk": 823049
+    },
+    {
+      "date": "2026-06-05",
+      "time": "17:15",
+      "opponent": "Cleveland Guardians vs Texas Rangers",
+      "location": "Arlington,US",
+      "venue": "Globe Life Field",
+      "game_pk": 822892
+    },
+    {
+      "date": "2026-06-05",
+      "time": "17:15",
       "opponent": "Kansas City Royals vs Minnesota Twins",
       "location": "Minneapolis,US",
       "venue": "Target Field",
-      "game_pk": 823698
+      "game_pk": 823699
     },
     {
-      "date": "2026-06-04",
-      "time": "17:05",
-      "opponent": "Athletics vs Chicago Cubs",
-      "location": "Chicago,US",
-      "venue": "Wrigley Field",
-      "game_pk": 824672
+      "date": "2026-06-05",
+      "time": "17:40",
+      "opponent": "Milwaukee Brewers vs Colorado Rockies",
+      "location": "Denver,US",
+      "venue": "Coors Field",
+      "game_pk": 824350
     },
     {
-      "date": "2026-06-04",
-      "time": "17:10",
-      "opponent": "Pittsburgh Pirates vs Houston Astros",
-      "location": "Houston,US",
-      "venue": "Daikin Park",
-      "game_pk": 824185
-    },
-    {
-      "date": "2026-06-04",
+      "date": "2026-06-05",
       "time": "18:40",
-      "opponent": "Los Angeles Dodgers vs Arizona Diamondbacks",
+      "opponent": "Washington Nationals vs Arizona Diamondbacks",
       "location": "Phoenix,US",
       "venue": "Chase Field",
-      "game_pk": 825076
+      "game_pk": 825073
+    },
+    {
+      "date": "2026-06-05",
+      "time": "18:40",
+      "opponent": "New York Mets vs San Diego Padres",
+      "location": "San Diego,US",
+      "venue": "Petco Park",
+      "game_pk": 823293
+    },
+    {
+      "date": "2026-06-05",
+      "time": "19:10",
+      "opponent": "Los Angeles Angels vs Los Angeles Dodgers",
+      "location": "Los Angeles,US",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "game_pk": 823943
     }
   ]
 }
