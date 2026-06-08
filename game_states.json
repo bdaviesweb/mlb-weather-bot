@@ -1,62 +1,34 @@
 {
-  "824916": {
+  "824829": {
     "state": "PREVIEW",
-    "matchup": "Pittsburgh Pirates vs Atlanta Braves"
+    "matchup": "Seattle Mariners vs Baltimore Orioles"
   },
-  "823453": {
+  "822972": {
     "state": "PREVIEW",
-    "matchup": "Chicago White Sox vs Philadelphia Phillies"
+    "matchup": "Boston Red Sox vs Tampa Bay Rays"
   },
-  "823537": {
-    "state": "LIVE",
-    "matchup": "Boston Red Sox vs New York Yankees"
-  },
-  "822807": {
+  "824427": {
     "state": "PREVIEW",
-    "matchup": "Baltimore Orioles vs Toronto Blue Jays"
+    "matchup": "New York Yankees vs Cleveland Guardians"
   },
-  "824268": {
+  "822806": {
     "state": "PREVIEW",
-    "matchup": "Seattle Mariners vs Detroit Tigers"
+    "matchup": "Philadelphia Phillies vs Toronto Blue Jays"
   },
-  "823857": {
+  "824025": {
     "state": "PREVIEW",
-    "matchup": "Tampa Bay Rays vs Miami Marlins"
+    "matchup": "Houston Astros vs Los Angeles Angels"
   },
-  "824183": {
+  "823289": {
     "state": "PREVIEW",
-    "matchup": "Athletics vs Houston Astros"
+    "matchup": "Cincinnati Reds vs San Diego Padres"
   },
-  "823696": {
+  "823218": {
     "state": "PREVIEW",
-    "matchup": "Kansas City Royals vs Minnesota Twins"
+    "matchup": "Washington Nationals vs San Francisco Giants"
   },
-  "823047": {
+  "824998": {
     "state": "PREVIEW",
-    "matchup": "Cincinnati Reds vs St. Louis Cardinals"
-  },
-  "822890": {
-    "state": "PREVIEW",
-    "matchup": "Cleveland Guardians vs Texas Rangers"
-  },
-  "824349": {
-    "state": "PREVIEW",
-    "matchup": "Milwaukee Brewers vs Colorado Rockies"
-  },
-  "825074": {
-    "state": "PREVIEW",
-    "matchup": "Washington Nationals vs Arizona Diamondbacks"
-  },
-  "823941": {
-    "state": "PREVIEW",
-    "matchup": "Los Angeles Angels vs Los Angeles Dodgers"
-  },
-  "823291": {
-    "state": "PREVIEW",
-    "matchup": "New York Mets vs San Diego Padres"
-  },
-  "824670": {
-    "state": "PREVIEW",
-    "matchup": "San Francisco Giants vs Chicago Cubs"
+    "matchup": "Milwaukee Brewers vs Athletics"
   }
 }
