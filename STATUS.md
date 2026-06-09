@@ -7,7 +7,7 @@
 ## 🟢 OPERATIONAL
 
 **Current Status:** All systems functioning normally
-**Last Updated:** June 09, 2026 09:16 AM PT
+**Last Updated:** June 09, 2026 09:20 AM PT
 **Season:** Regular Season 2026
 
 ---
@@ -23,7 +23,7 @@
 | 🌦️ National Weather Service API | 🟢 Connected | Real-time | Continuous |
 | 💾 State Persistence | 🟢 Working | June 09, 2026 | Automatic |
 | 🏟️ Roof Status API | 🟢 Connected | June 09, 2026 | Continuous |
-| ⏰ External Cron Trigger | 🟢 Operational | June 09, 2026 09:16 AM PT | Every 10 min via cron-job.org |
+| ⏰ External Cron Trigger | 🟢 Operational | June 09, 2026 09:20 AM PT | Every 10 min via cron-job.org |
 
 ---
 
@@ -35,7 +35,7 @@
 | **Total Alerts Sent** | 253 |
 | **Delay Prediction Accuracy** | 45.5% (20/44) |
 | **False Positives** | 0 |
-| **System Uptime** | 55.1% |
+| **System Uptime** | 55.0% |
 | **Monitoring Interval** | Every 10 min (via cron-job.org) |
 
 ---
@@ -114,4 +114,4 @@ critical issues
 
 ---
 
-_Last generated: June 09, 2026 09:16 AM PT_
+_Last generated: June 09, 2026 09:20 AM PT_
