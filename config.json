@@ -43,14 +43,6 @@
     {
       "date": "2026-06-14",
       "time": "10:40",
-      "opponent": "Detroit Tigers vs Cleveland Guardians",
-      "location": "Cleveland,US",
-      "venue": "Progressive Field",
-      "game_pk": 824424
-    },
-    {
-      "date": "2026-06-14",
-      "time": "10:40",
       "opponent": "Atlanta Braves vs New York Mets",
       "location": "New York,US",
       "venue": "Citi Field",
@@ -119,6 +111,14 @@
       "location": "Boston,US",
       "venue": "Fenway Park",
       "game_pk": 824751
+    },
+    {
+      "date": "2026-06-14",
+      "time": "10:40",
+      "opponent": "Detroit Tigers vs Cleveland Guardians",
+      "location": "Cleveland,US",
+      "venue": "Progressive Field",
+      "game_pk": 824424
     }
   ]
 }
