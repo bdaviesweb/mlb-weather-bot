@@ -23,10 +23,6 @@
     "state": "PREVIEW",
     "matchup": "Chicago White Sox vs New York Yankees"
   },
-  "824911": {
-    "state": "PREVIEW",
-    "matchup": "San Francisco Giants vs Atlanta Braves"
-  },
   "824098": {
     "state": "PREVIEW",
     "matchup": "St. Louis Cardinals vs Kansas City Royals"
@@ -34,5 +30,9 @@
   "824989": {
     "state": "PREVIEW",
     "matchup": "Los Angeles Angels vs Athletics"
+  },
+  "824911": {
+    "state": "POSTPONED",
+    "matchup": "San Francisco Giants vs Atlanta Braves"
   }
 }
