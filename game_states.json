@@ -1,62 +1,38 @@
 {
-  "824503": {
-    "state": "LIVE",
-    "matchup": "New York Mets vs Cincinnati Reds"
-  },
-  "822721": {
-    "state": "LIVE",
-    "matchup": "Kansas City Royals vs Washington Nationals"
-  },
-  "823450": {
-    "state": "LIVE",
-    "matchup": "Miami Marlins vs Philadelphia Phillies"
-  },
-  "824912": {
-    "state": "SUSPENDED",
-    "matchup": "San Francisco Giants vs Atlanta Braves"
-  },
-  "824178": {
-    "state": "PREVIEW",
-    "matchup": "Detroit Tigers vs Houston Astros"
-  },
-  "823044": {
-    "state": "PREVIEW",
-    "matchup": "San Diego Padres vs St. Louis Cardinals"
-  },
-  "823940": {
-    "state": "PREVIEW",
-    "matchup": "Tampa Bay Rays vs Los Angeles Dodgers"
-  },
-  "825072": {
-    "state": "PREVIEW",
-    "matchup": "Los Angeles Angels vs Arizona Diamondbacks"
-  },
-  "824746": {
+  "824748": {
     "state": "PREVIEW",
     "matchup": "Toronto Blue Jays vs Boston Red Sox"
   },
-  "823536": {
-    "state": "PREVIEW",
-    "matchup": "Chicago White Sox vs New York Yankees"
-  },
-  "824913": {
-    "state": "PREVIEW",
-    "matchup": "San Francisco Giants vs Atlanta Braves"
-  },
-  "823774": {
+  "823772": {
     "state": "PREVIEW",
     "matchup": "Cleveland Guardians vs Milwaukee Brewers"
   },
-  "824668": {
+  "822889": {
     "state": "PREVIEW",
-    "matchup": "Colorado Rockies vs Chicago Cubs"
+    "matchup": "Minnesota Twins vs Texas Rangers"
   },
-  "824992": {
-    "state": "PREVIEW",
-    "matchup": "Pittsburgh Pirates vs Athletics"
-  },
-  "823127": {
+  "823125": {
     "state": "PREVIEW",
     "matchup": "Baltimore Orioles vs Seattle Mariners"
+  },
+  "823448": {
+    "state": "PREVIEW",
+    "matchup": "New York Mets vs Philadelphia Phillies"
+  },
+  "823533": {
+    "state": "PREVIEW",
+    "matchup": "Chicago White Sox vs New York Yankees"
+  },
+  "824911": {
+    "state": "PREVIEW",
+    "matchup": "San Francisco Giants vs Atlanta Braves"
+  },
+  "824098": {
+    "state": "PREVIEW",
+    "matchup": "St. Louis Cardinals vs Kansas City Royals"
+  },
+  "824989": {
+    "state": "PREVIEW",
+    "matchup": "Los Angeles Angels vs Athletics"
   }
 }
