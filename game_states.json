@@ -1,58 +1,58 @@
 {
-  "824663": {
-    "state": "PREVIEW",
-    "matchup": "Toronto Blue Jays vs Chicago Cubs"
-  },
-  "824264": {
-    "state": "PREVIEW",
+  "824263": {
+    "state": "LIVE",
     "matchup": "Chicago White Sox vs Detroit Tigers"
   },
-  "823534": {
+  "823532": {
     "state": "PREVIEW",
     "matchup": "Cincinnati Reds vs New York Yankees"
   },
-  "822966": {
+  "824665": {
     "state": "PREVIEW",
-    "matchup": "Washington Nationals vs Tampa Bay Rays"
+    "matchup": "Toronto Blue Jays vs Chicago Cubs"
   },
-  "823853": {
-    "state": "PREVIEW",
-    "matchup": "San Francisco Giants vs Miami Marlins"
-  },
-  "824910": {
-    "state": "PREVIEW",
-    "matchup": "Milwaukee Brewers vs Atlanta Braves"
-  },
-  "822886": {
+  "822885": {
     "state": "PREVIEW",
     "matchup": "San Diego Padres vs Texas Rangers"
   },
-  "824179": {
+  "822967": {
+    "state": "PREVIEW",
+    "matchup": "Washington Nationals vs Tampa Bay Rays"
+  },
+  "823854": {
+    "state": "PREVIEW",
+    "matchup": "San Francisco Giants vs Miami Marlins"
+  },
+  "824909": {
+    "state": "PREVIEW",
+    "matchup": "Milwaukee Brewers vs Atlanta Braves"
+  },
+  "824180": {
     "state": "PREVIEW",
     "matchup": "Cleveland Guardians vs Houston Astros"
   },
-  "824097": {
+  "823447": {
     "state": "PREVIEW",
-    "matchup": "St. Louis Cardinals vs Kansas City Royals"
+    "matchup": "New York Mets vs Philadelphia Phillies"
   },
-  "824345": {
+  "824342": {
     "state": "PREVIEW",
     "matchup": "Pittsburgh Pirates vs Colorado Rockies"
   },
-  "824990": {
+  "824988": {
     "state": "PREVIEW",
     "matchup": "Los Angeles Angels vs Athletics"
   },
-  "825069": {
-    "state": "PREVIEW",
-    "matchup": "Minnesota Twins vs Arizona Diamondbacks"
-  },
-  "823936": {
+  "823937": {
     "state": "PREVIEW",
     "matchup": "Baltimore Orioles vs Los Angeles Dodgers"
   },
-  "823124": {
+  "823126": {
     "state": "PREVIEW",
     "matchup": "Boston Red Sox vs Seattle Mariners"
+  },
+  "825068": {
+    "state": "PREVIEW",
+    "matchup": "Minnesota Twins vs Arizona Diamondbacks"
   }
 }
