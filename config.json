@@ -58,14 +58,6 @@
     },
     {
       "date": "2026-06-21",
-      "time": "11:20",
-      "opponent": "Toronto Blue Jays vs Chicago Cubs",
-      "location": "Chicago,US",
-      "venue": "Wrigley Field",
-      "game_pk": 824664
-    },
-    {
-      "date": "2026-06-21",
       "time": "11:35",
       "opponent": "San Diego Padres vs Texas Rangers",
       "location": "Arlington,US",
@@ -119,6 +111,14 @@
       "location": "Philadelphia,US",
       "venue": "Citizens Bank Park",
       "game_pk": 823449
+    },
+    {
+      "date": "2026-06-21",
+      "time": "11:20",
+      "opponent": "Toronto Blue Jays vs Chicago Cubs",
+      "location": "Chicago,US",
+      "venue": "Wrigley Field",
+      "game_pk": 824664
     }
   ]
 }
