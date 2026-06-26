@@ -1,38 +1,62 @@
 {
-  "822961": {
-    "state": "LIVE",
-    "matchup": "Kansas City Royals vs Tampa Bay Rays"
-  },
-  "823366": {
-    "state": "LIVE",
-    "matchup": "Seattle Mariners vs Pittsburgh Pirates"
-  },
-  "823209": {
-    "state": "PREVIEW",
-    "matchup": "Athletics vs San Francisco Giants"
-  },
-  "824258": {
+  "824255": {
     "state": "PREVIEW",
     "matchup": "Houston Astros vs Detroit Tigers"
   },
-  "822717": {
+  "823363": {
     "state": "PREVIEW",
-    "matchup": "Philadelphia Phillies vs Washington Nationals"
+    "matchup": "Cincinnati Reds vs Pittsburgh Pirates"
   },
-  "822797": {
+  "824824": {
+    "state": "PREVIEW",
+    "matchup": "Washington Nationals vs Baltimore Orioles"
+  },
+  "822796": {
     "state": "PREVIEW",
     "matchup": "Texas Rangers vs Toronto Blue Jays"
   },
-  "823612": {
+  "824423": {
     "state": "PREVIEW",
-    "matchup": "Chicago Cubs vs New York Mets"
+    "matchup": "Seattle Mariners vs Cleveland Guardians"
   },
-  "824747": {
+  "822962": {
+    "state": "PREVIEW",
+    "matchup": "Arizona Diamondbacks vs Tampa Bay Rays"
+  },
+  "823610": {
+    "state": "PREVIEW",
+    "matchup": "Philadelphia Phillies vs New York Mets"
+  },
+  "824743": {
     "state": "PREVIEW",
     "matchup": "New York Yankees vs Boston Red Sox"
   },
-  "823042": {
-    "state": "POSTPONED",
-    "matchup": "Arizona Diamondbacks vs St. Louis Cardinals"
+  "824582": {
+    "state": "PREVIEW",
+    "matchup": "Kansas City Royals vs Chicago White Sox"
+  },
+  "823773": {
+    "state": "PREVIEW",
+    "matchup": "Chicago Cubs vs Milwaukee Brewers"
+  },
+  "823688": {
+    "state": "PREVIEW",
+    "matchup": "Colorado Rockies vs Minnesota Twins"
+  },
+  "823039": {
+    "state": "PREVIEW",
+    "matchup": "Miami Marlins vs St. Louis Cardinals"
+  },
+  "824014": {
+    "state": "PREVIEW",
+    "matchup": "Athletics vs Los Angeles Angels"
+  },
+  "823285": {
+    "state": "PREVIEW",
+    "matchup": "Los Angeles Dodgers vs San Diego Padres"
+  },
+  "823206": {
+    "state": "PREVIEW",
+    "matchup": "Atlanta Braves vs San Francisco Giants"
   }
 }
