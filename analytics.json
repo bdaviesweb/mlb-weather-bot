@@ -1,13 +1,13 @@
 {
   "metadata": {
     "created": "2026-03-25T05:50:00-07:00",
-    "last_updated": "2026-06-29T09:30:23.871002-07:00",
+    "last_updated": "2026-06-29T09:37:51.240697-07:00",
     "season": "Regular Season 2026"
   },
   "totals": {
-    "games_monitored": 752,
-    "alerts_sent": 332,
-    "daily_reports_sent": 85,
+    "games_monitored": 760,
+    "alerts_sent": 333,
+    "daily_reports_sent": 86,
     "high_risk_alerts_sent": 94,
     "delay_alerts_sent": 72,
     "resumption_alerts_sent": 54,
@@ -20,8 +20,8 @@
     "false_negatives": 38
   },
   "workflow_runs": {
-    "total_runs": 12136,
-    "successful_runs": 6662,
+    "total_runs": 12137,
+    "successful_runs": 6663,
     "failed_runs": 0,
     "skipped_runs": 5474
   },
@@ -1915,6 +1915,16 @@
         {
           "type": "resumption",
           "timestamp": "2026-06-28T14:20:21.434270-07:00"
+        }
+      ]
+    },
+    "2026-06-29": {
+      "alerts_sent": 1,
+      "games_monitored": 8,
+      "alert_types": [
+        {
+          "type": "daily_report",
+          "timestamp": "2026-06-29T09:37:51.233557-07:00"
         }
       ]
     }
