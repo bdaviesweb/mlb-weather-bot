@@ -18,6 +18,7 @@ import json
 import requests
 from datetime import datetime, timedelta
 import pytz
+from venues import get_venue_location
 
 def get_mlb_schedule(days_ahead=1):
     """Fetch MLB schedule for next X days using MLB Stats API"""
@@ -64,100 +65,6 @@ def get_mlb_schedule(days_ahead=1):
             continue
 
     return games
-
-
-def get_venue_location(venue_name):
-    """
-    Map MLB venue names to location strings.
-    Location strings must exactly match keys in STADIUM_COORDINATES
-    in weather_bot.py and high_risk_alert.py.
-    """
-
-    # ── Spring Training — Cactus League (AZ) ──────────────────
-    spring_training_venues = {
-        'Tempe Diablo Stadium':              'Tempe,US',
-        'Camelback Ranch':                   'Phoenix,US',
-        'Sloan Park':                        'Mesa,US',
-        'Salt River Fields':                 'Scottsdale,US',
-        'Salt River Fields at Talking Stick':'Scottsdale,US',
-        'Peoria Sports Complex':             'Peoria,US',
-        'Surprise Stadium':                  'Surprise,US',
-        'Goodyear Ballpark':                 'Goodyear,US',
-        'Hohokam Stadium':                   'Mesa,US',
-        'American Family Fields of Phoenix': 'Phoenix,US',
-        'JetBlue Park':                      'Fort Myers,US',
-        'JetBlue Park at Fenway South':      'Fort Myers,US',
-        'Ed Smith Stadium':                  'Sarasota,US',
-        'LECOM Park':                        'Bradenton,US',
-        'Charlotte Sports Park':             'Port Charlotte,US',
-        'Hammond Stadium':                   'Fort Myers,US',
-        'Roger Dean Chevrolet Stadium':      'Jupiter,US',
-        'Clover Park':                       'West Palm Beach,US',
-        'The Ballpark of the Palm Beaches':  'West Palm Beach,US',
-        'Spectrum Field':                    'Clearwater,US',
-        'George M. Steinbrenner Field':      'Tampa,US',
-        'TD Ballpark':                       'Dunedin,US',
-    }
-
-    # ── Regular Season ─────────────────────────────────────────
-    regular_season_venues = {
-        # AL West
-        'Angel Stadium':                       'Anaheim,US',
-        'Dodger Stadium':                      'Los Angeles,US',
-        'UNIQLO Field at Dodger Stadium':      'Los Angeles,US',  # ✅ renamed
-        'T-Mobile Park':                       'Seattle,US',
-        'Globe Life Field':                    'Arlington,US',
-        'Minute Maid Park':                    'Houston,US',
-        'Daikin Park':                         'Houston,US',      # ✅ NEW — possible Minute Maid rename
-        'Sutter Health Park':                  'Oakland,US',
-
-        # AL Central
-        'Kauffman Stadium':                    'Kansas City,US',
-        'Target Field':                        'Minneapolis,US',
-        'Guaranteed Rate Field':               'Chicago,US',
-        'Rate Field':                          'Chicago,US',      # ✅ White Sox renamed
-        'Progressive Field':                   'Cleveland,US',
-        'Comerica Park':                       'Detroit,US',
-
-        # AL East
-        'Yankee Stadium':                      'New York,US',
-        'Fenway Park':                         'Boston,US',
-        'Oriole Park at Camden Yards':         'Baltimore,US',
-        'Rogers Centre':                       'Toronto,CA',      # Excluded — roof always closed
-        'Tropicana Field':                     'St Petersburg,US',
-
-        # NL West
-        'Oracle Park':                         'San Francisco,US',
-        'Petco Park':                          'San Diego,US',
-        'Chase Field':                         'Phoenix,US',
-        'Coors Field':                         'Denver,US',
-
-        # NL Central
-        'Great American Ball Park':            'Cincinnati,US',
-        'Busch Stadium':                       'St Louis,US',
-        'American Family Field':               'Milwaukee,US',
-        'PNC Park':                            'Pittsburgh,US',
-        'Wrigley Field':                       'Chicago,US',
-
-        # NL East
-        'Citi Field':                          'New York,US',
-        'Citizens Bank Park':                  'Philadelphia,US',
-        'Nationals Park':                      'Washington,US',
-        'Truist Park':                         'Atlanta,US',
-        'loanDepot park':                      'Miami,US',
-        'LoanDepot Park':                      'Miami,US',        # ✅ NEW — alternate capitalization
-        'loanDepot Park':                      'Miami,US',        # ✅ NEW — alternate capitalization
-        'Loan Depot Park':                     'Miami,US',        # ✅ NEW — alternate spacing
-    }
-
-    if venue_name in spring_training_venues:
-        return spring_training_venues[venue_name]
-    elif venue_name in regular_season_venues:
-        return regular_season_venues[venue_name]
-    else:
-        print(f"⚠️  WARNING: Unknown venue '{venue_name}' — defaulting to Phoenix,US")
-        print(f"   👉 Add '{venue_name}' to get_venue_location() in update_schedule.py")
-        return 'Phoenix,US'
 
 
 def update_config_file(games):

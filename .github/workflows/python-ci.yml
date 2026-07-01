@@ -1,0 +1,54 @@
+name: Python CI
+
+on:
+  pull_request:
+    paths:
+      - "*.py"
+      - "**/*.py"
+      - "requirements.txt"
+      - ".github/workflows/python-ci.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "*.py"
+      - "**/*.py"
+      - "requirements.txt"
+      - ".github/workflows/python-ci.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: python -m unittest discover -p 'test_*.py'
+
+      - name: Compile Python files
+        run: >
+          python -m py_compile
+          weather_bot.py
+          high_risk_alert.py
+          mlb_game_status_monitor.py
+          analytics.py
+          update_schedule.py
+          test_venues.py
+          venues.py
+          weather.py
+          test_analytics.py
+          test_venues_shared.py
+          test_weather.py
+          test_workflows.py

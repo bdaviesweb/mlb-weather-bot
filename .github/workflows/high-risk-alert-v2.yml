@@ -8,14 +8,23 @@ on:
     - cron: '0 17 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: sports-weather-state-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   high-risk-alert:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
@@ -74,21 +83,9 @@ jobs:
           git add config.json || true
           git diff --quiet && git diff --staged --quiet || \
             git commit -m "📊 Update analytics and tracking [skip ci]"
-          git pull --rebase origin main || true
-          git push || echo "⚠️ WARNING: Push failed — dedup file may not persist"
+          git pull --rebase origin main || git rebase --abort || true
+          git push --force-with-lease || echo "⚠️ WARNING: Push failed — dedup file may not persist"
 
       - name: Log skipped run (already ran today)
         if: steps.check_already_ran.outputs.already_ran == 'true'
         run: python -c "from analytics import log_workflow_run; log_workflow_run('skipped')"
-
-      - name: Commit analytics for skipped run
-        if: steps.check_already_ran.outputs.already_ran == 'true'
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add analytics.json ANALYTICS.md 2>/dev/null || true
-          git add STATUS.md || true
-          git diff --quiet && git diff --staged --quiet || \
-            git commit -m "📊 Update analytics (skipped run) [skip ci]"
-          git pull --rebase origin main || true
-          git push || echo "⚠️ WARNING: Push failed — skipped run analytics may not persist"

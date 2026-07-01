@@ -1,0 +1,43 @@
+from pathlib import Path
+import unittest
+
+
+STATE_WORKFLOWS = [
+    Path(".github/workflows/weather-update-v2.yml"),
+    Path(".github/workflows/high-risk-alert-v2.yml"),
+    Path(".github/workflows/mlb-status-monitor-v2.yml"),
+]
+
+
+class WorkflowNoiseTests(unittest.TestCase):
+    def test_skipped_runs_do_not_commit_analytics(self):
+        for workflow in STATE_WORKFLOWS:
+            with self.subTest(workflow=str(workflow)):
+                text = workflow.read_text()
+
+                self.assertIn("log_workflow_run('skipped')", text)
+                self.assertNotIn("Commit analytics for skipped run", text)
+                self.assertNotIn("Update analytics (skipped run)", text)
+
+    def test_actionlint_workflow_exists(self):
+        workflow = Path(".github/workflows/actionlint.yml")
+        text = workflow.read_text()
+
+        self.assertIn("raven-actions/actionlint@v2", text)
+        self.assertIn("pull_request", text)
+        self.assertIn("workflow_dispatch", text)
+
+    def test_python_ci_workflow_runs_unit_tests_and_compile_check(self):
+        workflow = Path(".github/workflows/python-ci.yml")
+        text = workflow.read_text()
+
+        self.assertIn("python-version: '3.10'", text)
+        self.assertIn('- "*.py"', text)
+        self.assertIn('- "**/*.py"', text)
+        self.assertIn("pip install -r requirements.txt", text)
+        self.assertIn("python -m unittest discover -p 'test_*.py'", text)
+        self.assertIn("python -m py_compile", text)
+
+
+if __name__ == "__main__":
+    unittest.main()

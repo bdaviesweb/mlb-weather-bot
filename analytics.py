@@ -185,6 +185,38 @@ def log_prediction_accuracy(predicted_delay, actual_delay):
 # REPORTING FUNCTIONS
 # ============================================
 
+def calculate_workflow_reliability(workflow_runs):
+    """Calculate reliability from attempted runs, excluding planned skips."""
+    total_runs = workflow_runs.get('total_runs', 0)
+    successful_runs = workflow_runs.get('successful_runs', 0)
+    failed_runs = workflow_runs.get('failed_runs', 0)
+    skipped_runs = workflow_runs.get('skipped_runs', 0)
+
+    attempted_runs = successful_runs + failed_runs
+    success_rate = (
+        successful_runs / attempted_runs * 100
+        if attempted_runs > 0 else 0
+    )
+    failed_rate = (
+        failed_runs / attempted_runs * 100
+        if attempted_runs > 0 else 0
+    )
+    skipped_rate = (
+        skipped_runs / total_runs * 100
+        if total_runs > 0 else 0
+    )
+
+    return {
+        'total_runs': total_runs,
+        'attempted_runs': attempted_runs,
+        'successful_runs': successful_runs,
+        'failed_runs': failed_runs,
+        'skipped_runs': skipped_runs,
+        'success_rate': success_rate,
+        'failed_rate': failed_rate,
+        'skipped_rate': skipped_rate
+    }
+
 def generate_summary_report():
     """Generate a comprehensive analytics summary report"""
     analytics = load_analytics()
@@ -193,9 +225,7 @@ def generate_summary_report():
     correct_predictions = analytics['accuracy']['delays_predicted']
     accuracy_pct        = (correct_predictions / total_delays * 100) if total_delays > 0 else 0
 
-    total_runs      = analytics['workflow_runs']['total_runs']
-    successful_runs = analytics['workflow_runs']['successful_runs']
-    success_rate    = (successful_runs / total_runs * 100) if total_runs > 0 else 0
+    reliability = calculate_workflow_reliability(analytics['workflow_runs'])
 
     report = f"""
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -232,11 +262,12 @@ False Negatives:           {analytics['accuracy']['false_negatives']}
 SYSTEM RELIABILITY
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Total Workflow Runs:       {analytics['workflow_runs']['total_runs']}
-Successful:                {analytics['workflow_runs']['successful_runs']}
-Failed:                    {analytics['workflow_runs']['failed_runs']}
-Skipped (time check):      {analytics['workflow_runs']['skipped_runs']}
-Success Rate:              {success_rate:.1f}%
+Total Workflow Runs:       {reliability['total_runs']}
+Attempted Runs:            {reliability['attempted_runs']}
+Successful:                {reliability['successful_runs']}
+Failed:                    {reliability['failed_runs']}
+Skipped (time check):      {reliability['skipped_runs']}
+Operational Uptime:        {reliability['success_rate']:.1f}%
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     """
@@ -255,11 +286,7 @@ def generate_analytics_markdown():
     accuracy_pct        = (correct_predictions / total_delays * 100) if total_delays > 0 else 0
 
     # ── Reliability calculations ───────────────────────────────────────
-    total_runs      = analytics['workflow_runs']['total_runs']
-    successful_runs = analytics['workflow_runs']['successful_runs']
-    skipped_runs    = analytics['workflow_runs']['skipped_runs']
-    failed_runs     = analytics['workflow_runs']['failed_runs']
-    success_rate    = (successful_runs / total_runs * 100) if total_runs > 0 else 0
+    reliability = calculate_workflow_reliability(analytics['workflow_runs'])
 
     # ── Activity calculations ──────────────────────────────────────────
     today     = now.strftime('%Y-%m-%d')
@@ -327,12 +354,13 @@ def generate_analytics_markdown():
 
 | Metric | Count | Percentage |
 |--------|-------|------------|
-| Total Workflow Runs | {total_runs} | - |
-| ✅ Successful | {successful_runs} | {success_rate:.1f}% |
-| ❌ Failed | {failed_runs} | {(failed_runs / total_runs * 100) if total_runs > 0 else 0:.1f}% |
-| ⏭️ Skipped (outside game hours) | {skipped_runs} | {(skipped_runs / total_runs * 100) if total_runs > 0 else 0:.1f}% |
+| Total Workflow Runs | {reliability['total_runs']} | - |
+| Attempted Runs | {reliability['attempted_runs']} | - |
+| ✅ Successful | {reliability['successful_runs']} | {reliability['success_rate']:.1f}% of attempted |
+| ❌ Failed | {reliability['failed_runs']} | {reliability['failed_rate']:.1f}% of attempted |
+| ⏭️ Skipped (outside game hours) | {reliability['skipped_runs']} | {reliability['skipped_rate']:.1f}% of total |
 
-**System Uptime:** {success_rate:.1f}%
+**Operational Uptime:** {reliability['success_rate']:.1f}%
 
 ---
 
@@ -395,9 +423,7 @@ def generate_status_markdown():
     # ── Pull live metrics from analytics ──────────────────────────────
     total_alerts    = analytics['totals']['alerts_sent']
     games_monitored = analytics['totals']['games_monitored']
-    total_runs      = analytics['workflow_runs']['total_runs']
-    successful_runs = analytics['workflow_runs']['successful_runs']
-    uptime          = (successful_runs / total_runs * 100) if total_runs > 0 else 0
+    reliability = calculate_workflow_reliability(analytics['workflow_runs'])
 
     accuracy       = analytics['accuracy']
     actual_delays  = accuracy['actual_delays']
@@ -442,7 +468,8 @@ def generate_status_markdown():
 | **Total Alerts Sent** | {total_alerts} |
 | **Delay Prediction Accuracy** | {accuracy_pct:.1f}% ({predicted}/{actual_delays}) |
 | **False Positives** | {false_positives} |
-| **System Uptime** | {uptime:.1f}% |
+| **Operational Uptime** | {reliability['success_rate']:.1f}% |
+| **Skipped Runs** | {reliability['skipped_runs']} ({reliability['skipped_rate']:.1f}% of total) |
 | **Monitoring Interval** | Every 10 min (via cron-job.org) |
 
 ---

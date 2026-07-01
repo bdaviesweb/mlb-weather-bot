@@ -13,6 +13,7 @@ import requests
 from datetime import datetime
 import pytz
 from analytics import log_alert, log_workflow_run, log_prediction_accuracy
+from venues import get_venue_roof_type
 
 SLACK_WEBHOOK = os.environ.get('HIGH_RISK_WEBHOOK_URL')
 STATE_FILE    = 'game_states.json'
@@ -55,26 +56,6 @@ def get_venue_info_from_game(game):
         'roof_type':        roof_info['type'],
         'roof_description': roof_info['description']
     }
-
-
-def get_venue_roof_type(venue_name):
-    fixed_domes = {
-        'Tropicana Field': {'type': 'fixed_dome',   'description': '🏟️ Fixed Dome'},
-        'Rogers Centre':   {'type': 'fixed_dome',   'description': '🏟️ Fixed Dome'}
-    }
-    retractable_roofs = {
-        'Chase Field':           {'type': 'retractable', 'description': '🔄 Retractable Roof'},
-        'loanDepot park':        {'type': 'retractable', 'description': '🔄 Retractable Roof'},
-        'Globe Life Field':      {'type': 'retractable', 'description': '🔄 Retractable Roof'},
-        'Minute Maid Park':      {'type': 'retractable', 'description': '🔄 Retractable Roof'},
-        'T-Mobile Park':         {'type': 'retractable', 'description': '🔄 Retractable Roof'},
-        'American Family Field': {'type': 'retractable', 'description': '🔄 Retractable Roof'}
-    }
-    if venue_name in fixed_domes:
-        return fixed_domes[venue_name]
-    if venue_name in retractable_roofs:
-        return retractable_roofs[venue_name]
-    return {'type': 'open_air', 'description': '☀️ Open Air'}
 
 
 def get_mlb_game_status(game_date):

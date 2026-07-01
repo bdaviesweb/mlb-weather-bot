@@ -5,11 +5,18 @@ on:
     - cron: '*/10 * * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: sports-weather-state-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   monitor-status:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
@@ -21,7 +28,7 @@ jobs:
           cat game_states.json 2>/dev/null || echo "(no state file yet)"
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
@@ -63,18 +70,5 @@ jobs:
           git add STATUS.md || true
           git diff --staged --quiet || \
             git commit -m "📊 Update game states and analytics [skip ci]" || true
-          git pull --rebase origin main || true
-          git push || echo "⚠️ WARNING: Push failed — game state may not persist to next run"
-
-      - name: Commit analytics for skipped run
-        if: steps.check_time.outputs.should_run == 'false'
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add analytics.json || true
-          git add ANALYTICS.md || true
-          git add STATUS.md || true
-          git diff --staged --quiet || \
-            git commit -m "📊 Update analytics (skipped run) [skip ci]" || true
-          git pull --rebase origin main || true
-          git push || echo "⚠️ WARNING: Push failed — skipped run analytics may not persist"
+          git pull --rebase origin main || git rebase --abort || true
+          git push --force-with-lease || echo "⚠️ WARNING: Push failed — game state may not persist to next run"

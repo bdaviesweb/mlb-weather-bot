@@ -7,7 +7,7 @@
 ## 🟢 CURRENT PERFORMANCE
 
 **Status:** Fully Operational
-**Last Updated:** July 01, 2026 09:20 AM PT
+**Last Updated:** July 01, 2026 09:23 AM PT
 **Season:** Regular Season 2026
 
 ---
@@ -43,11 +43,12 @@
 | Metric | Count | Percentage |
 |--------|-------|------------|
 | Total Workflow Runs | 12452 | - |
-| ✅ Successful | 6835 | 54.9% |
-| ❌ Failed | 0 | 0.0% |
-| ⏭️ Skipped (outside game hours) | 5617 | 45.1% |
+| Attempted Runs | 6835 | - |
+| ✅ Successful | 6835 | 100.0% of attempted |
+| ❌ Failed | 0 | 0.0% of attempted |
+| ⏭️ Skipped (outside game hours) | 5617 | 45.1% of total |
 
-**System Uptime:** 54.9%
+**Operational Uptime:** 100.0%
 
 ---
 
@@ -85,4 +86,4 @@ workflow run.
 
 ---
 
-_Last generated: July 01, 2026 09:20 AM PT_
+_Last generated: July 01, 2026 09:23 AM PT_
