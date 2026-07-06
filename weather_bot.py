@@ -207,6 +207,10 @@ def build_slack_message(games_weather):
 
 
 def post_to_slack(message):
+    if not SLACK_WEBHOOK:
+        print("⚠️  SLACK_WEBHOOK_URL is not configured - skipping Slack post")
+        return False
+
     response = requests.post(
         SLACK_WEBHOOK,
         json=message,

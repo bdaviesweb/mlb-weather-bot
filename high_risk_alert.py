@@ -215,6 +215,10 @@ def build_high_risk_message(high_risk_games):
 
 
 def post_to_slack(message):
+    if not SLACK_WEBHOOK:
+        print("⚠️  HIGH_RISK_WEBHOOK_URL is not configured - skipping Slack post")
+        return False
+
     response = requests.post(
         SLACK_WEBHOOK,
         json=message,
