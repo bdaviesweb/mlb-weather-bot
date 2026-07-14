@@ -1,7 +1,7 @@
 {
   "metadata": {
     "created": "2026-03-25T05:50:00-07:00",
-    "last_updated": "2026-07-13T21:09:04.394066-07:00",
+    "last_updated": "2026-07-14T07:54:52.523680-07:00",
     "season": "Regular Season 2026"
   },
   "totals": {
@@ -20,9 +20,9 @@
     "false_negatives": 38
   },
   "workflow_runs": {
-    "total_runs": 12531,
+    "total_runs": 12532,
     "successful_runs": 6898,
-    "failed_runs": 14,
+    "failed_runs": 15,
     "skipped_runs": 5619
   },
   "daily_activity": {
