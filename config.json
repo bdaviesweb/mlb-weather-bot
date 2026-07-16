@@ -1,12 +1,12 @@
 {
   "games": [
     {
-      "date": "2026-07-14",
-      "time": "17:00",
-      "opponent": "American League All-Stars vs National League All-Stars",
+      "date": "2026-07-16",
+      "time": "16:10",
+      "opponent": "New York Mets vs Philadelphia Phillies",
       "location": "Philadelphia,US",
       "venue": "Citizens Bank Park",
-      "game_pk": 823443
+      "game_pk": 823440
     }
   ]
 }
