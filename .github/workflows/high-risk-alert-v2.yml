@@ -38,14 +38,14 @@ jobs:
           if [ -f last_high_risk_run.txt ]; then
             LAST_RUN=$(cat last_high_risk_run.txt)
             if [ "$LAST_RUN" = "$TODAY" ]; then
-              echo "already_ran=true" >> $GITHUB_OUTPUT
+              echo "already_ran=true" >> "$GITHUB_OUTPUT"
               echo "⏭️  Already posted high-risk alert today - skipping"
             else
-              echo "already_ran=false" >> $GITHUB_OUTPUT
+              echo "already_ran=false" >> "$GITHUB_OUTPUT"
               echo "✅ First run today - proceeding"
             fi
           else
-            echo "already_ran=false" >> $GITHUB_OUTPUT
+            echo "already_ran=false" >> "$GITHUB_OUTPUT"
             echo "✅ First run - proceeding"
           fi
 
@@ -82,8 +82,9 @@ jobs:
           git add STATUS.md || true
           git add high_risk_predictions.json || true
           git add config.json || true
-          git diff --quiet && git diff --staged --quiet || \
+          if ! git diff --quiet || ! git diff --staged --quiet; then
             git commit -m "📊 Update analytics and tracking [skip ci]"
+          fi
           git pull --rebase origin main || git rebase --abort || true
           git push --force-with-lease || echo "⚠️ WARNING: Push failed — dedup file may not persist"
 

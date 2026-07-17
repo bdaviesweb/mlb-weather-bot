@@ -27,6 +27,9 @@ class WorkflowNoiseTests(unittest.TestCase):
         self.assertIn("pull_request", text)
         self.assertIn("workflow_dispatch", text)
 
+    def test_no_nested_workflow_directory(self):
+        self.assertFalse(Path(".github/workflows/.github").exists())
+
     def test_python_ci_workflow_runs_unit_tests_and_compile_check(self):
         workflow = Path(".github/workflows/python-ci.yml")
         text = workflow.read_text()
