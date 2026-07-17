@@ -44,6 +44,7 @@ jobs:
           high_risk_alert.py
           mlb_game_status_monitor.py
           analytics.py
+          notifications.py
           update_schedule.py
           test_venues.py
           venues.py
@@ -54,3 +55,4 @@ jobs:
           test_workflows.py
           test_slack_webhooks.py
           test_update_schedule.py
+          test_notifications.py

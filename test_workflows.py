@@ -42,6 +42,7 @@ class WorkflowNoiseTests(unittest.TestCase):
         self.assertIn("python -m py_compile", text)
         self.assertIn("test_slack_webhooks.py", text)
         self.assertIn("test_update_schedule.py", text)
+        self.assertIn("test_notifications.py", text)
 
     def test_daily_weather_marker_only_runs_after_bot_success(self):
         text = Path(".github/workflows/weather-update-v2.yml").read_text()

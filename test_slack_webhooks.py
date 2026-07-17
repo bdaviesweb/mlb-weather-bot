@@ -9,13 +9,15 @@ import weather_bot
 class SlackWebhookConfigTests(unittest.TestCase):
     def test_daily_weather_post_skips_when_webhook_missing(self):
         with patch.object(weather_bot, "SLACK_WEBHOOK", ""), \
-                patch.object(weather_bot.requests, "post") as post:
+                patch.object(weather_bot.notifications, "post_to_github_issue", return_value=False), \
+                patch.object(weather_bot.notifications.requests, "post") as post:
             self.assertFalse(weather_bot.post_to_slack({"text": "test"}))
             post.assert_not_called()
 
     def test_high_risk_post_skips_when_webhook_missing(self):
         with patch.object(high_risk_alert, "SLACK_WEBHOOK", ""), \
-                patch.object(high_risk_alert.requests, "post") as post:
+                patch.object(high_risk_alert.notifications, "post_to_github_issue", return_value=False), \
+                patch.object(high_risk_alert.notifications.requests, "post") as post:
             self.assertFalse(high_risk_alert.post_to_slack({"text": "test"}))
             post.assert_not_called()
 
@@ -38,7 +40,8 @@ class SlackWebhookConfigTests(unittest.TestCase):
         }
 
         with patch.object(mlb_game_status_monitor, "SLACK_WEBHOOK", ""), \
-                patch.object(mlb_game_status_monitor.requests, "post") as post:
+                patch.object(mlb_game_status_monitor.notifications, "post_to_github_issue", return_value=False), \
+                patch.object(mlb_game_status_monitor.notifications.requests, "post") as post:
             self.assertFalse(
                 mlb_game_status_monitor.send_delay_alert(
                     game_status,

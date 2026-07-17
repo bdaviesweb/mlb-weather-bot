@@ -13,6 +13,7 @@ import requests
 from datetime import datetime
 import pytz
 from analytics import log_alert, log_workflow_run, log_prediction_accuracy
+import notifications
 from venues import get_venue_roof_type
 
 SLACK_WEBHOOK = os.environ.get('HIGH_RISK_WEBHOOK_URL')
@@ -271,10 +272,6 @@ def format_score_inning(game_status):
 
 
 def send_delay_alert(game_status, alert_type):
-    if not SLACK_WEBHOOK:
-        print("⚠️  HIGH_RISK_WEBHOOK_URL is not configured - skipping status alert")
-        return False
-
     pacific_tz = pytz.timezone('America/Los_Angeles')
     now = datetime.now(pacific_tz)
 
@@ -372,9 +369,15 @@ def send_delay_alert(game_status, alert_type):
         ]
     })
 
-    response = requests.post(SLACK_WEBHOOK, json=message, timeout=10)
+    delivered = notifications.notify(
+        f"MLB Game Status Alert: {game_status['matchup']}",
+        message,
+        webhook_url=SLACK_WEBHOOK,
+        webhook_name="HIGH_RISK_WEBHOOK_URL",
+        labels=["weather-alert", "game-status"],
+    )
 
-    if response.status_code == 200:
+    if delivered:
         print(f"✅ {alert_type} alert sent for {game_status['matchup']} at {venue_name}")
         alert_map = {
             STATE_DELAYED:   'delay',
@@ -386,7 +389,7 @@ def send_delay_alert(game_status, alert_type):
             log_alert(alert_map[alert_type])
         return True
     else:
-        print(f"❌ Failed to send alert: {response.status_code}")
+        print("❌ Failed to send alert")
         return False
 
 

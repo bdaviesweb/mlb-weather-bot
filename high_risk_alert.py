@@ -21,6 +21,7 @@ import requests
 import pytz
 from datetime import datetime, timedelta
 from analytics import log_alert, log_workflow_run, log_prediction_accuracy
+import notifications
 from venues import get_venue_name_from_location, get_venue_roof_info
 from weather import get_weather_forecast, is_high_risk
 
@@ -215,18 +216,15 @@ def build_high_risk_message(high_risk_games):
 
 
 def post_to_slack(message):
-    if not SLACK_WEBHOOK:
-        print("⚠️  HIGH_RISK_WEBHOOK_URL is not configured - skipping Slack post")
-        return False
-
-    response = requests.post(
-        SLACK_WEBHOOK,
-        json=message,
-        headers={'Content-Type': 'application/json'}
+    return bool(
+        notifications.notify(
+            "High Risk Weather Alerts",
+            message,
+            webhook_url=SLACK_WEBHOOK,
+            webhook_name="HIGH_RISK_WEBHOOK_URL",
+            labels=["weather-alert", "high-risk"],
+        )
     )
-    if response.status_code != 200:
-        raise ValueError(f"Slack request failed: {response.status_code}, {response.text}")
-    return response.status_code == 200
 
 
 def get_game_venue_name(game):

@@ -19,6 +19,7 @@ import requests
 import pytz
 from datetime import datetime, timedelta
 from analytics import log_alert, log_games_monitored, log_workflow_run
+import notifications
 from venues import get_venue_name_from_location, get_venue_roof_info
 from weather import calculate_game_impact, get_weather_forecast
 
@@ -207,18 +208,15 @@ def build_slack_message(games_weather):
 
 
 def post_to_slack(message):
-    if not SLACK_WEBHOOK:
-        print("⚠️  SLACK_WEBHOOK_URL is not configured - skipping Slack post")
-        return False
-
-    response = requests.post(
-        SLACK_WEBHOOK,
-        json=message,
-        headers={'Content-Type': 'application/json'}
+    return bool(
+        notifications.notify(
+            "Daily Weather Report",
+            message,
+            webhook_url=SLACK_WEBHOOK,
+            webhook_name="SLACK_WEBHOOK_URL",
+            labels=["weather-alert", "daily-report"],
+        )
     )
-    if response.status_code != 200:
-        raise ValueError(f"Slack request failed: {response.status_code}, {response.text}")
-    return response.status_code == 200
 
 
 def get_game_venue_name(game):
