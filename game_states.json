@@ -11,10 +11,6 @@
     "state": "PREVIEW",
     "matchup": "Los Angeles Dodgers vs New York Yankees"
   },
-  "824414": {
-    "state": "PREVIEW",
-    "matchup": "Pittsburgh Pirates vs Cleveland Guardians"
-  },
   "824901": {
     "state": "PREVIEW",
     "matchup": "Texas Rangers vs Atlanta Braves"
@@ -58,5 +54,9 @@
   "823115": {
     "state": "PREVIEW",
     "matchup": "San Francisco Giants vs Seattle Mariners"
+  },
+  "824414": {
+    "state": "POSTPONED",
+    "matchup": "Pittsburgh Pirates vs Cleveland Guardians"
   }
 }
