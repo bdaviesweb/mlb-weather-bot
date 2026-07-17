@@ -28,6 +28,8 @@ __pycache__/
 
 # Distribution / packaging
 build/
+!build/
+!build/sites-vite-plugin.ts
 develop-eggs/
 dist/
 downloads/
@@ -128,6 +130,12 @@ tmp/
 test_output/
 sandbox/
 scratch/
+
+# Web dashboard runtime/dependency output
+node_modules/
+.vinext/
+.wrangler/
+.next/
 
 # Generated data files (keep config.json and game_states.json tracked)
 # If you want to ignore generated files, add them here
