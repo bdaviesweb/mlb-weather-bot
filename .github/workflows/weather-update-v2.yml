@@ -55,13 +55,14 @@ jobs:
         run: python update_schedule.py
 
       - name: Run weather bot
+        id: run_weather_bot
         if: steps.check_already_ran.outputs.already_ran == 'false'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: python weather_bot.py
 
       - name: Mark as ran today
-        if: steps.check_already_ran.outputs.already_ran == 'false'
+        if: steps.check_already_ran.outputs.already_ran == 'false' && steps.run_weather_bot.outcome == 'success'
         run: |
           TODAY=$(TZ='America/Los_Angeles' date +%Y-%m-%d)
           echo "$TODAY" > last_weather_run.txt
@@ -73,13 +74,13 @@ jobs:
           git push || echo "⚠️ WARNING: Could not save run marker"
 
       - name: Keep workflow active (prevent cache staleness)
-        if: steps.check_already_ran.outputs.already_ran == 'false'
+        if: steps.check_already_ran.outputs.already_ran == 'false' && steps.run_weather_bot.outcome == 'success'
         run: |
           mkdir -p .github
           echo "Last run: $(TZ='America/Los_Angeles' date '+%Y-%m-%d %H:%M:%S %Z')" > .github/.weather-keep-alive
 
       - name: Commit run tracking, analytics, and keep-alive
-        if: steps.check_already_ran.outputs.already_ran == 'false'
+        if: steps.check_already_ran.outputs.already_ran == 'false' && steps.run_weather_bot.outcome == 'success'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"

@@ -1,6 +1,7 @@
 import unittest
 
 from venues import (
+    RETRACTABLE_ROOFS,
     STADIUM_COORDINATES,
     get_venue_location,
     get_venue_name_from_location,
@@ -16,6 +17,7 @@ class SharedVenueTests(unittest.TestCase):
         self.assertEqual(get_venue_location("Loan Depot Park"), "Miami,US")
         self.assertEqual(get_venue_location("UNIQLO Field at Dodger Stadium"), "Los Angeles,US")
         self.assertEqual(get_venue_location("Sutter Health Park"), "Oakland,US")
+        self.assertEqual(get_venue_location("Daikin Park"), "Houston,US")
 
     def test_location_to_venue_name_matches_weather_alert_expectations(self):
         self.assertEqual(get_venue_name_from_location("Chicago,US"), "Guaranteed Rate Field")
@@ -33,9 +35,17 @@ class SharedVenueTests(unittest.TestCase):
             {"has_roof": True, "type": "retractable", "should_alert": None},
         )
         self.assertEqual(
+            get_venue_roof_info("Daikin Park"),
+            {"has_roof": True, "type": "retractable", "should_alert": None},
+        )
+        self.assertEqual(
             get_venue_roof_type("Chase Field"),
             {"type": "retractable", "description": "🔄 Retractable Roof"},
         )
+
+    def test_retractable_roof_aliases_include_current_names(self):
+        self.assertIn("Daikin Park", RETRACTABLE_ROOFS)
+        self.assertIn("LoanDepot Park", RETRACTABLE_ROOFS)
 
     def test_test_venue_coordinates_cover_stadium_coordinates(self):
         test_venue_coords = {

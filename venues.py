@@ -161,8 +161,12 @@ FIXED_DOMES = {
 RETRACTABLE_ROOFS = {
     'Chase Field': {'has_roof': True, 'type': 'retractable'},
     'loanDepot park': {'has_roof': True, 'type': 'retractable'},
+    'LoanDepot Park': {'has_roof': True, 'type': 'retractable'},
+    'loanDepot Park': {'has_roof': True, 'type': 'retractable'},
+    'Loan Depot Park': {'has_roof': True, 'type': 'retractable'},
     'Globe Life Field': {'has_roof': True, 'type': 'retractable'},
     'Minute Maid Park': {'has_roof': True, 'type': 'retractable'},
+    'Daikin Park': {'has_roof': True, 'type': 'retractable'},
     'T-Mobile Park': {'has_roof': True, 'type': 'retractable'},
     'American Family Field': {'has_roof': True, 'type': 'retractable'},
 }

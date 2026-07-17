@@ -271,6 +271,10 @@ def format_score_inning(game_status):
 
 
 def send_delay_alert(game_status, alert_type):
+    if not SLACK_WEBHOOK:
+        print("⚠️  HIGH_RISK_WEBHOOK_URL is not configured - skipping status alert")
+        return False
+
     pacific_tz = pytz.timezone('America/Los_Angeles')
     now = datetime.now(pacific_tz)
 
@@ -380,8 +384,10 @@ def send_delay_alert(game_status, alert_type):
         }
         if alert_type in alert_map:
             log_alert(alert_map[alert_type])
+        return True
     else:
         print(f"❌ Failed to send alert: {response.status_code}")
+        return False
 
 
 def monitor_games():

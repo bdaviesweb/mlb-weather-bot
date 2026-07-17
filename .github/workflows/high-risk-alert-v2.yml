@@ -54,25 +54,26 @@ jobs:
         run: python update_schedule.py
 
       - name: Send High-risk alerts
+        id: send_high_risk_alert
         if: steps.check_already_ran.outputs.already_ran == 'false'
         env:
           HIGH_RISK_WEBHOOK_URL: ${{ secrets.HIGH_RISK_WEBHOOK_URL }}
         run: python high_risk_alert.py
 
       - name: Mark as ran today
-        if: steps.check_already_ran.outputs.already_ran == 'false'
+        if: steps.check_already_ran.outputs.already_ran == 'false' && steps.send_high_risk_alert.outcome == 'success'
         run: |
           TODAY=$(TZ='America/Los_Angeles' date +%Y-%m-%d)
           echo "$TODAY" > last_high_risk_run.txt
 
       - name: Keep workflow active
-        if: steps.check_already_ran.outputs.already_ran == 'false'
+        if: steps.check_already_ran.outputs.already_ran == 'false' && steps.send_high_risk_alert.outcome == 'success'
         run: |
           mkdir -p .github
           echo "Last run: $(TZ='America/Los_Angeles' date '+%Y-%m-%d %H:%M:%S %Z')" > .github/.highrisk-keep-alive
 
       - name: Commit tracking, analytics, and keep-alive
-        if: steps.check_already_ran.outputs.already_ran == 'false'
+        if: steps.check_already_ran.outputs.already_ran == 'false' && steps.send_high_risk_alert.outcome == 'success'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"

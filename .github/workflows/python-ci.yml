@@ -52,3 +52,5 @@ jobs:
           test_venues_shared.py
           test_weather.py
           test_workflows.py
+          test_slack_webhooks.py
+          test_update_schedule.py

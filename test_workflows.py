@@ -37,6 +37,20 @@ class WorkflowNoiseTests(unittest.TestCase):
         self.assertIn("pip install -r requirements.txt", text)
         self.assertIn("python -m unittest discover -p 'test_*.py'", text)
         self.assertIn("python -m py_compile", text)
+        self.assertIn("test_slack_webhooks.py", text)
+        self.assertIn("test_update_schedule.py", text)
+
+    def test_daily_weather_marker_only_runs_after_bot_success(self):
+        text = Path(".github/workflows/weather-update-v2.yml").read_text()
+
+        self.assertIn("id: run_weather_bot", text)
+        self.assertIn("steps.run_weather_bot.outcome == 'success'", text)
+
+    def test_high_risk_marker_only_runs_after_alert_success(self):
+        text = Path(".github/workflows/high-risk-alert-v2.yml").read_text()
+
+        self.assertIn("id: send_high_risk_alert", text)
+        self.assertIn("steps.send_high_risk_alert.outcome == 'success'", text)
 
 
 if __name__ == "__main__":

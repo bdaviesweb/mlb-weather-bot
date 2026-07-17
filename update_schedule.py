@@ -20,13 +20,17 @@ from datetime import datetime, timedelta
 import pytz
 from venues import get_venue_location
 
-def get_mlb_schedule(days_ahead=1):
-    """Fetch MLB schedule for next X days using MLB Stats API"""
+def get_mlb_schedule(days_ahead=2, now=None):
+    """Fetch MLB games starting in the next 24 hours."""
     games = []
     pacific_tz = pytz.timezone('America/Los_Angeles')
+    now_pacific = now or datetime.now(pacific_tz)
+    if now_pacific.tzinfo is None:
+        now_pacific = pacific_tz.localize(now_pacific)
+    window_end = now_pacific + timedelta(hours=24)
 
     for day_offset in range(days_ahead):
-        date = datetime.now() + timedelta(days=day_offset)
+        date = now_pacific + timedelta(days=day_offset)
         date_str = date.strftime('%Y-%m-%d')
 
         url = f"https://statsapi.mlb.com/api/v1/schedule?sportId=1&date={date_str}"
@@ -50,6 +54,9 @@ def get_mlb_schedule(days_ahead=1):
                         game_dt_utc     = datetime.strptime(game_datetime_utc, '%Y-%m-%dT%H:%M:%SZ')
                         game_dt_utc     = pytz.utc.localize(game_dt_utc)
                         game_dt_pacific = game_dt_utc.astimezone(pacific_tz)
+
+                        if not (now_pacific <= game_dt_pacific <= window_end):
+                            continue
 
                         games.append({
                             'date':     game_dt_pacific.strftime('%Y-%m-%d'),
@@ -77,7 +84,7 @@ def update_config_file(games):
 
 def main():
     print("🔄 Fetching MLB schedule...")
-    games = get_mlb_schedule(days_ahead=1)
+    games = get_mlb_schedule(days_ahead=2)
 
     if games:
         print(f"📅 Found {len(games)} games in next 24 hours")

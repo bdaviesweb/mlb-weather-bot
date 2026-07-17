@@ -221,6 +221,10 @@ def post_to_slack(message):
     return response.status_code == 200
 
 
+def get_game_venue_name(game):
+    return game.get('venue') or get_venue_name_from_location(game['location'])
+
+
 def main():
     try:
         games = load_games()
@@ -238,7 +242,7 @@ def main():
 
         for game in games:
             try:
-                venue_name = get_venue_name_from_location(game['location'])
+                venue_name = get_game_venue_name(game)
                 roof_info  = get_venue_roof_info(venue_name)
 
                 if roof_info['type'] == 'fixed':
@@ -333,6 +337,7 @@ def main():
             else:
                 print("❌ Failed to post to Slack")
                 log_workflow_run('failed')
+                raise RuntimeError("Slack post failed")
         else:
             print("⚠️  No games with successful weather data - skipping report")
             log_workflow_run('skipped')
