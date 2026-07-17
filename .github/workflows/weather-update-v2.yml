@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: sports-weather-state-${{ github.ref }}
@@ -59,6 +60,7 @@ jobs:
         if: steps.check_already_ran.outputs.already_ran == 'false'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python weather_bot.py
 
       - name: Mark as ran today

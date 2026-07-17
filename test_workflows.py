@@ -56,6 +56,17 @@ class WorkflowNoiseTests(unittest.TestCase):
         self.assertIn("id: send_high_risk_alert", text)
         self.assertIn("steps.send_high_risk_alert.outcome == 'success'", text)
 
+    def test_alert_workflows_grant_issue_fallback_permissions(self):
+        for workflow in [
+            Path(".github/workflows/weather-update-v2.yml"),
+            Path(".github/workflows/high-risk-alert-v2.yml"),
+            Path(".github/workflows/mlb-status-monitor-v2.yml"),
+        ]:
+            text = workflow.read_text()
+            with self.subTest(workflow=str(workflow)):
+                self.assertIn("issues: write", text)
+                self.assertIn("GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}", text)
+
 
 if __name__ == "__main__":
     unittest.main()

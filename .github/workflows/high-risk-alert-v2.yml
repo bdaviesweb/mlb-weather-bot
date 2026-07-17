@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: sports-weather-state-${{ github.ref }}
@@ -58,6 +59,7 @@ jobs:
         if: steps.check_already_ran.outputs.already_ran == 'false'
         env:
           HIGH_RISK_WEBHOOK_URL: ${{ secrets.HIGH_RISK_WEBHOOK_URL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python high_risk_alert.py
 
       - name: Mark as ran today

@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: sports-weather-state-${{ github.ref }}
@@ -51,6 +52,7 @@ jobs:
         if: steps.check_time.outputs.should_run == 'true'
         env:
           HIGH_RISK_WEBHOOK_URL: ${{ secrets.HIGH_RISK_WEBHOOK_URL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python mlb_game_status_monitor.py
 
       - name: Log skipped run outside game hours
