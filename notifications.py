@@ -89,44 +89,61 @@ def post_to_github_issue(title, message, labels=None):
         body_file.write(body)
         body_path = body_file.name
 
-    if issue_number:
-        command = [
-            "gh",
-            "issue",
-            "comment",
-            issue_number,
-            "--repo",
-            repo,
-            "--body-file",
-            body_path,
-        ]
-    else:
-        command = [
-            "gh",
-            "issue",
-            "create",
-            "--repo",
-            repo,
-            "--title",
-            title,
-            "--body-file",
-            body_path,
-            *label_args,
-        ]
+    try:
+        command_without_labels = None
+        if issue_number:
+            command = [
+                "gh",
+                "issue",
+                "comment",
+                issue_number,
+                "--repo",
+                repo,
+                "--body-file",
+                body_path,
+            ]
+        else:
+            command_without_labels = [
+                "gh",
+                "issue",
+                "create",
+                "--repo",
+                repo,
+                "--title",
+                title,
+                "--body-file",
+                body_path,
+            ]
+            command = [*command_without_labels, *label_args]
 
-    result = subprocess.run(
-        command,
-        check=False,
-        capture_output=True,
-        text=True,
-        env={**os.environ, "GH_TOKEN": token},
-    )
-    if result.returncode != 0:
-        print(f"❌ GitHub issue notification failed: {result.stderr.strip()}")
-        return False
+        result = subprocess.run(
+            command,
+            check=False,
+            capture_output=True,
+            text=True,
+            env={**os.environ, "GH_TOKEN": token},
+        )
+        if result.returncode != 0 and command_without_labels and label_args and "label" in result.stderr.lower():
+            print("⚠️  GitHub labels are missing - retrying issue notification without labels")
+            result = subprocess.run(
+                command_without_labels,
+                check=False,
+                capture_output=True,
+                text=True,
+                env={**os.environ, "GH_TOKEN": token},
+            )
 
-    print("✅ GitHub issue notification recorded")
-    return True
+        if result.returncode != 0:
+            print(f"❌ GitHub issue notification failed: {result.stderr.strip()}")
+            return False
+
+        print("✅ GitHub issue notification recorded")
+        return True
+    finally:
+        try:
+            os.unlink(body_path)
+        except OSError:
+            pass
 
 
 def notify(title, message, webhook_url=None, webhook_name="SLACK_WEBHOOK_URL", labels=None):

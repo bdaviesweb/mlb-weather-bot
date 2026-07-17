@@ -52,6 +52,32 @@ class NotificationTests(unittest.TestCase):
         self.assertIn("comment", subprocess.run.call_args_list[1].args[0])
         self.assertIn("42", subprocess.run.call_args_list[1].args[0])
 
+    def test_github_issue_retries_without_missing_labels(self):
+        env = {
+            "GITHUB_REPOSITORY": "bdaviesweb/mlb-weather-bot",
+            "GITHUB_TOKEN": "token",
+        }
+        list_result = MagicMock(returncode=0, stdout="", stderr="")
+        create_with_labels = MagicMock(returncode=1, stdout="", stderr="could not add label")
+        create_without_labels = MagicMock(returncode=0, stdout="https://github.com/issue/1", stderr="")
+
+        with patch.dict(os.environ, env, clear=True), \
+                patch.object(notifications, "subprocess") as subprocess:
+            subprocess.run.side_effect = [list_result, create_with_labels, create_without_labels]
+
+            self.assertTrue(
+                notifications.post_to_github_issue(
+                    "Weather report",
+                    {"text": "Daily weather", "blocks": []},
+                    labels=["weather-alert", "high-risk"],
+                )
+            )
+
+        first_create = subprocess.run.call_args_list[1].args[0]
+        retry_create = subprocess.run.call_args_list[2].args[0]
+        self.assertIn("--label", first_create)
+        self.assertNotIn("--label", retry_create)
+
 
 if __name__ == "__main__":
     unittest.main()
