@@ -36,7 +36,7 @@
     "matchup": "St. Louis Cardinals vs Arizona Diamondbacks"
   },
   "824738": {
-    "state": "DELAYED",
+    "state": "LIVE",
     "matchup": "Tampa Bay Rays vs Boston Red Sox"
   },
   "824899": {
@@ -51,10 +51,6 @@
     "state": "PREVIEW",
     "matchup": "San Francisco Giants vs Seattle Mariners"
   },
-  "823523": {
-    "state": "PREVIEW",
-    "matchup": "Los Angeles Dodgers vs New York Yankees"
-  },
   "824979": {
     "state": "PREVIEW",
     "matchup": "Washington Nationals vs Athletics"
@@ -62,5 +58,9 @@
   "824008": {
     "state": "PREVIEW",
     "matchup": "Detroit Tigers vs Los Angeles Angels"
+  },
+  "823523": {
+    "state": "POSTPONED",
+    "matchup": "Los Angeles Dodgers vs New York Yankees"
   }
 }
