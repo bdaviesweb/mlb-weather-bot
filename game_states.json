@@ -11,10 +11,6 @@
     "state": "PREVIEW",
     "matchup": "Tampa Bay Rays vs Toronto Blue Jays"
   },
-  "824735": {
-    "state": "PREVIEW",
-    "matchup": "Baltimore Orioles vs Boston Red Sox"
-  },
   "824895": {
     "state": "PREVIEW",
     "matchup": "San Diego Padres vs Atlanta Braves"
@@ -58,5 +54,9 @@
   "823519": {
     "state": "POSTPONED",
     "matchup": "Pittsburgh Pirates vs New York Yankees"
+  },
+  "824735": {
+    "state": "POSTPONED",
+    "matchup": "Baltimore Orioles vs Boston Red Sox"
   }
 }
