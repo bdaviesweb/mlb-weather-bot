@@ -1,124 +1,124 @@
 {
   "games": [
     {
-      "date": "2026-07-20",
+      "date": "2026-07-21",
       "time": "15:40",
       "opponent": "Minnesota Twins vs Cleveland Guardians",
       "location": "Cleveland,US",
       "venue": "Progressive Field",
-      "game_pk": 824410
+      "game_pk": 824409
     },
     {
-      "date": "2026-07-20",
+      "date": "2026-07-21",
+      "time": "15:40",
+      "opponent": "Los Angeles Dodgers vs Philadelphia Phillies",
+      "location": "Philadelphia,US",
+      "venue": "Citizens Bank Park",
+      "game_pk": 823437
+    },
+    {
+      "date": "2026-07-21",
       "time": "16:05",
       "opponent": "Pittsburgh Pirates vs New York Yankees",
       "location": "New York,US",
       "venue": "Yankee Stadium",
-      "game_pk": 823522
+      "game_pk": 823519
     },
     {
-      "date": "2026-07-20",
+      "date": "2026-07-21",
       "time": "16:07",
       "opponent": "Tampa Bay Rays vs Toronto Blue Jays",
       "location": "Toronto,CA",
       "venue": "Rogers Centre",
-      "game_pk": 822788
+      "game_pk": 822787
     },
     {
-      "date": "2026-07-20",
+      "date": "2026-07-21",
       "time": "16:10",
       "opponent": "Baltimore Orioles vs Boston Red Sox",
       "location": "Boston,US",
       "venue": "Fenway Park",
-      "game_pk": 824736
+      "game_pk": 824735
     },
     {
-      "date": "2026-07-20",
-      "time": "16:10",
-      "opponent": "Los Angeles Dodgers vs Philadelphia Phillies",
-      "location": "Philadelphia,US",
-      "venue": "Citizens Bank Park",
-      "game_pk": 823436
-    },
-    {
-      "date": "2026-07-20",
+      "date": "2026-07-21",
       "time": "16:15",
       "opponent": "San Diego Padres vs Atlanta Braves",
       "location": "Atlanta,US",
       "venue": "Truist Park",
-      "game_pk": 824898
+      "game_pk": 824895
     },
     {
-      "date": "2026-07-20",
+      "date": "2026-07-21",
       "time": "16:40",
       "opponent": "San Francisco Giants vs Kansas City Royals",
       "location": "Kansas City,US",
       "venue": "Kauffman Stadium",
-      "game_pk": 824087
+      "game_pk": 824085
     },
     {
-      "date": "2026-07-20",
+      "date": "2026-07-21",
       "time": "16:40",
       "opponent": "New York Mets vs Milwaukee Brewers",
       "location": "Milwaukee,US",
       "venue": "American Family Field",
-      "game_pk": 823762
+      "game_pk": 823760
     },
     {
-      "date": "2026-07-20",
+      "date": "2026-07-21",
       "time": "17:05",
       "opponent": "Detroit Tigers vs Chicago Cubs",
       "location": "Chicago,US",
       "venue": "Wrigley Field",
-      "game_pk": 824654
+      "game_pk": 824652
     },
     {
-      "date": "2026-07-20",
+      "date": "2026-07-21",
       "time": "17:05",
       "opponent": "Chicago White Sox vs Texas Rangers",
       "location": "Arlington,US",
       "venue": "Globe Life Field",
-      "game_pk": 822874
+      "game_pk": 822871
     },
     {
-      "date": "2026-07-20",
+      "date": "2026-07-21",
       "time": "17:10",
       "opponent": "Miami Marlins vs Houston Astros",
       "location": "Houston,US",
       "venue": "Daikin Park",
-      "game_pk": 824167
+      "game_pk": 824165
     },
     {
-      "date": "2026-07-20",
+      "date": "2026-07-21",
       "time": "17:40",
       "opponent": "Washington Nationals vs Colorado Rockies",
       "location": "Denver,US",
       "venue": "Coors Field",
-      "game_pk": 824328
+      "game_pk": 824329
     },
     {
-      "date": "2026-07-20",
+      "date": "2026-07-21",
+      "time": "18:38",
+      "opponent": "St. Louis Cardinals vs Los Angeles Angels",
+      "location": "Anaheim,US",
+      "venue": "Angel Stadium",
+      "game_pk": 824005
+    },
+    {
+      "date": "2026-07-21",
       "time": "18:40",
       "opponent": "Athletics vs Arizona Diamondbacks",
       "location": "Phoenix,US",
       "venue": "Chase Field",
-      "game_pk": 825058
+      "game_pk": 825056
     },
     {
-      "date": "2026-07-20",
+      "date": "2026-07-21",
       "time": "18:40",
       "opponent": "Cincinnati Reds vs Seattle Mariners",
       "location": "Seattle,US",
       "venue": "T-Mobile Park",
-      "game_pk": 823112
-    },
-    {
-      "date": "2026-07-20",
-      "time": "19:10",
-      "opponent": "St. Louis Cardinals vs Los Angeles Angels",
-      "location": "Anaheim,US",
-      "venue": "Angel Stadium",
-      "game_pk": 824006
+      "game_pk": 823114
     }
   ]
 }
