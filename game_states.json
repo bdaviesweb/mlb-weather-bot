@@ -7,10 +7,6 @@
     "state": "PREVIEW",
     "matchup": "Los Angeles Dodgers vs Philadelphia Phillies"
   },
-  "823519": {
-    "state": "PREVIEW",
-    "matchup": "Pittsburgh Pirates vs New York Yankees"
-  },
   "822787": {
     "state": "PREVIEW",
     "matchup": "Tampa Bay Rays vs Toronto Blue Jays"
@@ -58,5 +54,9 @@
   "823114": {
     "state": "PREVIEW",
     "matchup": "Cincinnati Reds vs Seattle Mariners"
+  },
+  "823519": {
+    "state": "POSTPONED",
+    "matchup": "Pittsburgh Pirates vs New York Yankees"
   }
 }
