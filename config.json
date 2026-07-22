@@ -2,14 +2,6 @@
   "games": [
     {
       "date": "2026-07-22",
-      "time": "10:05",
-      "opponent": "Pittsburgh Pirates vs New York Yankees",
-      "location": "New York,US",
-      "venue": "Yankee Stadium",
-      "game_pk": 823518
-    },
-    {
-      "date": "2026-07-22",
       "time": "16:05",
       "opponent": "Pittsburgh Pirates vs New York Yankees",
       "location": "New York,US",
@@ -135,6 +127,14 @@
       "location": "Houston,US",
       "venue": "Daikin Park",
       "game_pk": 824166
+    },
+    {
+      "date": "2026-07-23",
+      "time": "09:15",
+      "opponent": "San Diego Padres vs Atlanta Braves",
+      "location": "Atlanta,US",
+      "venue": "Truist Park",
+      "game_pk": 824893
     }
   ]
 }
