@@ -119,6 +119,14 @@
       "location": "San Francisco,US",
       "venue": "Oracle Park",
       "game_pk": 823196
+    },
+    {
+      "date": "2026-07-25",
+      "time": "10:10",
+      "opponent": "Kansas City Royals vs Detroit Tigers",
+      "location": "Detroit,US",
+      "venue": "Comerica Park",
+      "game_pk": 824244
     }
   ]
 }
