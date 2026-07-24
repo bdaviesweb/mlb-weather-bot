@@ -1,22 +1,62 @@
 {
-  "824893": {
-    "state": "LIVE",
-    "matchup": "San Diego Padres vs Atlanta Braves"
-  },
-  "824406": {
-    "state": "LIVE",
-    "matchup": "Minnesota Twins vs Cleveland Guardians"
-  },
-  "822785": {
+  "823759": {
     "state": "PREVIEW",
-    "matchup": "Tampa Bay Rays vs Toronto Blue Jays"
+    "matchup": "Colorado Rockies vs Milwaukee Brewers"
   },
-  "823042": {
-    "state": "PREVIEW",
-    "matchup": "Arizona Diamondbacks vs St. Louis Cardinals"
-  },
-  "824247": {
+  "824248": {
     "state": "PREVIEW",
     "matchup": "Kansas City Royals vs Detroit Tigers"
+  },
+  "823352": {
+    "state": "PREVIEW",
+    "matchup": "Chicago Cubs vs Pittsburgh Pirates"
+  },
+  "822707": {
+    "state": "PREVIEW",
+    "matchup": "Arizona Diamondbacks vs Washington Nationals"
+  },
+  "823434": {
+    "state": "PREVIEW",
+    "matchup": "New York Yankees vs Philadelphia Phillies"
+  },
+  "824812": {
+    "state": "PREVIEW",
+    "matchup": "Atlanta Braves vs Baltimore Orioles"
+  },
+  "823601": {
+    "state": "PREVIEW",
+    "matchup": "Los Angeles Dodgers vs New York Mets"
+  },
+  "822952": {
+    "state": "PREVIEW",
+    "matchup": "Cleveland Guardians vs Tampa Bay Rays"
+  },
+  "823843": {
+    "state": "PREVIEW",
+    "matchup": "San Diego Padres vs Miami Marlins"
+  },
+  "824733": {
+    "state": "PREVIEW",
+    "matchup": "Toronto Blue Jays vs Boston Red Sox"
+  },
+  "824573": {
+    "state": "PREVIEW",
+    "matchup": "Houston Astros vs Chicago White Sox"
+  },
+  "822872": {
+    "state": "PREVIEW",
+    "matchup": "Seattle Mariners vs Texas Rangers"
+  },
+  "823680": {
+    "state": "PREVIEW",
+    "matchup": "Athletics vs Minnesota Twins"
+  },
+  "823031": {
+    "state": "PREVIEW",
+    "matchup": "Cincinnati Reds vs St. Louis Cardinals"
+  },
+  "823196": {
+    "state": "PREVIEW",
+    "matchup": "Los Angeles Angels vs San Francisco Giants"
   }
 }
