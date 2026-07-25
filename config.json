@@ -119,6 +119,14 @@
       "location": "Arlington,US",
       "venue": "Globe Life Field",
       "game_pk": 822869
+    },
+    {
+      "date": "2026-07-26",
+      "time": "09:15",
+      "opponent": "Cleveland Guardians vs Tampa Bay Rays",
+      "location": "St Petersburg,US",
+      "venue": "Tropicana Field",
+      "game_pk": 822950
     }
   ]
 }
