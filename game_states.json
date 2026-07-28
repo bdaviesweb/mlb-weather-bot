@@ -19,10 +19,6 @@
     "state": "PREVIEW",
     "matchup": "Toronto Blue Jays vs Washington Nationals"
   },
-  "824490": {
-    "state": "PREVIEW",
-    "matchup": "Cleveland Guardians vs Cincinnati Reds"
-  },
   "823597": {
     "state": "PREVIEW",
     "matchup": "Atlanta Braves vs New York Mets"
@@ -46,5 +42,9 @@
   "823195": {
     "state": "PREVIEW",
     "matchup": "Milwaukee Brewers vs San Francisco Giants"
+  },
+  "824490": {
+    "state": "POSTPONED",
+    "matchup": "Cleveland Guardians vs Cincinnati Reds"
   }
 }
