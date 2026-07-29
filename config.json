@@ -2,30 +2,6 @@
   "games": [
     {
       "date": "2026-07-29",
-      "time": "09:10",
-      "opponent": "Philadelphia Phillies vs Miami Marlins",
-      "location": "Miami,US",
-      "venue": "loanDepot park",
-      "game_pk": 823837
-    },
-    {
-      "date": "2026-07-29",
-      "time": "09:35",
-      "opponent": "Arizona Diamondbacks vs Pittsburgh Pirates",
-      "location": "Pittsburgh,US",
-      "venue": "PNC Park",
-      "game_pk": 823351
-    },
-    {
-      "date": "2026-07-29",
-      "time": "10:05",
-      "opponent": "Toronto Blue Jays vs Washington Nationals",
-      "location": "Washington,US",
-      "venue": "Nationals Park",
-      "game_pk": 822702
-    },
-    {
-      "date": "2026-07-29",
       "time": "10:10",
       "opponent": "Baltimore Orioles vs Detroit Tigers",
       "location": "Detroit,US",
@@ -127,6 +103,14 @@
       "location": "Los Angeles,US",
       "venue": "UNIQLO Field at Dodger Stadium",
       "game_pk": 823924
+    },
+    {
+      "date": "2026-07-30",
+      "time": "09:10",
+      "opponent": "Texas Rangers vs Tampa Bay Rays",
+      "location": "St Petersburg,US",
+      "venue": "Tropicana Field",
+      "game_pk": 822946
     }
   ]
 }
