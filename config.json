@@ -1,134 +1,6 @@
 {
   "games": [
     {
-      "date": "2026-07-28",
-      "time": "10:40",
-      "opponent": "Cleveland Guardians vs Cincinnati Reds",
-      "location": "Cincinnati,US",
-      "venue": "Great American Ball Park",
-      "game_pk": 824490
-    },
-    {
-      "date": "2026-07-28",
-      "time": "16:10",
-      "opponent": "Cleveland Guardians vs Cincinnati Reds",
-      "location": "Cincinnati,US",
-      "venue": "Great American Ball Park",
-      "game_pk": 824489
-    },
-    {
-      "date": "2026-07-28",
-      "time": "15:40",
-      "opponent": "Baltimore Orioles vs Detroit Tigers",
-      "location": "Detroit,US",
-      "venue": "Comerica Park",
-      "game_pk": 824243
-    },
-    {
-      "date": "2026-07-28",
-      "time": "15:40",
-      "opponent": "Arizona Diamondbacks vs Pittsburgh Pirates",
-      "location": "Pittsburgh,US",
-      "venue": "PNC Park",
-      "game_pk": 823350
-    },
-    {
-      "date": "2026-07-28",
-      "time": "15:40",
-      "opponent": "Texas Rangers vs Tampa Bay Rays",
-      "location": "St Petersburg,US",
-      "venue": "Tropicana Field",
-      "game_pk": 822949
-    },
-    {
-      "date": "2026-07-28",
-      "time": "15:40",
-      "opponent": "Philadelphia Phillies vs Miami Marlins",
-      "location": "Miami,US",
-      "venue": "loanDepot park",
-      "game_pk": 823838
-    },
-    {
-      "date": "2026-07-28",
-      "time": "15:45",
-      "opponent": "Toronto Blue Jays vs Washington Nationals",
-      "location": "Washington,US",
-      "venue": "Nationals Park",
-      "game_pk": 822703
-    },
-    {
-      "date": "2026-07-28",
-      "time": "16:10",
-      "opponent": "Atlanta Braves vs New York Mets",
-      "location": "New York,US",
-      "venue": "Citi Field",
-      "game_pk": 823598
-    },
-    {
-      "date": "2026-07-28",
-      "time": "16:40",
-      "opponent": "Kansas City Royals vs Minnesota Twins",
-      "location": "Minneapolis,US",
-      "venue": "Target Field",
-      "game_pk": 823676
-    },
-    {
-      "date": "2026-07-28",
-      "time": "16:40",
-      "opponent": "New York Yankees vs Chicago White Sox",
-      "location": "Chicago,US",
-      "venue": "Rate Field",
-      "game_pk": 824569
-    },
-    {
-      "date": "2026-07-28",
-      "time": "16:45",
-      "opponent": "Chicago Cubs vs St. Louis Cardinals",
-      "location": "St Louis,US",
-      "venue": "Busch Stadium",
-      "game_pk": 823026
-    },
-    {
-      "date": "2026-07-28",
-      "time": "18:38",
-      "opponent": "Houston Astros vs Los Angeles Angels",
-      "location": "Anaheim,US",
-      "venue": "Angel Stadium",
-      "game_pk": 824003
-    },
-    {
-      "date": "2026-07-28",
-      "time": "18:40",
-      "opponent": "Boston Red Sox vs Athletics",
-      "location": "Oakland,US",
-      "venue": "Sutter Health Park",
-      "game_pk": 824976
-    },
-    {
-      "date": "2026-07-28",
-      "time": "18:40",
-      "opponent": "Colorado Rockies vs San Diego Padres",
-      "location": "San Diego,US",
-      "venue": "Petco Park",
-      "game_pk": 823275
-    },
-    {
-      "date": "2026-07-28",
-      "time": "18:45",
-      "opponent": "Milwaukee Brewers vs San Francisco Giants",
-      "location": "San Francisco,US",
-      "venue": "Oracle Park",
-      "game_pk": 823193
-    },
-    {
-      "date": "2026-07-28",
-      "time": "19:10",
-      "opponent": "Seattle Mariners vs Los Angeles Dodgers",
-      "location": "Los Angeles,US",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "game_pk": 823923
-    },
-    {
       "date": "2026-07-29",
       "time": "09:10",
       "opponent": "Philadelphia Phillies vs Miami Marlins",
@@ -167,6 +39,94 @@
       "location": "New York,US",
       "venue": "Citi Field",
       "game_pk": 823596
+    },
+    {
+      "date": "2026-07-29",
+      "time": "16:10",
+      "opponent": "Atlanta Braves vs New York Mets",
+      "location": "New York,US",
+      "venue": "Citi Field",
+      "game_pk": 823598
+    },
+    {
+      "date": "2026-07-29",
+      "time": "12:45",
+      "opponent": "Milwaukee Brewers vs San Francisco Giants",
+      "location": "San Francisco,US",
+      "venue": "Oracle Park",
+      "game_pk": 823192
+    },
+    {
+      "date": "2026-07-29",
+      "time": "13:10",
+      "opponent": "Colorado Rockies vs San Diego Padres",
+      "location": "San Diego,US",
+      "venue": "Petco Park",
+      "game_pk": 823273
+    },
+    {
+      "date": "2026-07-29",
+      "time": "15:40",
+      "opponent": "Texas Rangers vs Tampa Bay Rays",
+      "location": "St Petersburg,US",
+      "venue": "Tropicana Field",
+      "game_pk": 822947
+    },
+    {
+      "date": "2026-07-29",
+      "time": "16:10",
+      "opponent": "Cleveland Guardians vs Cincinnati Reds",
+      "location": "Cincinnati,US",
+      "venue": "Great American Ball Park",
+      "game_pk": 824487
+    },
+    {
+      "date": "2026-07-29",
+      "time": "16:40",
+      "opponent": "Kansas City Royals vs Minnesota Twins",
+      "location": "Minneapolis,US",
+      "venue": "Target Field",
+      "game_pk": 823677
+    },
+    {
+      "date": "2026-07-29",
+      "time": "16:40",
+      "opponent": "New York Yankees vs Chicago White Sox",
+      "location": "Chicago,US",
+      "venue": "Rate Field",
+      "game_pk": 824567
+    },
+    {
+      "date": "2026-07-29",
+      "time": "16:45",
+      "opponent": "Chicago Cubs vs St. Louis Cardinals",
+      "location": "St Louis,US",
+      "venue": "Busch Stadium",
+      "game_pk": 823022
+    },
+    {
+      "date": "2026-07-29",
+      "time": "18:38",
+      "opponent": "Houston Astros vs Los Angeles Angels",
+      "location": "Anaheim,US",
+      "venue": "Angel Stadium",
+      "game_pk": 824002
+    },
+    {
+      "date": "2026-07-29",
+      "time": "18:40",
+      "opponent": "Boston Red Sox vs Athletics",
+      "location": "Oakland,US",
+      "venue": "Sutter Health Park",
+      "game_pk": 824973
+    },
+    {
+      "date": "2026-07-29",
+      "time": "19:10",
+      "opponent": "Seattle Mariners vs Los Angeles Dodgers",
+      "location": "Los Angeles,US",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "game_pk": 823924
     }
   ]
 }
