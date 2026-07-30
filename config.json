@@ -2,14 +2,6 @@
   "games": [
     {
       "date": "2026-07-30",
-      "time": "09:10",
-      "opponent": "Texas Rangers vs Tampa Bay Rays",
-      "location": "St Petersburg,US",
-      "venue": "Tropicana Field",
-      "game_pk": 822946
-    },
-    {
-      "date": "2026-07-30",
       "time": "10:40",
       "opponent": "Kansas City Royals vs Minnesota Twins",
       "location": "Minneapolis,US",
