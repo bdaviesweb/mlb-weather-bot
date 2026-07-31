@@ -1,42 +1,62 @@
 {
-  "822946": {
+  "824651": {
     "state": "LIVE",
-    "matchup": "Texas Rangers vs Tampa Bay Rays"
+    "matchup": "New York Yankees vs Chicago Cubs"
   },
-  "823674": {
-    "state": "LIVE",
-    "matchup": "Kansas City Royals vs Minnesota Twins"
-  },
-  "824568": {
-    "state": "LIVE",
-    "matchup": "New York Yankees vs Chicago White Sox"
-  },
-  "823023": {
-    "state": "LIVE",
-    "matchup": "Chicago Cubs vs St. Louis Cardinals"
-  },
-  "824488": {
+  "824486": {
     "state": "PREVIEW",
     "matchup": "Pittsburgh Pirates vs Cincinnati Reds"
   },
-  "823595": {
-    "state": "LIVE",
+  "824809": {
+    "state": "PREVIEW",
+    "matchup": "Philadelphia Phillies vs Baltimore Orioles"
+  },
+  "822782": {
+    "state": "PREVIEW",
+    "matchup": "St. Louis Cardinals vs Toronto Blue Jays"
+  },
+  "824407": {
+    "state": "PREVIEW",
+    "matchup": "Arizona Diamondbacks vs Cleveland Guardians"
+  },
+  "822945": {
+    "state": "PREVIEW",
+    "matchup": "Chicago White Sox vs Tampa Bay Rays"
+  },
+  "823593": {
+    "state": "PREVIEW",
     "matchup": "Miami Marlins vs New York Mets"
   },
-  "824894": {
+  "824892": {
     "state": "PREVIEW",
     "matchup": "Washington Nationals vs Atlanta Braves"
   },
-  "824974": {
+  "824164": {
     "state": "PREVIEW",
-    "matchup": "Boston Red Sox vs Athletics"
+    "matchup": "Texas Rangers vs Houston Astros"
   },
-  "823271": {
+  "824325": {
+    "state": "PREVIEW",
+    "matchup": "Kansas City Royals vs Colorado Rockies"
+  },
+  "823999": {
+    "state": "PREVIEW",
+    "matchup": "Milwaukee Brewers vs Los Angeles Angels"
+  },
+  "824975": {
+    "state": "PREVIEW",
+    "matchup": "Detroit Tigers vs Athletics"
+  },
+  "823272": {
     "state": "PREVIEW",
     "matchup": "San Francisco Giants vs San Diego Padres"
   },
-  "823921": {
+  "823922": {
     "state": "PREVIEW",
-    "matchup": "Seattle Mariners vs Los Angeles Dodgers"
+    "matchup": "Boston Red Sox vs Los Angeles Dodgers"
+  },
+  "823111": {
+    "state": "PREVIEW",
+    "matchup": "Minnesota Twins vs Seattle Mariners"
   }
 }
