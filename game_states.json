@@ -1,6 +1,6 @@
 {
   "824807": {
-    "state": "LIVE",
+    "state": "DELAYED",
     "matchup": "Philadelphia Phillies vs Baltimore Orioles"
   },
   "824891": {
@@ -12,7 +12,7 @@
     "matchup": "St. Louis Cardinals vs Toronto Blue Jays"
   },
   "824404": {
-    "state": "DELAYED",
+    "state": "LIVE",
     "matchup": "Arizona Diamondbacks vs Cleveland Guardians"
   },
   "824483": {
