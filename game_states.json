@@ -1,62 +1,34 @@
 {
-  "824807": {
-    "state": "DELAYED",
-    "matchup": "Philadelphia Phillies vs Baltimore Orioles"
-  },
-  "824891": {
-    "state": "LIVE",
-    "matchup": "Washington Nationals vs Atlanta Braves"
-  },
-  "822783": {
-    "state": "LIVE",
-    "matchup": "St. Louis Cardinals vs Toronto Blue Jays"
-  },
-  "824404": {
-    "state": "LIVE",
-    "matchup": "Arizona Diamondbacks vs Cleveland Guardians"
-  },
-  "824483": {
+  "823431": {
     "state": "PREVIEW",
-    "matchup": "Pittsburgh Pirates vs Cincinnati Reds"
+    "matchup": "Washington Nationals vs Philadelphia Phillies"
   },
-  "822943": {
+  "823520": {
     "state": "PREVIEW",
-    "matchup": "Chicago White Sox vs Tampa Bay Rays"
+    "matchup": "St. Louis Cardinals vs New York Yankees"
   },
-  "823592": {
+  "823757": {
     "state": "PREVIEW",
-    "matchup": "Miami Marlins vs New York Mets"
+    "matchup": "Pittsburgh Pirates vs Milwaukee Brewers"
   },
-  "824163": {
+  "824647": {
     "state": "PREVIEW",
-    "matchup": "Texas Rangers vs Houston Astros"
+    "matchup": "Los Angeles Dodgers vs Chicago Cubs"
   },
-  "824648": {
+  "822867": {
     "state": "PREVIEW",
-    "matchup": "New York Yankees vs Chicago Cubs"
+    "matchup": "San Francisco Giants vs Texas Rangers"
   },
-  "824323": {
+  "824160": {
     "state": "PREVIEW",
-    "matchup": "Kansas City Royals vs Colorado Rockies"
+    "matchup": "Toronto Blue Jays vs Houston Astros"
   },
-  "823996": {
+  "824324": {
     "state": "PREVIEW",
-    "matchup": "Milwaukee Brewers vs Los Angeles Angels"
+    "matchup": "Tampa Bay Rays vs Colorado Rockies"
   },
-  "824971": {
+  "825095": {
     "state": "PREVIEW",
-    "matchup": "Detroit Tigers vs Athletics"
-  },
-  "823270": {
-    "state": "PREVIEW",
-    "matchup": "San Francisco Giants vs San Diego Padres"
-  },
-  "823107": {
-    "state": "PREVIEW",
-    "matchup": "Minnesota Twins vs Seattle Mariners"
-  },
-  "823919": {
-    "state": "PREVIEW",
-    "matchup": "Boston Red Sox vs Los Angeles Dodgers"
+    "matchup": "San Diego Padres vs Arizona Diamondbacks"
   }
 }
