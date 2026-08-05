@@ -119,6 +119,30 @@
       "location": "Seattle,US",
       "venue": "T-Mobile Park",
       "game_pk": 823106
+    },
+    {
+      "date": "2026-08-06",
+      "time": "09:35",
+      "opponent": "Los Angeles Angels vs Baltimore Orioles",
+      "location": "Baltimore,US",
+      "venue": "Oriole Park at Camden Yards",
+      "game_pk": 824804
+    },
+    {
+      "date": "2026-08-06",
+      "time": "09:40",
+      "opponent": "Athletics vs Cincinnati Reds",
+      "location": "Cincinnati,US",
+      "venue": "Great American Ball Park",
+      "game_pk": 824481
+    },
+    {
+      "date": "2026-08-06",
+      "time": "10:10",
+      "opponent": "New York Mets vs Cleveland Guardians",
+      "location": "Cleveland,US",
+      "venue": "Progressive Field",
+      "game_pk": 824401
     }
   ]
 }
