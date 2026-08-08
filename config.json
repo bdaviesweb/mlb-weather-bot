@@ -119,6 +119,14 @@
       "location": "Seattle,US",
       "venue": "T-Mobile Park",
       "game_pk": 823102
+    },
+    {
+      "date": "2026-08-09",
+      "time": "09:15",
+      "opponent": "Cincinnati Reds vs Washington Nationals",
+      "location": "Washington,US",
+      "venue": "Nationals Park",
+      "game_pk": 822700
     }
   ]
 }
