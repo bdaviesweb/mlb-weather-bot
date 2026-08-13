@@ -1,124 +1,76 @@
 {
   "games": [
     {
-      "date": "2026-08-12",
-      "time": "10:40",
-      "opponent": "Baltimore Orioles vs Minnesota Twins",
-      "location": "Minneapolis,US",
-      "venue": "Target Field",
-      "game_pk": 823672
-    },
-    {
-      "date": "2026-08-12",
-      "time": "11:15",
-      "opponent": "Philadelphia Phillies vs St. Louis Cardinals",
-      "location": "St Louis,US",
-      "venue": "Busch Stadium",
-      "game_pk": 823017
-    },
-    {
-      "date": "2026-08-12",
-      "time": "12:05",
-      "opponent": "Tampa Bay Rays vs Athletics",
-      "location": "Oakland,US",
-      "venue": "Sutter Health Park",
-      "game_pk": 824967
-    },
-    {
-      "date": "2026-08-12",
-      "time": "12:40",
-      "opponent": "Colorado Rockies vs Arizona Diamondbacks",
-      "location": "Phoenix,US",
-      "venue": "Chase Field",
-      "game_pk": 825047
-    },
-    {
-      "date": "2026-08-12",
-      "time": "12:45",
-      "opponent": "Houston Astros vs San Francisco Giants",
-      "location": "San Francisco,US",
-      "venue": "Oracle Park",
-      "game_pk": 823187
-    },
-    {
-      "date": "2026-08-12",
-      "time": "13:10",
-      "opponent": "Milwaukee Brewers vs San Diego Padres",
-      "location": "San Diego,US",
-      "venue": "Petco Park",
-      "game_pk": 823263
-    },
-    {
-      "date": "2026-08-12",
-      "time": "15:40",
+      "date": "2026-08-13",
+      "time": "10:10",
       "opponent": "Cleveland Guardians vs Detroit Tigers",
       "location": "Detroit,US",
       "venue": "Comerica Park",
-      "game_pk": 824241
+      "game_pk": 824238
     },
     {
-      "date": "2026-08-12",
-      "time": "15:40",
+      "date": "2026-08-13",
+      "time": "10:10",
       "opponent": "Pittsburgh Pirates vs Miami Marlins",
       "location": "Miami,US",
       "venue": "loanDepot park",
-      "game_pk": 823833
+      "game_pk": 823829
     },
     {
-      "date": "2026-08-12",
-      "time": "15:45",
-      "opponent": "Chicago Cubs vs Washington Nationals",
-      "location": "Washington,US",
-      "venue": "Nationals Park",
-      "game_pk": 822698
-    },
-    {
-      "date": "2026-08-12",
-      "time": "16:05",
+      "date": "2026-08-13",
+      "time": "10:35",
       "opponent": "Seattle Mariners vs New York Yankees",
       "location": "New York,US",
       "venue": "Yankee Stadium",
-      "game_pk": 823511
+      "game_pk": 823508
     },
     {
-      "date": "2026-08-12",
-      "time": "16:07",
-      "opponent": "Boston Red Sox vs Toronto Blue Jays",
-      "location": "Toronto,CA",
-      "venue": "Rogers Centre",
-      "game_pk": 822779
-    },
-    {
-      "date": "2026-08-12",
-      "time": "16:15",
-      "opponent": "New York Mets vs Atlanta Braves",
-      "location": "Atlanta,US",
-      "venue": "Truist Park",
-      "game_pk": 824883
-    },
-    {
-      "date": "2026-08-12",
-      "time": "16:40",
+      "date": "2026-08-13",
+      "time": "11:10",
       "opponent": "Cincinnati Reds vs Chicago White Sox",
       "location": "Chicago,US",
       "venue": "Rate Field",
-      "game_pk": 824562
+      "game_pk": 824561
     },
     {
-      "date": "2026-08-12",
-      "time": "19:10",
-      "opponent": "Kansas City Royals vs Los Angeles Dodgers",
-      "location": "Los Angeles,US",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "game_pk": 823916
+      "date": "2026-08-13",
+      "time": "12:07",
+      "opponent": "Boston Red Sox vs Toronto Blue Jays",
+      "location": "Toronto,CA",
+      "venue": "Rogers Centre",
+      "game_pk": 822776
     },
     {
-      "date": "2026-08-12",
-      "time": "19:10",
+      "date": "2026-08-13",
+      "time": "13:05",
+      "opponent": "Chicago Cubs vs Washington Nationals",
+      "location": "Washington,US",
+      "venue": "Nationals Park",
+      "game_pk": 822696
+    },
+    {
+      "date": "2026-08-13",
+      "time": "16:30",
+      "opponent": "Philadelphia Phillies vs Minnesota Twins",
+      "location": "Phoenix,US",
+      "venue": "Field of Dreams",
+      "game_pk": 823669
+    },
+    {
+      "date": "2026-08-13",
+      "time": "19:07",
       "opponent": "Texas Rangers vs Los Angeles Angels",
       "location": "Anaheim,US",
       "venue": "Angel Stadium",
-      "game_pk": 823994
+      "game_pk": 823995
+    },
+    {
+      "date": "2026-08-13",
+      "time": "19:10",
+      "opponent": "Milwaukee Brewers vs Los Angeles Dodgers",
+      "location": "Los Angeles,US",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "game_pk": 823915
     }
   ]
 }
