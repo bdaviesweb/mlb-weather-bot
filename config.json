@@ -11,6 +11,14 @@
     {
       "date": "2026-08-13",
       "time": "10:10",
+      "opponent": "Cincinnati Reds vs Chicago White Sox",
+      "location": "Chicago,US",
+      "venue": "Rate Field",
+      "game_pk": 824561
+    },
+    {
+      "date": "2026-08-13",
+      "time": "10:10",
       "opponent": "Pittsburgh Pirates vs Miami Marlins",
       "location": "Miami,US",
       "venue": "loanDepot park",
@@ -23,14 +31,6 @@
       "location": "New York,US",
       "venue": "Yankee Stadium",
       "game_pk": 823508
-    },
-    {
-      "date": "2026-08-13",
-      "time": "11:10",
-      "opponent": "Cincinnati Reds vs Chicago White Sox",
-      "location": "Chicago,US",
-      "venue": "Rate Field",
-      "game_pk": 824561
     },
     {
       "date": "2026-08-13",
