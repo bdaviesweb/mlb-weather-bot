@@ -1,38 +1,58 @@
 {
-  "824238": {
-    "state": "LIVE",
-    "matchup": "Cleveland Guardians vs Detroit Tigers"
-  },
-  "824561": {
-    "state": "LIVE",
-    "matchup": "Cincinnati Reds vs Chicago White Sox"
-  },
-  "823829": {
-    "state": "LIVE",
-    "matchup": "Pittsburgh Pirates vs Miami Marlins"
-  },
-  "823508": {
-    "state": "LIVE",
-    "matchup": "Seattle Mariners vs New York Yankees"
-  },
-  "822776": {
+  "824643": {
     "state": "PREVIEW",
-    "matchup": "Boston Red Sox vs Toronto Blue Jays"
+    "matchup": "St. Louis Cardinals vs Chicago Cubs"
   },
-  "822696": {
+  "824479": {
     "state": "PREVIEW",
-    "matchup": "Chicago Cubs vs Washington Nationals"
+    "matchup": "Miami Marlins vs Cincinnati Reds"
   },
-  "823669": {
+  "823346": {
     "state": "PREVIEW",
-    "matchup": "Philadelphia Phillies vs Minnesota Twins"
+    "matchup": "Boston Red Sox vs Pittsburgh Pirates"
   },
-  "823995": {
+  "824237": {
     "state": "PREVIEW",
-    "matchup": "Texas Rangers vs Los Angeles Angels"
+    "matchup": "Chicago White Sox vs Detroit Tigers"
   },
-  "823915": {
+  "823591": {
+    "state": "PREVIEW",
+    "matchup": "Washington Nationals vs New York Mets"
+  },
+  "824399": {
+    "state": "PREVIEW",
+    "matchup": "San Diego Padres vs Cleveland Guardians"
+  },
+  "822942": {
+    "state": "PREVIEW",
+    "matchup": "Baltimore Orioles vs Tampa Bay Rays"
+  },
+  "824882": {
+    "state": "PREVIEW",
+    "matchup": "Arizona Diamondbacks vs Atlanta Braves"
+  },
+  "822777": {
+    "state": "PREVIEW",
+    "matchup": "New York Yankees vs Toronto Blue Jays"
+  },
+  "824159": {
+    "state": "PREVIEW",
+    "matchup": "Seattle Mariners vs Houston Astros"
+  },
+  "823993": {
+    "state": "PREVIEW",
+    "matchup": "Kansas City Royals vs Los Angeles Angels"
+  },
+  "824968": {
+    "state": "PREVIEW",
+    "matchup": "Texas Rangers vs Athletics"
+  },
+  "823913": {
     "state": "PREVIEW",
     "matchup": "Milwaukee Brewers vs Los Angeles Dodgers"
+  },
+  "823185": {
+    "state": "PREVIEW",
+    "matchup": "Colorado Rockies vs San Francisco Giants"
   }
 }
