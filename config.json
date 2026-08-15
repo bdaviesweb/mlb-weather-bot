@@ -119,6 +119,14 @@
       "location": "Oakland,US",
       "venue": "Sutter Health Park",
       "game_pk": 824966
+    },
+    {
+      "date": "2026-08-16",
+      "time": "09:15",
+      "opponent": "Baltimore Orioles vs Tampa Bay Rays",
+      "location": "St Petersburg,US",
+      "venue": "Tropicana Field",
+      "game_pk": 822940
     }
   ]
 }
