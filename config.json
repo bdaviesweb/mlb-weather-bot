@@ -2,14 +2,6 @@
   "games": [
     {
       "date": "2026-08-16",
-      "time": "09:15",
-      "opponent": "Baltimore Orioles vs Tampa Bay Rays",
-      "location": "St Petersburg,US",
-      "venue": "Tropicana Field",
-      "game_pk": 822940
-    },
-    {
-      "date": "2026-08-16",
       "time": "10:35",
       "opponent": "Boston Red Sox vs Pittsburgh Pirates",
       "location": "Pittsburgh,US",
