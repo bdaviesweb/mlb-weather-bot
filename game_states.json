@@ -1,62 +1,46 @@
 {
-  "822940": {
-    "state": "LIVE",
+  "824514": {
+    "state": "PREVIEW",
+    "matchup": "St. Louis Cardinals vs Cincinnati Reds"
+  },
+  "824478": {
+    "state": "PREVIEW",
+    "matchup": "St. Louis Cardinals vs Cincinnati Reds"
+  },
+  "822939": {
+    "state": "PREVIEW",
     "matchup": "Baltimore Orioles vs Tampa Bay Rays"
   },
-  "823344": {
-    "state": "LIVE",
-    "matchup": "Boston Red Sox vs Pittsburgh Pirates"
-  },
-  "824880": {
-    "state": "LIVE",
-    "matchup": "Arizona Diamondbacks vs Atlanta Braves"
-  },
-  "822774": {
-    "state": "LIVE",
-    "matchup": "New York Yankees vs Toronto Blue Jays"
-  },
-  "823590": {
-    "state": "LIVE",
-    "matchup": "Washington Nationals vs New York Mets"
-  },
-  "824397": {
-    "state": "LIVE",
-    "matchup": "San Diego Padres vs Cleveland Guardians"
-  },
-  "824236": {
+  "823427": {
     "state": "PREVIEW",
-    "matchup": "Chicago White Sox vs Detroit Tigers"
+    "matchup": "Miami Marlins vs Philadelphia Phillies"
   },
-  "824477": {
-    "state": "LIVE",
-    "matchup": "Miami Marlins vs Cincinnati Reds"
-  },
-  "823670": {
+  "823343": {
     "state": "PREVIEW",
-    "matchup": "Philadelphia Phillies vs Minnesota Twins"
+    "matchup": "Detroit Tigers vs Pittsburgh Pirates"
   },
-  "824642": {
+  "824725": {
     "state": "PREVIEW",
-    "matchup": "St. Louis Cardinals vs Chicago Cubs"
+    "matchup": "Arizona Diamondbacks vs Boston Red Sox"
   },
-  "823182": {
+  "823589": {
     "state": "PREVIEW",
-    "matchup": "Colorado Rockies vs San Francisco Giants"
+    "matchup": "San Diego Padres vs New York Mets"
   },
-  "824965": {
+  "824077": {
     "state": "PREVIEW",
-    "matchup": "Texas Rangers vs Athletics"
+    "matchup": "Athletics vs Kansas City Royals"
   },
-  "823991": {
+  "823668": {
     "state": "PREVIEW",
-    "matchup": "Kansas City Royals vs Los Angeles Angels"
+    "matchup": "Atlanta Braves vs Minnesota Twins"
   },
-  "823912": {
+  "824641": {
     "state": "PREVIEW",
-    "matchup": "Milwaukee Brewers vs Los Angeles Dodgers"
+    "matchup": "Chicago White Sox vs Chicago Cubs"
   },
-  "824156": {
+  "824320": {
     "state": "PREVIEW",
-    "matchup": "Seattle Mariners vs Houston Astros"
+    "matchup": "Los Angeles Dodgers vs Colorado Rockies"
   }
 }
