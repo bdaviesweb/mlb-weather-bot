@@ -1,38 +1,6 @@
 {
   "games": [
     {
-      "date": "2026-08-27",
-      "time": "18:45",
-      "opponent": "Arizona Diamondbacks vs San Francisco Giants",
-      "location": "San Francisco,US",
-      "venue": "Oracle Park",
-      "game_pk": 823179
-    },
-    {
-      "date": "2026-08-28",
-      "time": "11:20",
-      "opponent": "Cincinnati Reds vs Chicago Cubs",
-      "location": "Chicago,US",
-      "venue": "Wrigley Field",
-      "game_pk": 824638
-    },
-    {
-      "date": "2026-08-28",
-      "time": "15:40",
-      "opponent": "Los Angeles Dodgers vs Detroit Tigers",
-      "location": "Detroit,US",
-      "venue": "Comerica Park",
-      "game_pk": 824231
-    },
-    {
-      "date": "2026-08-28",
-      "time": "15:45",
-      "opponent": "Miami Marlins vs Washington Nationals",
-      "location": "Washington,US",
-      "venue": "Nationals Park",
-      "game_pk": 822691
-    },
-    {
       "date": "2026-08-28",
       "time": "16:10",
       "opponent": "Kansas City Royals vs Cleveland Guardians",
@@ -103,6 +71,126 @@
       "location": "St Louis,US",
       "venue": "Busch Stadium",
       "game_pk": 823013
+    },
+    {
+      "date": "2026-08-28",
+      "time": "18:38",
+      "opponent": "Philadelphia Phillies vs Los Angeles Angels",
+      "location": "Anaheim,US",
+      "venue": "Angel Stadium",
+      "game_pk": 823985
+    },
+    {
+      "date": "2026-08-28",
+      "time": "18:40",
+      "opponent": "Baltimore Orioles vs Athletics",
+      "location": "Oakland,US",
+      "venue": "Sutter Health Park",
+      "game_pk": 824960
+    },
+    {
+      "date": "2026-08-28",
+      "time": "19:15",
+      "opponent": "Arizona Diamondbacks vs San Francisco Giants",
+      "location": "San Francisco,US",
+      "venue": "Oracle Park",
+      "game_pk": 823178
+    },
+    {
+      "date": "2026-08-29",
+      "time": "10:05",
+      "opponent": "Boston Red Sox vs New York Yankees",
+      "location": "New York,US",
+      "venue": "Yankee Stadium",
+      "game_pk": 823539
+    },
+    {
+      "date": "2026-08-29",
+      "time": "10:10",
+      "opponent": "Los Angeles Dodgers vs Detroit Tigers",
+      "location": "Detroit,US",
+      "venue": "Comerica Park",
+      "game_pk": 824230
+    },
+    {
+      "date": "2026-08-29",
+      "time": "11:10",
+      "opponent": "Chicago White Sox vs Minnesota Twins",
+      "location": "Minneapolis,US",
+      "venue": "Target Field",
+      "game_pk": 823665
+    },
+    {
+      "date": "2026-08-29",
+      "time": "11:15",
+      "opponent": "Pittsburgh Pirates vs St. Louis Cardinals",
+      "location": "St Louis,US",
+      "venue": "Busch Stadium",
+      "game_pk": 823011
+    },
+    {
+      "date": "2026-08-29",
+      "time": "11:20",
+      "opponent": "Cincinnati Reds vs Chicago Cubs",
+      "location": "Chicago,US",
+      "venue": "Wrigley Field",
+      "game_pk": 824637
+    },
+    {
+      "date": "2026-08-29",
+      "time": "12:07",
+      "opponent": "Seattle Mariners vs Toronto Blue Jays",
+      "location": "Toronto,CA",
+      "venue": "Rogers Centre",
+      "game_pk": 822770
+    },
+    {
+      "date": "2026-08-29",
+      "time": "13:05",
+      "opponent": "Arizona Diamondbacks vs San Francisco Giants",
+      "location": "San Francisco,US",
+      "venue": "Oracle Park",
+      "game_pk": 823177
+    },
+    {
+      "date": "2026-08-29",
+      "time": "13:05",
+      "opponent": "Miami Marlins vs Washington Nationals",
+      "location": "Washington,US",
+      "venue": "Nationals Park",
+      "game_pk": 822690
+    },
+    {
+      "date": "2026-08-29",
+      "time": "13:10",
+      "opponent": "Kansas City Royals vs Cleveland Guardians",
+      "location": "Cleveland,US",
+      "venue": "Progressive Field",
+      "game_pk": 824392
+    },
+    {
+      "date": "2026-08-29",
+      "time": "13:10",
+      "opponent": "Houston Astros vs New York Mets",
+      "location": "New York,US",
+      "venue": "Citi Field",
+      "game_pk": 823582
+    },
+    {
+      "date": "2026-08-29",
+      "time": "13:10",
+      "opponent": "San Diego Padres vs Tampa Bay Rays",
+      "location": "St Petersburg,US",
+      "venue": "Tropicana Field",
+      "game_pk": 822936
+    },
+    {
+      "date": "2026-08-29",
+      "time": "13:10",
+      "opponent": "Colorado Rockies vs Atlanta Braves",
+      "location": "Atlanta,US",
+      "venue": "Truist Park",
+      "game_pk": 824874
     }
   ]
 }
