@@ -2,51 +2,11 @@
   "games": [
     {
       "date": "2026-08-29",
-      "time": "10:05",
-      "opponent": "Boston Red Sox vs New York Yankees",
-      "location": "New York,US",
-      "venue": "Yankee Stadium",
-      "game_pk": 823539
-    },
-    {
-      "date": "2026-08-29",
       "time": "16:15",
       "opponent": "Boston Red Sox vs New York Yankees",
       "location": "New York,US",
       "venue": "Yankee Stadium",
       "game_pk": 823501
-    },
-    {
-      "date": "2026-08-29",
-      "time": "10:10",
-      "opponent": "Los Angeles Dodgers vs Detroit Tigers",
-      "location": "Detroit,US",
-      "venue": "Comerica Park",
-      "game_pk": 824230
-    },
-    {
-      "date": "2026-08-29",
-      "time": "11:10",
-      "opponent": "Chicago White Sox vs Minnesota Twins",
-      "location": "Minneapolis,US",
-      "venue": "Target Field",
-      "game_pk": 823665
-    },
-    {
-      "date": "2026-08-29",
-      "time": "11:15",
-      "opponent": "Pittsburgh Pirates vs St. Louis Cardinals",
-      "location": "St Louis,US",
-      "venue": "Busch Stadium",
-      "game_pk": 823011
-    },
-    {
-      "date": "2026-08-29",
-      "time": "11:20",
-      "opponent": "Cincinnati Reds vs Chicago Cubs",
-      "location": "Chicago,US",
-      "venue": "Wrigley Field",
-      "game_pk": 824637
     },
     {
       "date": "2026-08-29",
@@ -143,6 +103,78 @@
       "location": "Washington,US",
       "venue": "Nationals Park",
       "game_pk": 822688
+    },
+    {
+      "date": "2026-08-30",
+      "time": "10:35",
+      "opponent": "Colorado Rockies vs Atlanta Braves",
+      "location": "Atlanta,US",
+      "venue": "Truist Park",
+      "game_pk": 824876
+    },
+    {
+      "date": "2026-08-30",
+      "time": "10:35",
+      "opponent": "Boston Red Sox vs New York Yankees",
+      "location": "New York,US",
+      "venue": "Yankee Stadium",
+      "game_pk": 823502
+    },
+    {
+      "date": "2026-08-30",
+      "time": "10:37",
+      "opponent": "Seattle Mariners vs Toronto Blue Jays",
+      "location": "Toronto,CA",
+      "venue": "Rogers Centre",
+      "game_pk": 822766
+    },
+    {
+      "date": "2026-08-30",
+      "time": "10:40",
+      "opponent": "Kansas City Royals vs Cleveland Guardians",
+      "location": "Cleveland,US",
+      "venue": "Progressive Field",
+      "game_pk": 824393
+    },
+    {
+      "date": "2026-08-30",
+      "time": "10:40",
+      "opponent": "Los Angeles Dodgers vs Detroit Tigers",
+      "location": "Detroit,US",
+      "venue": "Comerica Park",
+      "game_pk": 824232
+    },
+    {
+      "date": "2026-08-30",
+      "time": "10:40",
+      "opponent": "San Diego Padres vs Tampa Bay Rays",
+      "location": "St Petersburg,US",
+      "venue": "Tropicana Field",
+      "game_pk": 822933
+    },
+    {
+      "date": "2026-08-30",
+      "time": "11:10",
+      "opponent": "Chicago White Sox vs Minnesota Twins",
+      "location": "Minneapolis,US",
+      "venue": "Target Field",
+      "game_pk": 823662
+    },
+    {
+      "date": "2026-08-30",
+      "time": "11:10",
+      "opponent": "Texas Rangers vs Milwaukee Brewers",
+      "location": "Milwaukee,US",
+      "venue": "American Family Field",
+      "game_pk": 823740
+    },
+    {
+      "date": "2026-08-30",
+      "time": "11:15",
+      "opponent": "Pittsburgh Pirates vs St. Louis Cardinals",
+      "location": "St Louis,US",
+      "venue": "Busch Stadium",
+      "game_pk": 823010
     }
   ]
 }
