@@ -1,30 +1,6 @@
 {
   "games": [
     {
-      "date": "2026-08-28",
-      "time": "18:38",
-      "opponent": "Philadelphia Phillies vs Los Angeles Angels",
-      "location": "Anaheim,US",
-      "venue": "Angel Stadium",
-      "game_pk": 823985
-    },
-    {
-      "date": "2026-08-28",
-      "time": "18:40",
-      "opponent": "Baltimore Orioles vs Athletics",
-      "location": "Oakland,US",
-      "venue": "Sutter Health Park",
-      "game_pk": 824960
-    },
-    {
-      "date": "2026-08-28",
-      "time": "19:15",
-      "opponent": "Arizona Diamondbacks vs San Francisco Giants",
-      "location": "San Francisco,US",
-      "venue": "Oracle Park",
-      "game_pk": 823178
-    },
-    {
       "date": "2026-08-29",
       "time": "10:05",
       "opponent": "Boston Red Sox vs New York Yankees",
@@ -90,6 +66,14 @@
     },
     {
       "date": "2026-08-29",
+      "time": "19:05",
+      "opponent": "Arizona Diamondbacks vs San Francisco Giants",
+      "location": "San Francisco,US",
+      "venue": "Oracle Park",
+      "game_pk": 823176
+    },
+    {
+      "date": "2026-08-29",
       "time": "13:05",
       "opponent": "Miami Marlins vs Washington Nationals",
       "location": "Washington,US",
@@ -135,6 +119,30 @@
       "location": "Milwaukee,US",
       "venue": "American Family Field",
       "game_pk": 823741
+    },
+    {
+      "date": "2026-08-29",
+      "time": "19:05",
+      "opponent": "Baltimore Orioles vs Athletics",
+      "location": "Oakland,US",
+      "venue": "Sutter Health Park",
+      "game_pk": 824961
+    },
+    {
+      "date": "2026-08-29",
+      "time": "19:07",
+      "opponent": "Philadelphia Phillies vs Los Angeles Angels",
+      "location": "Anaheim,US",
+      "venue": "Angel Stadium",
+      "game_pk": 823986
+    },
+    {
+      "date": "2026-08-30",
+      "time": "09:15",
+      "opponent": "Miami Marlins vs Washington Nationals",
+      "location": "Washington,US",
+      "venue": "Nationals Park",
+      "game_pk": 822688
     }
   ]
 }
