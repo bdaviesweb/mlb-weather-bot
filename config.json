@@ -1,36 +1,100 @@
 {
   "games": [
     {
-      "date": "2026-08-30",
-      "time": "12:10",
-      "opponent": "Houston Astros vs New York Mets",
-      "location": "New York,US",
-      "venue": "Citi Field",
-      "game_pk": 823580
+      "date": "2026-08-31",
+      "time": "15:05",
+      "opponent": "San Francisco Giants vs Atlanta Braves",
+      "location": "Atlanta,US",
+      "venue": "Truist Park",
+      "game_pk": 824911
     },
     {
-      "date": "2026-08-30",
-      "time": "13:05",
-      "opponent": "Baltimore Orioles vs Athletics",
-      "location": "Oakland,US",
-      "venue": "Sutter Health Park",
-      "game_pk": 824959
+      "date": "2026-08-31",
+      "time": "15:40",
+      "opponent": "San Diego Padres vs Cincinnati Reds",
+      "location": "Cincinnati,US",
+      "venue": "Great American Ball Park",
+      "game_pk": 824473
     },
     {
-      "date": "2026-08-30",
-      "time": "13:07",
-      "opponent": "Philadelphia Phillies vs Los Angeles Angels",
-      "location": "Anaheim,US",
-      "venue": "Angel Stadium",
-      "game_pk": 823987
+      "date": "2026-08-31",
+      "time": "15:40",
+      "opponent": "New York Mets vs Tampa Bay Rays",
+      "location": "St Petersburg,US",
+      "venue": "Tropicana Field",
+      "game_pk": 822932
     },
     {
-      "date": "2026-08-30",
-      "time": "16:20",
-      "opponent": "Cincinnati Reds vs Chicago Cubs",
+      "date": "2026-08-31",
+      "time": "15:45",
+      "opponent": "Seattle Mariners vs Boston Red Sox",
+      "location": "Boston,US",
+      "venue": "Fenway Park",
+      "game_pk": 824719
+    },
+    {
+      "date": "2026-08-31",
+      "time": "15:45",
+      "opponent": "Miami Marlins vs Washington Nationals",
+      "location": "Washington,US",
+      "venue": "Nationals Park",
+      "game_pk": 822689
+    },
+    {
+      "date": "2026-08-31",
+      "time": "16:40",
+      "opponent": "Detroit Tigers vs Minnesota Twins",
+      "location": "Minneapolis,US",
+      "venue": "Target Field",
+      "game_pk": 823663
+    },
+    {
+      "date": "2026-08-31",
+      "time": "16:40",
+      "opponent": "Milwaukee Brewers vs Chicago Cubs",
       "location": "Chicago,US",
       "venue": "Wrigley Field",
-      "game_pk": 824636
+      "game_pk": 824635
+    },
+    {
+      "date": "2026-08-31",
+      "time": "17:05",
+      "opponent": "Athletics vs Texas Rangers",
+      "location": "Arlington,US",
+      "venue": "Globe Life Field",
+      "game_pk": 822855
+    },
+    {
+      "date": "2026-08-31",
+      "time": "17:10",
+      "opponent": "Chicago White Sox vs Houston Astros",
+      "location": "Houston,US",
+      "venue": "Daikin Park",
+      "game_pk": 824149
+    },
+    {
+      "date": "2026-08-31",
+      "time": "17:40",
+      "opponent": "Baltimore Orioles vs Colorado Rockies",
+      "location": "Denver,US",
+      "venue": "Coors Field",
+      "game_pk": 824314
+    },
+    {
+      "date": "2026-08-31",
+      "time": "18:38",
+      "opponent": "New York Yankees vs Los Angeles Angels",
+      "location": "Anaheim,US",
+      "venue": "Angel Stadium",
+      "game_pk": 823982
+    },
+    {
+      "date": "2026-08-31",
+      "time": "18:40",
+      "opponent": "Philadelphia Phillies vs Arizona Diamondbacks",
+      "location": "Phoenix,US",
+      "venue": "Chase Field",
+      "game_pk": 825040
     }
   ]
 }
