@@ -135,6 +135,14 @@
       "location": "Washington,US",
       "venue": "Nationals Park",
       "game_pk": 822686
+    },
+    {
+      "date": "2026-09-02",
+      "time": "11:35",
+      "opponent": "Athletics vs Texas Rangers",
+      "location": "Arlington,US",
+      "venue": "Globe Life Field",
+      "game_pk": 822851
     }
   ]
 }
