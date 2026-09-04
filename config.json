@@ -2,14 +2,6 @@
   "games": [
     {
       "date": "2026-09-04",
-      "time": "11:10",
-      "opponent": "Detroit Tigers vs Cleveland Guardians",
-      "location": "Cleveland,US",
-      "venue": "Progressive Field",
-      "game_pk": 824424
-    },
-    {
-      "date": "2026-09-04",
       "time": "16:15",
       "opponent": "Detroit Tigers vs Cleveland Guardians",
       "location": "Cleveland,US",
