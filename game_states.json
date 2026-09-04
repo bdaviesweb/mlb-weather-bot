@@ -1,38 +1,66 @@
 {
-  "823337": {
-    "state": "LIVE",
-    "matchup": "San Francisco Giants vs Pittsburgh Pirates"
+  "824424": {
+    "state": "DELAYED",
+    "matchup": "Detroit Tigers vs Cleveland Guardians"
   },
-  "824388": {
-    "state": "LIVE",
-    "matchup": "Toronto Blue Jays vs Cleveland Guardians"
+  "824387": {
+    "state": "PREVIEW",
+    "matchup": "Detroit Tigers vs Cleveland Guardians"
   },
-  "824144": {
-    "state": "LIVE",
-    "matchup": "Chicago White Sox vs Houston Astros"
+  "824471": {
+    "state": "PREVIEW",
+    "matchup": "Milwaukee Brewers vs Cincinnati Reds"
   },
-  "824796": {
+  "823418": {
+    "state": "PREVIEW",
+    "matchup": "Atlanta Braves vs Philadelphia Phillies"
+  },
+  "823338": {
+    "state": "PREVIEW",
+    "matchup": "Los Angeles Angels vs Pittsburgh Pirates"
+  },
+  "824797": {
     "state": "PREVIEW",
     "matchup": "Boston Red Sox vs Baltimore Orioles"
   },
-  "824632": {
+  "823579": {
     "state": "PREVIEW",
-    "matchup": "Milwaukee Brewers vs Chicago Cubs"
+    "matchup": "San Francisco Giants vs New York Mets"
   },
-  "824069": {
+  "823824": {
     "state": "PREVIEW",
-    "matchup": "Miami Marlins vs Kansas City Royals"
+    "matchup": "Chicago Cubs vs Miami Marlins"
   },
-  "822853": {
+  "824554": {
+    "state": "PREVIEW",
+    "matchup": "Minnesota Twins vs Chicago White Sox"
+  },
+  "822852": {
     "state": "PREVIEW",
     "matchup": "Tampa Bay Rays vs Texas Rangers"
   },
-  "823095": {
+  "824146": {
+    "state": "PREVIEW",
+    "matchup": "Arizona Diamondbacks vs Houston Astros"
+  },
+  "824067": {
+    "state": "PREVIEW",
+    "matchup": "Toronto Blue Jays vs Kansas City Royals"
+  },
+  "824311": {
+    "state": "PREVIEW",
+    "matchup": "St. Louis Cardinals vs Colorado Rockies"
+  },
+  "823256": {
+    "state": "PREVIEW",
+    "matchup": "New York Yankees vs San Diego Padres"
+  },
+  "823905": {
+    "state": "PREVIEW",
+    "matchup": "Washington Nationals vs Los Angeles Dodgers"
+  },
+  "823093": {
     "state": "PREVIEW",
     "matchup": "Athletics vs Seattle Mariners"
-  },
-  "823907": {
-    "state": "PREVIEW",
-    "matchup": "St. Louis Cardinals vs Los Angeles Dodgers"
   }
 }
