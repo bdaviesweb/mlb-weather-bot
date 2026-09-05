@@ -119,6 +119,62 @@
       "location": "Seattle,US",
       "venue": "T-Mobile Park",
       "game_pk": 823094
+    },
+    {
+      "date": "2026-09-06",
+      "time": "09:10",
+      "opponent": "Milwaukee Brewers vs Cincinnati Reds",
+      "location": "Cincinnati,US",
+      "venue": "Great American Ball Park",
+      "game_pk": 824469
+    },
+    {
+      "date": "2026-09-06",
+      "time": "10:10",
+      "opponent": "Atlanta Braves vs Philadelphia Phillies",
+      "location": "Philadelphia,US",
+      "venue": "Citizens Bank Park",
+      "game_pk": 823417
+    },
+    {
+      "date": "2026-09-06",
+      "time": "10:35",
+      "opponent": "Boston Red Sox vs Baltimore Orioles",
+      "location": "Baltimore,US",
+      "venue": "Oriole Park at Camden Yards",
+      "game_pk": 824794
+    },
+    {
+      "date": "2026-09-06",
+      "time": "10:35",
+      "opponent": "Los Angeles Angels vs Pittsburgh Pirates",
+      "location": "Pittsburgh,US",
+      "venue": "PNC Park",
+      "game_pk": 823336
+    },
+    {
+      "date": "2026-09-06",
+      "time": "10:40",
+      "opponent": "Detroit Tigers vs Cleveland Guardians",
+      "location": "Cleveland,US",
+      "venue": "Progressive Field",
+      "game_pk": 824385
+    },
+    {
+      "date": "2026-09-06",
+      "time": "10:40",
+      "opponent": "San Francisco Giants vs New York Mets",
+      "location": "New York,US",
+      "venue": "Citi Field",
+      "game_pk": 823578
+    },
+    {
+      "date": "2026-09-06",
+      "time": "10:40",
+      "opponent": "Chicago Cubs vs Miami Marlins",
+      "location": "Miami,US",
+      "venue": "loanDepot park",
+      "game_pk": 823822
     }
   ]
 }
