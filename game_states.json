@@ -1,62 +1,46 @@
 {
-  "824469": {
-    "state": "LIVE",
-    "matchup": "Milwaukee Brewers vs Cincinnati Reds"
-  },
-  "823417": {
-    "state": "LIVE",
+  "823415": {
+    "state": "FINAL",
     "matchup": "Atlanta Braves vs Philadelphia Phillies"
   },
-  "824794": {
+  "823820": {
     "state": "LIVE",
-    "matchup": "Boston Red Sox vs Baltimore Orioles"
+    "matchup": "New York Mets vs Miami Marlins"
   },
-  "823336": {
+  "824715": {
     "state": "LIVE",
-    "matchup": "Los Angeles Angels vs Pittsburgh Pirates"
+    "matchup": "Los Angeles Angels vs Boston Red Sox"
   },
-  "824385": {
+  "824793": {
     "state": "LIVE",
-    "matchup": "Detroit Tigers vs Cleveland Guardians"
+    "matchup": "Cleveland Guardians vs Baltimore Orioles"
   },
-  "823578": {
+  "824062": {
     "state": "LIVE",
-    "matchup": "San Francisco Giants vs New York Mets"
+    "matchup": "Arizona Diamondbacks vs Kansas City Royals"
   },
-  "823822": {
+  "823742": {
     "state": "LIVE",
-    "matchup": "Chicago Cubs vs Miami Marlins"
+    "matchup": "Chicago Cubs vs Milwaukee Brewers"
   },
-  "824142": {
+  "824229": {
     "state": "LIVE",
-    "matchup": "Arizona Diamondbacks vs Houston Astros"
+    "matchup": "Minnesota Twins vs Detroit Tigers"
   },
-  "824065": {
-    "state": "LIVE",
-    "matchup": "Toronto Blue Jays vs Kansas City Royals"
-  },
-  "822848": {
-    "state": "LIVE",
-    "matchup": "Tampa Bay Rays vs Texas Rangers"
-  },
-  "824309": {
+  "823254": {
     "state": "PREVIEW",
-    "matchup": "St. Louis Cardinals vs Colorado Rockies"
+    "matchup": "Washington Nationals vs San Diego Padres"
   },
-  "823091": {
+  "823175": {
     "state": "PREVIEW",
-    "matchup": "Athletics vs Seattle Mariners"
+    "matchup": "St. Louis Cardinals vs San Francisco Giants"
   },
-  "823253": {
+  "823902": {
     "state": "PREVIEW",
-    "matchup": "New York Yankees vs San Diego Padres"
+    "matchup": "Cincinnati Reds vs Los Angeles Dodgers"
   },
-  "824552": {
+  "824958": {
     "state": "PREVIEW",
-    "matchup": "Minnesota Twins vs Chicago White Sox"
-  },
-  "823903": {
-    "state": "PREVIEW",
-    "matchup": "Washington Nationals vs Los Angeles Dodgers"
+    "matchup": "Toronto Blue Jays vs Athletics"
   }
 }
