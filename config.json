@@ -2,30 +2,6 @@
   "games": [
     {
       "date": "2026-09-07",
-      "time": "11:10",
-      "opponent": "Arizona Diamondbacks vs Kansas City Royals",
-      "location": "Kansas City,US",
-      "venue": "Kauffman Stadium",
-      "game_pk": 824062
-    },
-    {
-      "date": "2026-09-07",
-      "time": "11:10",
-      "opponent": "Chicago Cubs vs Milwaukee Brewers",
-      "location": "Milwaukee,US",
-      "venue": "American Family Field",
-      "game_pk": 823742
-    },
-    {
-      "date": "2026-09-07",
-      "time": "12:10",
-      "opponent": "Minnesota Twins vs Detroit Tigers",
-      "location": "Detroit,US",
-      "venue": "Comerica Park",
-      "game_pk": 824229
-    },
-    {
-      "date": "2026-09-07",
       "time": "14:10",
       "opponent": "Washington Nationals vs San Diego Padres",
       "location": "San Diego,US",
