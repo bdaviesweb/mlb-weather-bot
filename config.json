@@ -119,6 +119,22 @@
       "location": "Los Angeles,US",
       "venue": "UNIQLO Field at Dodger Stadium",
       "game_pk": 823901
+    },
+    {
+      "date": "2026-09-09",
+      "time": "10:10",
+      "opponent": "Minnesota Twins vs Detroit Tigers",
+      "location": "Detroit,US",
+      "venue": "Comerica Park",
+      "game_pk": 824226
+    },
+    {
+      "date": "2026-09-09",
+      "time": "12:05",
+      "opponent": "Toronto Blue Jays vs Athletics",
+      "location": "Oakland,US",
+      "venue": "Sutter Health Park",
+      "game_pk": 824956
     }
   ]
 }
