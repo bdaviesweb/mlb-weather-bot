@@ -2,14 +2,6 @@
   "games": [
     {
       "date": "2026-09-09",
-      "time": "10:10",
-      "opponent": "Minnesota Twins vs Detroit Tigers",
-      "location": "Detroit,US",
-      "venue": "Comerica Park",
-      "game_pk": 824226
-    },
-    {
-      "date": "2026-09-09",
       "time": "12:05",
       "opponent": "Toronto Blue Jays vs Athletics",
       "location": "Oakland,US",
@@ -127,6 +119,14 @@
       "location": "Atlanta,US",
       "venue": "Truist Park",
       "game_pk": 824872
+    },
+    {
+      "date": "2026-09-10",
+      "time": "10:05",
+      "opponent": "Houston Astros vs Philadelphia Phillies",
+      "location": "Philadelphia,US",
+      "venue": "Citizens Bank Park",
+      "game_pk": 823413
     }
   ]
 }
