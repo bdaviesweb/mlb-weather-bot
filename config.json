@@ -2,14 +2,6 @@
   "games": [
     {
       "date": "2026-09-10",
-      "time": "10:05",
-      "opponent": "Houston Astros vs Philadelphia Phillies",
-      "location": "Philadelphia,US",
-      "venue": "Citizens Bank Park",
-      "game_pk": 823413
-    },
-    {
-      "date": "2026-09-10",
       "time": "13:10",
       "opponent": "Texas Rangers vs Seattle Mariners",
       "location": "Seattle,US",
@@ -31,6 +23,14 @@
       "location": "Chicago,US",
       "venue": "Rate Field",
       "game_pk": 824550
+    },
+    {
+      "date": "2026-09-11",
+      "time": "11:20",
+      "opponent": "Pittsburgh Pirates vs Chicago Cubs",
+      "location": "Chicago,US",
+      "venue": "Wrigley Field",
+      "game_pk": 824631
     }
   ]
 }
