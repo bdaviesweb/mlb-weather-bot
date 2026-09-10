@@ -1,132 +1,36 @@
 {
   "games": [
     {
-      "date": "2026-09-09",
-      "time": "12:05",
-      "opponent": "Toronto Blue Jays vs Athletics",
-      "location": "Oakland,US",
-      "venue": "Sutter Health Park",
-      "game_pk": 824956
-    },
-    {
-      "date": "2026-09-09",
-      "time": "12:45",
-      "opponent": "St. Louis Cardinals vs San Francisco Giants",
-      "location": "San Francisco,US",
-      "venue": "Oracle Park",
-      "game_pk": 823172
-    },
-    {
-      "date": "2026-09-09",
-      "time": "13:10",
-      "opponent": "Washington Nationals vs San Diego Padres",
-      "location": "San Diego,US",
-      "venue": "Petco Park",
-      "game_pk": 823251
-    },
-    {
-      "date": "2026-09-09",
-      "time": "13:10",
-      "opponent": "Texas Rangers vs Seattle Mariners",
-      "location": "Seattle,US",
-      "venue": "T-Mobile Park",
-      "game_pk": 823090
-    },
-    {
-      "date": "2026-09-09",
-      "time": "15:35",
-      "opponent": "Cleveland Guardians vs Baltimore Orioles",
-      "location": "Baltimore,US",
-      "venue": "Oriole Park at Camden Yards",
-      "game_pk": 824791
-    },
-    {
-      "date": "2026-09-09",
-      "time": "15:40",
-      "opponent": "Houston Astros vs Philadelphia Phillies",
-      "location": "Philadelphia,US",
-      "venue": "Citizens Bank Park",
-      "game_pk": 823416
-    },
-    {
-      "date": "2026-09-09",
-      "time": "15:40",
-      "opponent": "New York Mets vs Miami Marlins",
-      "location": "Miami,US",
-      "venue": "loanDepot park",
-      "game_pk": 823818
-    },
-    {
-      "date": "2026-09-09",
-      "time": "15:45",
-      "opponent": "Los Angeles Angels vs Boston Red Sox",
-      "location": "Boston,US",
-      "venue": "Fenway Park",
-      "game_pk": 824713
-    },
-    {
-      "date": "2026-09-09",
-      "time": "16:05",
-      "opponent": "Colorado Rockies vs New York Yankees",
-      "location": "New York,US",
-      "venue": "Yankee Stadium",
-      "game_pk": 823497
-    },
-    {
-      "date": "2026-09-09",
-      "time": "16:15",
-      "opponent": "Tampa Bay Rays vs Atlanta Braves",
-      "location": "Atlanta,US",
-      "venue": "Truist Park",
-      "game_pk": 824871
-    },
-    {
-      "date": "2026-09-09",
-      "time": "16:40",
-      "opponent": "Arizona Diamondbacks vs Kansas City Royals",
-      "location": "Kansas City,US",
-      "venue": "Kauffman Stadium",
-      "game_pk": 824064
-    },
-    {
-      "date": "2026-09-09",
-      "time": "16:40",
-      "opponent": "Pittsburgh Pirates vs Chicago White Sox",
-      "location": "Chicago,US",
-      "venue": "Rate Field",
-      "game_pk": 824549
-    },
-    {
-      "date": "2026-09-09",
-      "time": "16:40",
-      "opponent": "Chicago Cubs vs Milwaukee Brewers",
-      "location": "Milwaukee,US",
-      "venue": "American Family Field",
-      "game_pk": 823739
-    },
-    {
-      "date": "2026-09-09",
-      "time": "19:10",
-      "opponent": "Cincinnati Reds vs Los Angeles Dodgers",
-      "location": "Los Angeles,US",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "game_pk": 823900
-    },
-    {
-      "date": "2026-09-10",
-      "time": "09:15",
-      "opponent": "Tampa Bay Rays vs Atlanta Braves",
-      "location": "Atlanta,US",
-      "venue": "Truist Park",
-      "game_pk": 824872
-    },
-    {
       "date": "2026-09-10",
       "time": "10:05",
       "opponent": "Houston Astros vs Philadelphia Phillies",
       "location": "Philadelphia,US",
       "venue": "Citizens Bank Park",
       "game_pk": 823413
+    },
+    {
+      "date": "2026-09-10",
+      "time": "13:10",
+      "opponent": "Texas Rangers vs Seattle Mariners",
+      "location": "Seattle,US",
+      "venue": "T-Mobile Park",
+      "game_pk": 823088
+    },
+    {
+      "date": "2026-09-10",
+      "time": "16:05",
+      "opponent": "Colorado Rockies vs New York Yankees",
+      "location": "New York,US",
+      "venue": "Yankee Stadium",
+      "game_pk": 823499
+    },
+    {
+      "date": "2026-09-10",
+      "time": "16:40",
+      "opponent": "Pittsburgh Pirates vs Chicago White Sox",
+      "location": "Chicago,US",
+      "venue": "Rate Field",
+      "game_pk": 824550
     }
   ]
 }
