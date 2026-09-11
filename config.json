@@ -2,14 +2,6 @@
   "games": [
     {
       "date": "2026-09-11",
-      "time": "11:20",
-      "opponent": "Pittsburgh Pirates vs Chicago Cubs",
-      "location": "Chicago,US",
-      "venue": "Wrigley Field",
-      "game_pk": 824631
-    },
-    {
-      "date": "2026-09-11",
       "time": "15:40",
       "opponent": "Colorado Rockies vs Detroit Tigers",
       "location": "Detroit,US",
@@ -119,6 +111,30 @@
       "location": "San Francisco,US",
       "venue": "Oracle Park",
       "game_pk": 823173
+    },
+    {
+      "date": "2026-09-12",
+      "time": "10:10",
+      "opponent": "Colorado Rockies vs Detroit Tigers",
+      "location": "Detroit,US",
+      "venue": "Comerica Park",
+      "game_pk": 824224
+    },
+    {
+      "date": "2026-09-12",
+      "time": "10:35",
+      "opponent": "New York Mets vs New York Yankees",
+      "location": "New York,US",
+      "venue": "Yankee Stadium",
+      "game_pk": 823496
+    },
+    {
+      "date": "2026-09-12",
+      "time": "11:20",
+      "opponent": "Pittsburgh Pirates vs Chicago Cubs",
+      "location": "Chicago,US",
+      "venue": "Wrigley Field",
+      "game_pk": 824630
     }
   ]
 }
