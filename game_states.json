@@ -1,62 +1,42 @@
 {
-  "824225": {
-    "state": "LIVE",
-    "matchup": "Colorado Rockies vs Detroit Tigers"
-  },
-  "822682": {
-    "state": "LIVE",
-    "matchup": "Los Angeles Angels vs Washington Nationals"
-  },
-  "824869": {
-    "state": "LIVE",
-    "matchup": "Philadelphia Phillies vs Atlanta Braves"
-  },
-  "823495": {
-    "state": "LIVE",
-    "matchup": "New York Mets vs New York Yankees"
-  },
-  "822764": {
-    "state": "LIVE",
-    "matchup": "Baltimore Orioles vs Toronto Blue Jays"
-  },
-  "822928": {
-    "state": "LIVE",
-    "matchup": "Houston Astros vs Tampa Bay Rays"
-  },
-  "823815": {
-    "state": "LIVE",
-    "matchup": "Los Angeles Dodgers vs Miami Marlins"
-  },
-  "823658": {
-    "state": "LIVE",
-    "matchup": "Cleveland Guardians vs Minnesota Twins"
-  },
-  "823734": {
-    "state": "LIVE",
-    "matchup": "Cincinnati Reds vs Milwaukee Brewers"
-  },
-  "823008": {
-    "state": "LIVE",
-    "matchup": "Chicago White Sox vs St. Louis Cardinals"
-  },
-  "824628": {
-    "state": "LIVE",
-    "matchup": "Pittsburgh Pirates vs Chicago Cubs"
-  },
-  "824708": {
+  "824465": {
     "state": "PREVIEW",
-    "matchup": "Kansas City Royals vs Boston Red Sox"
+    "matchup": "Los Angeles Dodgers vs Cincinnati Reds"
   },
-  "824952": {
+  "824386": {
     "state": "PREVIEW",
-    "matchup": "Seattle Mariners vs Athletics"
+    "matchup": "Chicago White Sox vs Cleveland Guardians"
   },
-  "825033": {
+  "822765": {
     "state": "PREVIEW",
-    "matchup": "Texas Rangers vs Arizona Diamondbacks"
+    "matchup": "Detroit Tigers vs Toronto Blue Jays"
   },
-  "823171": {
+  "823575": {
     "state": "PREVIEW",
-    "matchup": "San Diego Padres vs San Francisco Giants"
+    "matchup": "Baltimore Orioles vs New York Mets"
+  },
+  "824629": {
+    "state": "PREVIEW",
+    "matchup": "Atlanta Braves vs Chicago Cubs"
+  },
+  "823656": {
+    "state": "PREVIEW",
+    "matchup": "New York Yankees vs Minnesota Twins"
+  },
+  "823006": {
+    "state": "PREVIEW",
+    "matchup": "San Francisco Giants vs St. Louis Cardinals"
+  },
+  "824308": {
+    "state": "PREVIEW",
+    "matchup": "San Diego Padres vs Colorado Rockies"
+  },
+  "823981": {
+    "state": "PREVIEW",
+    "matchup": "Seattle Mariners vs Los Angeles Angels"
+  },
+  "825034": {
+    "state": "PREVIEW",
+    "matchup": "Miami Marlins vs Arizona Diamondbacks"
   }
 }
