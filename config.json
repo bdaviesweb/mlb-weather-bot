@@ -135,6 +135,22 @@
       "location": "St Louis,US",
       "venue": "Busch Stadium",
       "game_pk": 823004
+    },
+    {
+      "date": "2026-09-16",
+      "time": "10:40",
+      "opponent": "New York Yankees vs Minnesota Twins",
+      "location": "Minneapolis,US",
+      "venue": "Target Field",
+      "game_pk": 823655
+    },
+    {
+      "date": "2026-09-16",
+      "time": "12:07",
+      "opponent": "Detroit Tigers vs Toronto Blue Jays",
+      "location": "Toronto,CA",
+      "venue": "Rogers Centre",
+      "game_pk": 822763
     }
   ]
 }
