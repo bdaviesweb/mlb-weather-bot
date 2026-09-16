@@ -2,22 +2,6 @@
   "games": [
     {
       "date": "2026-09-16",
-      "time": "10:40",
-      "opponent": "New York Yankees vs Minnesota Twins",
-      "location": "Minneapolis,US",
-      "venue": "Target Field",
-      "game_pk": 823655
-    },
-    {
-      "date": "2026-09-16",
-      "time": "12:07",
-      "opponent": "Detroit Tigers vs Toronto Blue Jays",
-      "location": "Toronto,CA",
-      "venue": "Rogers Centre",
-      "game_pk": 822763
-    },
-    {
-      "date": "2026-09-16",
       "time": "15:40",
       "opponent": "Los Angeles Dodgers vs Cincinnati Reds",
       "location": "Cincinnati,US",
@@ -127,6 +111,14 @@
       "location": "St Petersburg,US",
       "venue": "Tropicana Field",
       "game_pk": 822924
+    },
+    {
+      "date": "2026-09-17",
+      "time": "12:10",
+      "opponent": "San Diego Padres vs Colorado Rockies",
+      "location": "Denver,US",
+      "venue": "Coors Field",
+      "game_pk": 824305
     }
   ]
 }
