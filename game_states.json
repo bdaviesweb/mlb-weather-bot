@@ -1,61 +1,61 @@
 {
-  "824466": {
+  "824382": {
+    "state": "LIVE",
+    "matchup": "Chicago White Sox vs Cleveland Guardians"
+  },
+  "823004": {
+    "state": "LIVE",
+    "matchup": "San Francisco Giants vs St. Louis Cardinals"
+  },
+  "823655": {
+    "state": "LIVE",
+    "matchup": "New York Yankees vs Minnesota Twins"
+  },
+  "822763": {
+    "state": "LIVE",
+    "matchup": "Detroit Tigers vs Toronto Blue Jays"
+  },
+  "824467": {
     "state": "PREVIEW",
     "matchup": "Los Angeles Dodgers vs Cincinnati Reds"
   },
-  "822925": {
+  "822926": {
     "state": "PREVIEW",
     "matchup": "Athletics vs Tampa Bay Rays"
   },
-  "824384": {
-    "state": "PREVIEW",
-    "matchup": "Chicago White Sox vs Cleveland Guardians"
-  },
-  "823333": {
+  "823332": {
     "state": "PREVIEW",
     "matchup": "Milwaukee Brewers vs Pittsburgh Pirates"
   },
-  "822683": {
+  "822680": {
     "state": "PREVIEW",
     "matchup": "Philadelphia Phillies vs Washington Nationals"
   },
-  "822762": {
-    "state": "PREVIEW",
-    "matchup": "Detroit Tigers vs Toronto Blue Jays"
-  },
-  "823574": {
+  "823576": {
     "state": "PREVIEW",
     "matchup": "Baltimore Orioles vs New York Mets"
   },
-  "824627": {
+  "824626": {
     "state": "PREVIEW",
     "matchup": "Atlanta Braves vs Chicago Cubs"
   },
-  "823654": {
-    "state": "PREVIEW",
-    "matchup": "New York Yankees vs Minnesota Twins"
-  },
-  "823007": {
-    "state": "PREVIEW",
-    "matchup": "San Francisco Giants vs St. Louis Cardinals"
-  },
-  "822849": {
+  "822846": {
     "state": "PREVIEW",
     "matchup": "Boston Red Sox vs Texas Rangers"
   },
-  "824143": {
+  "824140": {
     "state": "PREVIEW",
     "matchup": "Kansas City Royals vs Houston Astros"
   },
-  "824307": {
+  "824306": {
     "state": "PREVIEW",
     "matchup": "San Diego Padres vs Colorado Rockies"
   },
-  "823980": {
+  "823979": {
     "state": "PREVIEW",
     "matchup": "Seattle Mariners vs Los Angeles Angels"
   },
-  "825030": {
+  "825031": {
     "state": "PREVIEW",
     "matchup": "Miami Marlins vs Arizona Diamondbacks"
   }
