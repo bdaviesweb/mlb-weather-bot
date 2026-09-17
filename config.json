@@ -2,14 +2,6 @@
   "games": [
     {
       "date": "2026-09-17",
-      "time": "12:10",
-      "opponent": "San Diego Padres vs Colorado Rockies",
-      "location": "Denver,US",
-      "venue": "Coors Field",
-      "game_pk": 824305
-    },
-    {
-      "date": "2026-09-17",
       "time": "16:15",
       "opponent": "Kansas City Royals vs Houston Astros",
       "location": "Houston,US",
