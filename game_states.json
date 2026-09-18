@@ -1,38 +1,62 @@
 {
-  "823334": {
-    "state": "LIVE",
-    "matchup": "Milwaukee Brewers vs Pittsburgh Pirates"
-  },
-  "824464": {
-    "state": "LIVE",
-    "matchup": "Los Angeles Dodgers vs Cincinnati Reds"
-  },
-  "822924": {
-    "state": "LIVE",
-    "matchup": "Athletics vs Tampa Bay Rays"
-  },
-  "824305": {
+  "824463": {
     "state": "PREVIEW",
-    "matchup": "San Diego Padres vs Colorado Rockies"
+    "matchup": "Chicago Cubs vs Cincinnati Reds"
   },
-  "824141": {
+  "823331": {
     "state": "PREVIEW",
-    "matchup": "Kansas City Royals vs Houston Astros"
+    "matchup": "Kansas City Royals vs Pittsburgh Pirates"
   },
-  "823573": {
+  "824790": {
+    "state": "PREVIEW",
+    "matchup": "Milwaukee Brewers vs Baltimore Orioles"
+  },
+  "824383": {
+    "state": "PREVIEW",
+    "matchup": "Athletics vs Cleveland Guardians"
+  },
+  "822923": {
+    "state": "PREVIEW",
+    "matchup": "Boston Red Sox vs Tampa Bay Rays"
+  },
+  "823572": {
     "state": "PREVIEW",
     "matchup": "Philadelphia Phillies vs New York Mets"
   },
-  "824548": {
+  "824547": {
     "state": "PREVIEW",
     "matchup": "Detroit Tigers vs Chicago White Sox"
   },
-  "822845": {
+  "822847": {
     "state": "PREVIEW",
-    "matchup": "Boston Red Sox vs Texas Rangers"
+    "matchup": "Toronto Blue Jays vs Texas Rangers"
   },
-  "823978": {
+  "824303": {
+    "state": "PREVIEW",
+    "matchup": "Seattle Mariners vs Colorado Rockies"
+  },
+  "824138": {
+    "state": "PREVIEW",
+    "matchup": "Atlanta Braves vs Houston Astros"
+  },
+  "823005": {
+    "state": "PREVIEW",
+    "matchup": "Washington Nationals vs St. Louis Cardinals"
+  },
+  "823977": {
     "state": "PREVIEW",
     "matchup": "Minnesota Twins vs Los Angeles Angels"
+  },
+  "823252": {
+    "state": "PREVIEW",
+    "matchup": "Miami Marlins vs San Diego Padres"
+  },
+  "825032": {
+    "state": "PREVIEW",
+    "matchup": "New York Yankees vs Arizona Diamondbacks"
+  },
+  "823898": {
+    "state": "PREVIEW",
+    "matchup": "San Francisco Giants vs Los Angeles Dodgers"
   }
 }
