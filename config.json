@@ -2,14 +2,6 @@
   "games": [
     {
       "date": "2026-09-19",
-      "time": "11:10",
-      "opponent": "Detroit Tigers vs Chicago White Sox",
-      "location": "Chicago,US",
-      "venue": "Rate Field",
-      "game_pk": 824545
-    },
-    {
-      "date": "2026-09-19",
       "time": "13:05",
       "opponent": "Milwaukee Brewers vs Baltimore Orioles",
       "location": "Baltimore,US",
@@ -119,6 +111,70 @@
       "location": "Anaheim,US",
       "venue": "Angel Stadium",
       "game_pk": 823976
+    },
+    {
+      "date": "2026-09-20",
+      "time": "10:10",
+      "opponent": "Philadelphia Phillies vs New York Mets",
+      "location": "New York,US",
+      "venue": "Citi Field",
+      "game_pk": 823570
+    },
+    {
+      "date": "2026-09-20",
+      "time": "10:35",
+      "opponent": "Kansas City Royals vs Pittsburgh Pirates",
+      "location": "Pittsburgh,US",
+      "venue": "PNC Park",
+      "game_pk": 823329
+    },
+    {
+      "date": "2026-09-20",
+      "time": "10:40",
+      "opponent": "Chicago Cubs vs Cincinnati Reds",
+      "location": "Cincinnati,US",
+      "venue": "Great American Ball Park",
+      "game_pk": 824462
+    },
+    {
+      "date": "2026-09-20",
+      "time": "10:40",
+      "opponent": "Athletics vs Cleveland Guardians",
+      "location": "Cleveland,US",
+      "venue": "Progressive Field",
+      "game_pk": 824381
+    },
+    {
+      "date": "2026-09-20",
+      "time": "10:40",
+      "opponent": "Boston Red Sox vs Tampa Bay Rays",
+      "location": "St Petersburg,US",
+      "venue": "Tropicana Field",
+      "game_pk": 822922
+    },
+    {
+      "date": "2026-09-20",
+      "time": "11:10",
+      "opponent": "Atlanta Braves vs Houston Astros",
+      "location": "Houston,US",
+      "venue": "Daikin Park",
+      "game_pk": 824139
+    },
+    {
+      "date": "2026-09-20",
+      "time": "11:10",
+      "opponent": "Detroit Tigers vs Chicago White Sox",
+      "location": "Chicago,US",
+      "venue": "Rate Field",
+      "game_pk": 824546
+    },
+    {
+      "date": "2026-09-20",
+      "time": "11:15",
+      "opponent": "Washington Nationals vs St. Louis Cardinals",
+      "location": "St Louis,US",
+      "venue": "Busch Stadium",
+      "game_pk": 823001
     }
   ]
 }
