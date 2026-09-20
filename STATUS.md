@@ -7,7 +7,7 @@
 ## 🟢 OPERATIONAL
 
 **Current Status:** All systems functioning normally
-**Last Updated:** September 20, 2026 11:24 AM PT
+**Last Updated:** September 20, 2026 11:38 AM PT
 **Season:** Regular Season 2026
 
 ---
@@ -23,7 +23,7 @@
 | 🌦️ National Weather Service API | 🟢 Connected | Real-time | Continuous |
 | 💾 State Persistence | 🟢 Working | September 20, 2026 | Automatic |
 | 🏟️ Roof Status API | 🟢 Connected | September 20, 2026 | Continuous |
-| ⏰ External Cron Trigger | 🟢 Operational | September 20, 2026 11:24 AM PT | Every 10 min via cron-job.org |
+| ⏰ External Cron Trigger | 🟢 Operational | September 20, 2026 11:38 AM PT | Every 10 min via cron-job.org |
 
 ---
 
@@ -32,8 +32,8 @@
 | Metric | Value |
 |--------|-------|
 | **Games Monitored** | 1367 |
-| **Total Alerts Sent** | 522 |
-| **Delay Prediction Accuracy** | 40.6% (41/101) |
+| **Total Alerts Sent** | 524 |
+| **Delay Prediction Accuracy** | 39.8% (41/103) |
 | **False Positives** | 0 |
 | **Operational Uptime** | 99.8% |
 | **Skipped Runs** | 5621 (42.2% of total) |
@@ -115,4 +115,4 @@ critical issues
 
 ---
 
-_Last generated: September 20, 2026 11:24 AM PT_
+_Last generated: September 20, 2026 11:38 AM PT_
