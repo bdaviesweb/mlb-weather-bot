@@ -1,60 +1,36 @@
 {
   "games": [
     {
-      "date": "2026-09-20",
-      "time": "11:35",
-      "opponent": "Toronto Blue Jays vs Texas Rangers",
-      "location": "Arlington,US",
-      "venue": "Globe Life Field",
-      "game_pk": 822844
-    },
-    {
-      "date": "2026-09-20",
-      "time": "12:10",
-      "opponent": "Seattle Mariners vs Colorado Rockies",
-      "location": "Denver,US",
-      "venue": "Coors Field",
-      "game_pk": 824300
-    },
-    {
-      "date": "2026-09-20",
-      "time": "13:07",
-      "opponent": "Minnesota Twins vs Los Angeles Angels",
-      "location": "Anaheim,US",
-      "venue": "Angel Stadium",
-      "game_pk": 823975
-    },
-    {
-      "date": "2026-09-20",
-      "time": "13:10",
-      "opponent": "San Francisco Giants vs Los Angeles Dodgers",
-      "location": "Los Angeles,US",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "game_pk": 823896
-    },
-    {
-      "date": "2026-09-20",
-      "time": "13:10",
-      "opponent": "Miami Marlins vs San Diego Padres",
-      "location": "San Diego,US",
-      "venue": "Petco Park",
-      "game_pk": 823247
-    },
-    {
-      "date": "2026-09-20",
-      "time": "13:10",
-      "opponent": "New York Yankees vs Arizona Diamondbacks",
-      "location": "Phoenix,US",
-      "venue": "Chase Field",
-      "game_pk": 825028
-    },
-    {
-      "date": "2026-09-20",
-      "time": "16:20",
-      "opponent": "Milwaukee Brewers vs Baltimore Orioles",
+      "date": "2026-09-21",
+      "time": "15:35",
+      "opponent": "Toronto Blue Jays vs Baltimore Orioles",
       "location": "Baltimore,US",
       "venue": "Oriole Park at Camden Yards",
-      "game_pk": 824789
+      "game_pk": 824787
+    },
+    {
+      "date": "2026-09-21",
+      "time": "15:40",
+      "opponent": "Washington Nationals vs Detroit Tigers",
+      "location": "Detroit,US",
+      "venue": "Comerica Park",
+      "game_pk": 824221
+    },
+    {
+      "date": "2026-09-21",
+      "time": "18:45",
+      "opponent": "Minnesota Twins vs San Francisco Giants",
+      "location": "San Francisco,US",
+      "venue": "Oracle Park",
+      "game_pk": 823169
+    },
+    {
+      "date": "2026-09-22",
+      "time": "10:05",
+      "opponent": "Tampa Bay Rays vs New York Yankees",
+      "location": "New York,US",
+      "venue": "Yankee Stadium",
+      "game_pk": 823543
     }
   ]
 }
