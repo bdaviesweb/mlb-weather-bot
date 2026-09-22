@@ -10,14 +10,6 @@
     },
     {
       "date": "2026-09-22",
-      "time": "15:35",
-      "opponent": "Toronto Blue Jays vs Baltimore Orioles",
-      "location": "Baltimore,US",
-      "venue": "Oriole Park at Camden Yards",
-      "game_pk": 824785
-    },
-    {
-      "date": "2026-09-22",
       "time": "15:40",
       "opponent": "Washington Nationals vs Detroit Tigers",
       "location": "Detroit,US",
@@ -121,12 +113,36 @@
       "game_pk": 823897
     },
     {
+      "date": "2026-09-22",
+      "time": "15:35",
+      "opponent": "Toronto Blue Jays vs Baltimore Orioles",
+      "location": "Baltimore,US",
+      "venue": "Oriole Park at Camden Yards",
+      "game_pk": 824785
+    },
+    {
       "date": "2026-09-23",
       "time": "10:10",
       "opponent": "Washington Nationals vs Detroit Tigers",
       "location": "Detroit,US",
       "venue": "Comerica Park",
       "game_pk": 824223
+    },
+    {
+      "date": "2026-09-23",
+      "time": "10:35",
+      "opponent": "Toronto Blue Jays vs Baltimore Orioles",
+      "location": "Baltimore,US",
+      "venue": "Oriole Park at Camden Yards",
+      "game_pk": 824785
+    },
+    {
+      "date": "2026-09-23",
+      "time": "12:45",
+      "opponent": "Minnesota Twins vs San Francisco Giants",
+      "location": "San Francisco,US",
+      "venue": "Oracle Park",
+      "game_pk": 823168
     }
   ]
 }
