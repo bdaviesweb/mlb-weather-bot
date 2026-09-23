@@ -119,6 +119,38 @@
       "location": "Pittsburgh,US",
       "venue": "PNC Park",
       "game_pk": 823326
+    },
+    {
+      "date": "2026-09-24",
+      "time": "11:10",
+      "opponent": "Chicago White Sox vs Kansas City Royals",
+      "location": "Kansas City,US",
+      "venue": "Kauffman Stadium",
+      "game_pk": 824059
+    },
+    {
+      "date": "2026-09-24",
+      "time": "11:20",
+      "opponent": "Miami Marlins vs Chicago Cubs",
+      "location": "Chicago,US",
+      "venue": "Wrigley Field",
+      "game_pk": 824623
+    },
+    {
+      "date": "2026-09-24",
+      "time": "11:35",
+      "opponent": "New York Mets vs Texas Rangers",
+      "location": "Arlington,US",
+      "venue": "Globe Life Field",
+      "game_pk": 822842
+    },
+    {
+      "date": "2026-09-24",
+      "time": "12:10",
+      "opponent": "Arizona Diamondbacks vs Colorado Rockies",
+      "location": "Denver,US",
+      "venue": "Coors Field",
+      "game_pk": 824298
     }
   ]
 }
