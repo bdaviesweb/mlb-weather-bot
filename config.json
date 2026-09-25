@@ -135,6 +135,14 @@
       "location": "Detroit,US",
       "venue": "Comerica Park",
       "game_pk": 824219
+    },
+    {
+      "date": "2026-09-26",
+      "time": "12:07",
+      "opponent": "Cincinnati Reds vs Toronto Blue Jays",
+      "location": "Toronto,CA",
+      "venue": "Rogers Centre",
+      "game_pk": 822759
     }
   ]
 }
