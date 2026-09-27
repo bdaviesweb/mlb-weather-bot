@@ -3,10 +3,6 @@
     "state": "LIVE",
     "matchup": "New York Mets vs Washington Nationals"
   },
-  "823490": {
-    "state": "DELAYED",
-    "matchup": "Baltimore Orioles vs New York Yankees"
-  },
   "823408": {
     "state": "LIVE",
     "matchup": "Tampa Bay Rays vs Philadelphia Phillies"
@@ -58,5 +54,9 @@
   "823731": {
     "state": "LIVE",
     "matchup": "St. Louis Cardinals vs Milwaukee Brewers"
+  },
+  "823490": {
+    "state": "DELAYED",
+    "matchup": "Baltimore Orioles vs New York Yankees"
   }
 }
