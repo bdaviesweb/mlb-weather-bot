@@ -7,7 +7,7 @@
 ## 🟢 OPERATIONAL
 
 **Current Status:** All systems functioning normally
-**Last Updated:** September 26, 2026 10:32 PM PT
+**Last Updated:** September 27, 2026 10:35 AM PT
 **Season:** Regular Season 2026
 
 ---
@@ -16,14 +16,14 @@
 
 | Component | Status | Last Successful Run | Next Run |
 |-----------|--------|---------------------|----------|
-| 📊 Daily Weather Report (7 AM) | 🟢 Operational | September 26, 2026 7:00 AM PT | September 27, 2026 7:00 AM PT |
-| 🚨 High Risk Alert (10 AM) | 🟢 Operational | September 26, 2026 10:00 AM PT | September 27, 2026 10:00 AM PT |
+| 📊 Daily Weather Report (7 AM) | 🟢 Operational | September 27, 2026 7:00 AM PT | September 28, 2026 7:00 AM PT |
+| 🚨 High Risk Alert (10 AM) | 🟢 Operational | September 27, 2026 10:00 AM PT | September 28, 2026 10:00 AM PT |
 | ⚾ Game Status Monitor | 🟢 Operational | Real-time during game hours | Every 10 min (10 AM - 10 PM PT) |
 | 🔌 MLB Stats API | 🟢 Connected | Real-time | Continuous |
 | 🌦️ National Weather Service API | 🟢 Connected | Real-time | Continuous |
-| 💾 State Persistence | 🟢 Working | September 26, 2026 | Automatic |
-| 🏟️ Roof Status API | 🟢 Connected | September 26, 2026 | Continuous |
-| ⏰ External Cron Trigger | 🟢 Operational | September 26, 2026 10:32 PM PT | Every 10 min via cron-job.org |
+| 💾 State Persistence | 🟢 Working | September 27, 2026 | Automatic |
+| 🏟️ Roof Status API | 🟢 Connected | September 27, 2026 | Continuous |
+| ⏰ External Cron Trigger | 🟢 Operational | September 27, 2026 10:35 AM PT | Every 10 min via cron-job.org |
 
 ---
 
@@ -31,12 +31,12 @@
 
 | Metric | Value |
 |--------|-------|
-| **Games Monitored** | 1419 |
-| **Total Alerts Sent** | 543 |
+| **Games Monitored** | 1427 |
+| **Total Alerts Sent** | 544 |
 | **Delay Prediction Accuracy** | 38.7% (41/106) |
 | **False Positives** | 0 |
 | **Operational Uptime** | 99.8% |
-| **Skipped Runs** | 5621 (42.1% of total) |
+| **Skipped Runs** | 5621 (42.0% of total) |
 | **Monitoring Interval** | Every 10 min (via cron-job.org) |
 
 ---
@@ -115,4 +115,4 @@ critical issues
 
 ---
 
-_Last generated: September 26, 2026 10:32 PM PT_
+_Last generated: September 27, 2026 10:35 AM PT_
