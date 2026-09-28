@@ -7,6 +7,14 @@
       "location": "Atlanta,US",
       "venue": "Truist Park",
       "game_pk": 849845
+    },
+    {
+      "date": "2026-09-29",
+      "time": "14:00",
+      "opponent": "Chicago White Sox vs Houston Astros",
+      "location": "Houston,US",
+      "venue": "Daikin Park",
+      "game_pk": 849849
     }
   ]
 }
