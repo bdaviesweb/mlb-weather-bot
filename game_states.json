@@ -1,62 +1,18 @@
 {
-  "822679": {
-    "state": "LIVE",
-    "matchup": "New York Mets vs Washington Nationals"
+  "849845": {
+    "state": "FINAL",
+    "matchup": "Philadelphia Phillies vs Atlanta Braves"
   },
-  "823408": {
+  "849849": {
     "state": "LIVE",
-    "matchup": "Tampa Bay Rays vs Philadelphia Phillies"
+    "matchup": "Chicago White Sox vs Houston Astros"
   },
-  "824705": {
-    "state": "LIVE",
-    "matchup": "Chicago Cubs vs Boston Red Sox"
+  "849851": {
+    "state": "PREVIEW",
+    "matchup": "Boston Red Sox vs New York Yankees"
   },
-  "824948": {
-    "state": "LIVE",
-    "matchup": "Houston Astros vs Athletics"
-  },
-  "823164": {
-    "state": "LIVE",
-    "matchup": "Los Angeles Dodgers vs San Francisco Giants"
-  },
-  "822761": {
-    "state": "LIVE",
-    "matchup": "Cincinnati Reds vs Toronto Blue Jays"
-  },
-  "824055": {
-    "state": "LIVE",
-    "matchup": "Cleveland Guardians vs Kansas City Royals"
-  },
-  "824217": {
-    "state": "LIVE",
-    "matchup": "Pittsburgh Pirates vs Detroit Tigers"
-  },
-  "823246": {
-    "state": "LIVE",
-    "matchup": "Arizona Diamondbacks vs San Diego Padres"
-  },
-  "823084": {
-    "state": "LIVE",
-    "matchup": "Los Angeles Angels vs Seattle Mariners"
-  },
-  "823650": {
-    "state": "LIVE",
-    "matchup": "Texas Rangers vs Minnesota Twins"
-  },
-  "824542": {
-    "state": "LIVE",
-    "matchup": "Colorado Rockies vs Chicago White Sox"
-  },
-  "823814": {
-    "state": "LIVE",
-    "matchup": "Atlanta Braves vs Miami Marlins"
-  },
-  "823731": {
-    "state": "LIVE",
-    "matchup": "St. Louis Cardinals vs Milwaukee Brewers"
-  },
-  "823490": {
-    "state": "DELAYED",
-    "matchup": "Baltimore Orioles vs New York Yankees"
+  "849843": {
+    "state": "PREVIEW",
+    "matchup": "Chicago Cubs vs San Diego Padres"
   }
 }
