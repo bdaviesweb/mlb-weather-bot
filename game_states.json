@@ -1,17 +1,17 @@
 {
-  "849845": {
-    "state": "FINAL",
+  "849841": {
+    "state": "PREVIEW",
     "matchup": "Philadelphia Phillies vs Atlanta Braves"
   },
-  "849849": {
-    "state": "LIVE",
+  "849846": {
+    "state": "PREVIEW",
     "matchup": "Chicago White Sox vs Houston Astros"
   },
-  "849851": {
+  "849848": {
     "state": "PREVIEW",
     "matchup": "Boston Red Sox vs New York Yankees"
   },
-  "849843": {
+  "849842": {
     "state": "PREVIEW",
     "matchup": "Chicago Cubs vs San Diego Padres"
   }
