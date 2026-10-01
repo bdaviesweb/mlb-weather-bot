@@ -1,32 +1,8 @@
 {
   "games": [
     {
-      "date": "2026-09-30",
-      "time": "14:00",
-      "opponent": "Chicago White Sox vs Houston Astros",
-      "location": "Houston,US",
-      "venue": "Daikin Park",
-      "game_pk": 849846
-    },
-    {
-      "date": "2026-09-30",
-      "time": "17:00",
-      "opponent": "Boston Red Sox vs New York Yankees",
-      "location": "New York,US",
-      "venue": "Yankee Stadium",
-      "game_pk": 849848
-    },
-    {
-      "date": "2026-09-30",
-      "time": "19:00",
-      "opponent": "Chicago Cubs vs San Diego Padres",
-      "location": "San Diego,US",
-      "venue": "Petco Park",
-      "game_pk": 849842
-    },
-    {
       "date": "2026-10-01",
-      "time": "11:00",
+      "time": "17:00",
       "opponent": "Philadelphia Phillies vs Atlanta Braves",
       "location": "Atlanta,US",
       "venue": "Truist Park",
