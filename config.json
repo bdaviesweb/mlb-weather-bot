@@ -7,6 +7,14 @@
       "location": "Cleveland,US",
       "venue": "Progressive Field",
       "game_pk": 849829
+    },
+    {
+      "date": "2026-10-03",
+      "time": "13:00",
+      "opponent": "Atlanta Braves vs Los Angeles Dodgers",
+      "location": "Los Angeles,US",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "game_pk": 849828
     }
   ]
 }
