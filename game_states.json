@@ -1,6 +1,18 @@
 {
-  "849844": {
+  "849829": {
+    "state": "LIVE",
+    "matchup": "Chicago White Sox vs Cleveland Guardians"
+  },
+  "849828": {
     "state": "PREVIEW",
-    "matchup": "Philadelphia Phillies vs Atlanta Braves"
+    "matchup": "Atlanta Braves vs Los Angeles Dodgers"
+  },
+  "849835": {
+    "state": "PREVIEW",
+    "matchup": "New York Yankees vs Tampa Bay Rays"
+  },
+  "849830": {
+    "state": "PREVIEW",
+    "matchup": "San Diego Padres vs Milwaukee Brewers"
   }
 }
