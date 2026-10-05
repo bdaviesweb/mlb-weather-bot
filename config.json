@@ -1,20 +1,12 @@
 {
   "games": [
     {
-      "date": "2026-10-04",
-      "time": "13:00",
-      "opponent": "San Diego Padres vs Milwaukee Brewers",
-      "location": "Milwaukee,US",
-      "venue": "American Family Field",
-      "game_pk": 849825
-    },
-    {
-      "date": "2026-10-04",
+      "date": "2026-10-05",
       "time": "17:00",
-      "opponent": "Atlanta Braves vs Los Angeles Dodgers",
-      "location": "Los Angeles,US",
-      "venue": "UNIQLO Field at Dodger Stadium",
-      "game_pk": 849823
+      "opponent": "New York Yankees vs Tampa Bay Rays",
+      "location": "St Petersburg,US",
+      "venue": "Tropicana Field",
+      "game_pk": 849839
     }
   ]
 }
