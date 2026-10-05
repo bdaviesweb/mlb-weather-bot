@@ -7,6 +7,14 @@
       "location": "St Petersburg,US",
       "venue": "Tropicana Field",
       "game_pk": 849839
+    },
+    {
+      "date": "2026-10-06",
+      "time": "15:00",
+      "opponent": "Los Angeles Dodgers vs Atlanta Braves",
+      "location": "Atlanta,US",
+      "venue": "Truist Park",
+      "game_pk": 849819
     }
   ]
 }
