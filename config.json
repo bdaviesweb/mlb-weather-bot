@@ -15,6 +15,14 @@
       "location": "San Diego,US",
       "venue": "Petco Park",
       "game_pk": 849826
+    },
+    {
+      "date": "2026-10-07",
+      "time": "13:00",
+      "opponent": "Cleveland Guardians vs Chicago White Sox",
+      "location": "Chicago,US",
+      "venue": "Rate Field",
+      "game_pk": 849833
     }
   ]
 }
