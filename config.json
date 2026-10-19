@@ -1,12 +1,12 @@
 {
   "games": [
     {
-      "date": "2026-10-18",
-      "time": "14:08",
-      "opponent": "Tampa Bay Rays vs Cleveland Guardians",
-      "location": "Cleveland,US",
-      "venue": "Progressive Field",
-      "game_pk": 849817
+      "date": "2026-10-19",
+      "time": "17:08",
+      "opponent": "Cleveland Guardians vs Tampa Bay Rays",
+      "location": "St Petersburg,US",
+      "venue": "Tropicana Field",
+      "game_pk": 849815
     }
   ]
 }
